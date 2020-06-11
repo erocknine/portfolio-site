@@ -327,8 +327,8 @@ body {
 
 @keyframes resume {
   0% {}
-  50% {transform: translateX(48.2vw)}
-  100% {transform: translateX(48.2vw) translateY(7rem);}
+  50% {transform: translateX(47.8vw)}
+  100% {transform: translateX(47.8vw) translateY(7rem);}
 }
 
 [data-aos="navbar-relocate-blogs"] {
@@ -344,8 +344,8 @@ body {
 
 @keyframes blogs {
   0% {}
-  50% {transform: translateX(40.5vw);}
-  100% {transform: translateX(40.5vw) translateY(11rem);}
+  50% {transform: translateX(39.5vw);}
+  100% {transform: translateX(39.5vw) translateY(11rem);}
 }
 
 [data-aos="navbar-relocate-contact"] {
@@ -357,11 +357,14 @@ body {
     animation-fill-mode: both;
   }
 }
-
+//43
+//36
+//29
+//22
 @keyframes contact {
   0% {}
-  50% {transform: translateX(31.5vw);}
-  100% {transform: translateX(31.5vw) translateY(15rem);}
+  50% {transform: translateX(31.3vw);}
+  100% {transform: translateX(31.3vw) translateY(15rem);}
 }
 
 .profile-left {
@@ -387,7 +390,6 @@ body {
   justify-content: center;
   color: rgb(245, 237, 240);
   position: relative;
-  height: 75vh;
   font-family: 'Lato';
   background: rgb(96,108,136);
   background: linear-gradient(180deg, rgba(96,108,136,1) 11%, rgba(63,76,107,1) 55%);
@@ -397,10 +399,9 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-height: 75vh;
   height: 100%;
   justify-content: center;
-  padding: 0 15rem;
+  width: 70vw;
   font-size: 1.1rem;
   .text {
     margin: 1rem;
