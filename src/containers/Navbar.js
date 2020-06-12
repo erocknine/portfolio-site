@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -7,27 +7,79 @@ import { Icon } from 'semantic-ui-react'
 export default function Navbar() {
 
   return (
-    <nav className="navbar">
-      <ul>
-        <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true}><NavItem aos={'projects'} >Projects</NavItem></ScrollAnimation>
-        <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true} delay={250}><NavItem aos={'resume'}>Resume</NavItem></ScrollAnimation>
-        <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true} delay={500}><NavItem aos={'blogs'}>Blogs</NavItem></ScrollAnimation>
-        <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true} delay={750}><Contact aos={'contact'}>Contact</Contact></ScrollAnimation>
-      </ul>
-    </nav>
+    <Fragment>
+      <nav className="navbar-top">
+      <AnchorLink href="#profile" className="eric-sk-cheung" 
+        data-aos={`navbar-relocate-eric`}
+        data-aos-anchor="trigger-navbar-relocate"
+        data-aos-anchor-placement="top-left"
+        data-aos-easing="ease-in-out"
+        data-aos-duration={1200}>
+      </AnchorLink>
+        <ul>
+          <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true}><Projects position={'top'}>Projects</Projects></ScrollAnimation>
+          <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true} delay={250}><Resume position={'top'}>Resume</Resume></ScrollAnimation>
+          <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true} delay={500}><Blogs position={'top'}>Blogs</Blogs></ScrollAnimation>
+          <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true} delay={750}><Contact position={'top'}>Contact</Contact></ScrollAnimation>
+        </ul>
+      </nav>
+      <nav className="navbar-right">
+        <ul>
+          <Projects position={'right'}>Projects</Projects>
+          <Resume position={'right'}>Resume</Resume>
+          <Blogs position={'right'}>Blogs</Blogs>
+          <Contact position={'right'}>Contact</Contact>
+        </ul>
+      </nav>
+    </Fragment>
   )
 }
 
-const NavItem = (props) => {
+const Projects = (props) => {
   return (
     <li className="nav-item"
-      data-aos={`navbar-relocate-${props.aos}`}
+      data-aos={`navbar-relocate-projects-${props.position}`}
       data-aos-anchor="trigger-navbar-relocate"
       data-aos-anchor-placement="top-top"
-      data-aos-easing="ease"
-      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-delay={props.position === 'right' ? "1000": "0"}
+      data-aos-duration={props.position === 'top' ? "1000":"250"}
     >
-      <AnchorLink href={`#${props.aos}`} className="nav-link">
+      <AnchorLink href="#projects" className="nav-link">
+        { props.children }
+      </AnchorLink>
+    </li>
+  );
+}
+
+const Resume = (props) => {
+  return (
+    <li className="nav-item"
+      data-aos={`navbar-relocate-resume-${props.position}`}
+      data-aos-anchor="trigger-navbar-relocate"
+      data-aos-anchor-placement="top-top"
+      data-aos-easing="ease-in-out"
+      data-aos-delay={props.position === 'right' ? "750": "0"}
+      data-aos-duration={props.position === 'top' ? "750":"500"}
+    >
+      <AnchorLink href="#resume" className="nav-link">
+        { props.children }
+      </AnchorLink>
+    </li>
+  );
+}
+
+const Blogs = (props) => {
+  return (
+    <li className="nav-item"
+      data-aos={`navbar-relocate-blogs-${props.position}`}
+      data-aos-anchor="trigger-navbar-relocate"
+      data-aos-anchor-placement="top-top"
+      data-aos-easing="ease-in-out"
+      data-aos-delay={props.position === 'right' ? "500": "0"}
+      data-aos-duration={props.position === 'top' ? "500":"750"}
+    >
+      <AnchorLink href="#blogs" className="nav-link">
         { props.children }
       </AnchorLink>
     </li>
@@ -46,11 +98,12 @@ const Contact = (props) => {
 
   return (
     <li className="nav-item"
-      data-aos={`navbar-relocate-${props.aos}`}
+      data-aos={`navbar-relocate-contact-${props.position}`}
       data-aos-anchor="trigger-navbar-relocate"
       data-aos-anchor-placement="top-top"
-      data-aos-easing="ease"
-      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-delay={props.position === 'right' ? "250": "0"}
+      data-aos-duration={props.position === 'top' ? "250":"1000"}
     >
       <span className="nav-link" onClick={() => setOpenContact(!openContact)}>
         { props.children }

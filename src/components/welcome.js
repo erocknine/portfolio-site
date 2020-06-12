@@ -14,9 +14,3 @@ export default function Welcome(props) {
     </section>
   )
 }
-
-{/* <div className="welcome-section-front">
-  <div className="welcome-section-image">
-    <h1>Eric SK.C.</h1>
-  </div>
-</div> */}

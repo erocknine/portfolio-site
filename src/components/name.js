@@ -9,7 +9,7 @@ export default function Name() {
           <ScrollAnimation 
           animateIn='zoomIn'
           animateOnce={true}>
-            <h1 className="name-section-name">Eric SK.C.</h1>
+            <h1 className="name-section-name">Eric SK.C</h1>
           </ScrollAnimation>
         </div>
       </div>

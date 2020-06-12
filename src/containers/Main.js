@@ -1,8 +1,9 @@
 import React from 'react'
 import Name from '../components/name'
 import Profile from '../components/profile'
-import Parallax from '../components/parallax'
+import {Parallax, ParallaxThree} from '../components/parallax'
 import Projects from '../components/projects'
+import Resume from '../components/resume'
 
 export default function Main() {
 
@@ -10,8 +11,10 @@ export default function Main() {
     <main className="main-container">
       <Name/>
       <Profile/>
-      <Parallax class={'first'}/>
+      <Parallax/>
       <Projects/>
+      <ParallaxThree/>
+      <Resume/>
     </main>
   )
 }
