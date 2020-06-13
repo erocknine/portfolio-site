@@ -43,7 +43,7 @@ const Panel = ({ number, title, text, tech, images }, props) => {
   }
 
   return (
-      <div className={open ? `panel open-active`:`panel`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <div className={open ? `panel open-active`:`panel`} onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
         <div className="project-slides">
           <Carousel infiniteLoop={true} showThumbs={false}>
             {renderSlides()}

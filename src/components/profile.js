@@ -35,7 +35,7 @@ export default function Profile() {
 
           <p className="text desc">I am constantly charmed by the complexities of programming and coding technologies, and amazed by what has been created before me. My goal for every project is to be functional yet visually appealing, intuitive yet creative.</p>
             
-          <p className="text desc">I love traveling, gaming, and eating as many different kinds of food as possible! I’ve taught English in Japan, owned and operated a food business in Hawaii, and written a book while in NYC.</p>
+          <p className="text desc">I love traveling, gaming, and eating as many different kinds of food as possible! I’ve taught English in Japan, owned and operated a food business in Hawaii, and self-published a novel while in NYC.</p>
         </ScrollAnimation>
 
         <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true}><h3 className="text">// Technical Skills</h3></ScrollAnimation>
