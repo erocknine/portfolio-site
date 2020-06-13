@@ -1,9 +1,11 @@
 import React from 'react'
 import Name from '../components/name'
 import Profile from '../components/profile'
-import {Parallax, ParallaxThree} from '../components/parallax'
+import {ImageBreak, ImageBreakThree} from '../components/imagebreak'
 import Projects from '../components/projects'
 import Resume from '../components/resume'
+import Blogs from '../components/blogs'
+import Conclusion from '../components/conclusion'
 
 export default function Main() {
 
@@ -11,10 +13,12 @@ export default function Main() {
     <main className="main-container">
       <Name/>
       <Profile/>
-      <Parallax/>
+      <ImageBreak num={"one"}/>
       <Projects/>
-      <ParallaxThree/>
+      <ImageBreakThree/>
       <Resume/>
+      <ImageBreak num={"two"}/>
+      <Blogs/>
     </main>
   )
 }

@@ -12,9 +12,9 @@ export default function Navbar() {
       <AnchorLink href="#profile" className="eric-sk-cheung" 
         data-aos={`navbar-relocate-eric`}
         data-aos-anchor="trigger-navbar-relocate"
-        data-aos-anchor-placement="top-left"
+        data-aos-anchor-placement="top-top"
         data-aos-easing="ease-in-out"
-        data-aos-duration={1200}>
+        data-aos-duration={1500}>
       </AnchorLink>
         <ul>
           <ScrollAnimation offset={50} animateIn='fadeInDown' animateOnce={true}><Projects position={'top'}>Projects</Projects></ScrollAnimation>

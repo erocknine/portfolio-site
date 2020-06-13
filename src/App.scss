@@ -6,6 +6,7 @@ $white: rgb(231, 229, 229);
 $gunmetal: rgb(28, 48, 65);
 $grapefruit: #ff5e62;
 $yellow:rgb(235, 184, 54);
+$linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
 
 // box-shadow: 
 // 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
@@ -25,7 +26,7 @@ body {
 //Landing Welcome Screen
 
 .welcome-panel-left {
-  background-color: $beige;
+  background-color: $grapefruit;
   width: 50%;
   animation-name: slideright;
   visibility: hidden;
@@ -36,7 +37,7 @@ body {
 }
 
 .welcome-panel-right {
-  background-color: $beige;
+  background-color: $grapefruit;
   width: 50%;
   animation-name: slideleft;
   visibility: hidden;
@@ -60,7 +61,7 @@ body {
   height: 100vh;
   font-family: 'Bebas Neue', cursive;
   display: flex;
-  background-color: rgb(235, 184, 54);
+  background: linear-gradient(90deg, rgb(203, 206, 216) 0%, rgba(218,233,255,.9) 100%);
   overflow:hidden;
   font-family: 'Sawarabi Gothic', sans-serif;
   position: relative;
@@ -71,7 +72,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: $grapefruit;
     margin: auto 0;
     font-size: 10rem;
     position: absolute;
@@ -93,7 +94,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: $grapefruit;
     margin: auto 0;
     font-size: 10rem;
     position: absolute;
@@ -124,10 +125,10 @@ body {
   background-image: url('./images/ericskc.jpg');
   background-size: cover;
   opacity: 0;
-  animation-name: enter;
-  animation-delay: 1000ms;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
+  // animation-name: enter;
+  // animation-delay: 1000ms;
+  // animation-duration: 600ms;
+  // animation-fill-mode: forwards;
 }
 
 @keyframes enter {
@@ -137,7 +138,8 @@ body {
 
 [data-aos="navbar-relocate-eric"] {
   &.aos-animate {
-    transform: translateX(90vw);
+    transform: translateX(88vw);
+    opacity: 1;
   }
 }
 
@@ -145,6 +147,7 @@ body {
   top: 0;
   position: fixed;
   width: 100vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
   z-index: 1000;
@@ -174,7 +177,6 @@ body {
 [data-aos="navbar-relocate-resume-top"] {
   &.aos-animate {
     transform: translateX(47vw);
-    // opacity: 0;
     visibility: hidden;
   }
 }
@@ -182,7 +184,6 @@ body {
 [data-aos="navbar-relocate-blogs-top"] {
   &.aos-animate {
     transform: translateX(40vw);
-    // opacity: 0;
     visibility: hidden;
   }
 }
@@ -190,7 +191,6 @@ body {
 [data-aos="navbar-relocate-contact-top"] {
   &.aos-animate {
     transform: translateX(33vw);
-    // opacity: 0;
     visibility: hidden;
   }
 }
@@ -204,6 +204,9 @@ body {
   font-family: 'Lato';
   font-size: 1.1rem;
   visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 2vh;
   ul {
     display: flex;
@@ -211,7 +214,8 @@ body {
     padding: 0;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 60%;
+    width: 100%;
   }
   li {
     position: absolute;
@@ -221,28 +225,28 @@ body {
 
 [data-aos="navbar-relocate-projects-right"] {
   &.aos-animate {
-    transform: translateY(7vh);
+    transform: translateY(18vh);
     visibility: visible;
   }
 }
 
 [data-aos="navbar-relocate-resume-right"] {
   &.aos-animate {
-    transform: translateY(17vh);
+    transform: translateY(28vh);
     visibility: visible;
   }
 }
 
 [data-aos="navbar-relocate-blogs-right"] {
   &.aos-animate {
-    transform: translateY(27vh);
+    transform: translateY(38vh);
     visibility: visible;
   }
 }
 
 [data-aos="navbar-relocate-contact-right"] {
   &.aos-animate {
-    transform: translateY(37vh);
+    transform: translateY(48vh);
     visibility: visible;
   }
 }
@@ -380,7 +384,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $beige;
+  background-color: $grapefruit;
   opacity: .95;
   height: 100vh;
 }
@@ -437,7 +441,7 @@ li {
 .profile-left {
   width: 100vw;
   height: 100%;
-  background-color: $white;
+  background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
   transform: skew(45deg);
   z-index: 1;
 }
@@ -465,7 +469,7 @@ li {
 .profile-right {
   width: 100vw;
   height: 100%;
-  background-color: orange;
+  background: linear-gradient(90deg, rgba(244,107,69,1) 33%, rgba(238,168,73,1) 83%);
   transform: skew(45deg);
   z-index: 1;
 }
@@ -517,7 +521,7 @@ li {
   text-align: center;
   height: 100%;
   justify-content: center;
-  width: 70vw;
+  max-width: 50vw;
   font-size: 1.1rem;
   padding: 1rem 0;
   .text {
@@ -531,6 +535,7 @@ li {
   }
   .text:hover {
     text-shadow: 2px 2px 2px $brown;
+    transition: 600ms
   }
 }
 
@@ -585,13 +590,13 @@ li {
   .projects-header {
     left: 0;
     right: 0;
-    filter: brightness(2);
-    color: $white;
+    filter: brightness(1);
+    color: white;
   }
   .projects-header-bar {
     padding: .5rem;
     min-height: 10vh;
-    background: linear-gradient(135deg, rgba(255,179,71,.9) 20%, rgba(255,210,71,.9) 40%, rgba(255,160,51,.9) 78%);
+    background: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -599,7 +604,8 @@ li {
 }
 
 .navbar-tab {
-  min-height: 90vh;
+  min-height: 60vh;
+  min-width: 5.7rem;
   width: 10vw;
   background: $brown;
   opacity: .75;
@@ -625,6 +631,7 @@ li {
   display: flex;
   justify-content: center;
   padding: 1rem;
+  transition: 600ms ease;
 }
 
 .panel > *:first-child {
@@ -652,8 +659,9 @@ li {
 
 .panel p:hover,
 .panel h2:hover {
+  color: $grapefruit;
   transition: 600ms;
-  text-shadow: 1px 1px 1px $grapefruit;
+  text-shadow: 1px 1px 1px rgb(92, 98, 104);
 }
 
 .panel p:nth-child(2) {
@@ -672,29 +680,33 @@ li {
   .resume-header-bar {
     padding: .5rem;
     min-height: 10vh;
-    background: linear-gradient(90deg, rgba(255, 20, 73, 0.9) 0%, rgba(255, 50, 49, 0.9) 38%, rgba(255, 60, 40, .9) 90%); 
+    background: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: brightness(2);
-    color: $white;
+    filter: brightness(1);
+    color: white;
   }
   .resume-content {
     display: flex;
-    justify-content: space-between;
+    background-color: rgba(43, 48, 58, .85);
+    min-height: 90vh;
+    padding: 0 10vw;
   }
   .resume-text {
-    padding: 1rem 5rem;
+    padding: 1rem 5rem 2rem 5rem;
     background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
-    width: 90vw;
+    max-width: 80vw;
     h2, h3 {
       margin: 1rem 0 0.5rem 0;
+      transition: 600ms ease;
     }
     p {
       margin: 0;
     }
     p:hover, h2:hover, h3:hover {
-      text-shadow: 1px 1px 1px $grapefruit;
+      text-shadow: 1px 1px 1px rgb(73, 82, 90);
+      color: $grapefruit;
     }
     .resume-history {
       padding-left: 3rem;
@@ -704,15 +716,17 @@ li {
     }
     .resume-text-sub {
       margin: .5rem 0;
+      transition: 600ms ease;
     }
     .resume-text-desc {
       padding-left: 1rem;
       font-size: 1.1rem;
+      transition: 600ms ease;
     }
   }
 }
 
-.parallax-section-one {
+.image-section-one {
   background-image: url('./images/astro.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -720,126 +734,76 @@ li {
   height: 50vh;
 }
 
-.parallax-section-three {
+.image-section-two {
+  background-image: url('./images/matcha.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.image-section-three {
   display: flex;
   height: 70vh;
-  .parallax-three-one {
+  background-color: #272932;
+  z-index: 1;
+  position: relative;
+  .image-three {
     width: 33vw;
     object-fit: cover;
+    transition: 600ms;
+    opacity: 0;
+    animation-name: slideshow;
+    animation-duration: 6000ms;
+    animation-fill-mode: forwards;
   }
-  .parallax-three-two {
-    object-fit: cover;
-    width: 33vw;
-  }
-  .parallax-three-three {
-    width: 33vw;
-    object-fit: cover;
+  .text-desc {
+    bottom: 0;
+    left: 2vw;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-family: 'Bebas Neue';
+      font-size: 3rem;
+    }
   }
 }
 
-.welcome-section-front {
+@keyframes slideshow {
+  5% {opacity: 1}
+  100% {opacity: 1}
+}
+
+.blogs-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $beige;
-  height: 100vh;
+  flex-direction: column;
+  background-image: url('./images/comets.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  .blogs-header-bar {
+    padding: .5rem;
+    min-height: 10vh;
+    background: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    filter: brightness(1);
+  }
+  .blogs-content {
+    display: flex;
+    background-color: rgba(43, 48, 58, .85);
+    min-height: 90vh;
+    padding: 0 10vw;
+  }
+  .blogs-text {
+    max-width: 79vw;
+    max-height: 70vh;
+    width: 80vw;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+  }
 }
-
-// .welcome-section-image {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-image: url('images/gate.jpg');
-//   background-size: cover;
-//   background-position: center;
-//   height: 100vh;
-//   width: 100vw;
-//   -webkit-background-clip: text;
-//   h1 {
-//     margin: 0;
-//     font-size: 12rem;
-//     color: transparent;
-//     animation-name: welcoming;
-//     animation-duration: 3s;
-//     animation-iteration-count: 1;
-//   }
-// }
-
-// @keyframes welcoming {
-//   0% {opacity: 1; visibility: visible; text-shadow: 1px 1px 15px white; color: transparent;}
-//   25% {opacity: 1; visibility: visible; text-shadow: 1px 1px 10px white}
-//   50% {opacity: 1; visibility: visible;}
-//   50% {opacity: 1; visibility: visible;}
-//   100% {opacity: 1; visibility: visible;}
-// }
-
-
-// [data-aos="navbar-relocate-projects"] {
-//   &.aos-animate {
-//     // transform: translateX(40rem);
-//     animation-name: projects;
-//     animation-duration: 1s;
-//     animation-delay: .75s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: both;
-//   }
-// }
-
-// @keyframes projects {
-//   0% {}
-//   75% {transform: translateX(56vw);}
-//   100% {transform: translateX(56vw) translateY(3rem);}
-// }
-
-// [data-aos="navbar-relocate-resume"] {
-//   &.aos-animate {
-//     // transform: translateX(33rem);
-//     animation-name: resume;
-//     animation-duration: 1s;
-//     animation-delay: .5s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: both;
-//   }
-// }
-
-// @keyframes resume {
-//   0% {}
-//   50% {transform: translateX(47.8vw)}
-//   100% {transform: translateX(47.8vw) translateY(7rem);}
-// }
-
-// [data-aos="navbar-relocate-blogs"] {
-//   &.aos-animate {
-//     // transform: translateX(26rem) translateY(8rem);
-//     animation-name: blogs;
-//     animation-duration: 1s;
-//     animation-delay: .25s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: both;
-//   }
-// }
-
-// @keyframes blogs {
-//   0% {}
-//   50% {transform: translateX(39.5vw);}
-//   100% {transform: translateX(39.5vw) translateY(11rem);}
-// }
-
-// [data-aos="navbar-relocate-contact"] {
-//   &.aos-animate {
-//     // transform: translateX(19rem) translateY(12rem);
-//     animation-name: contact;
-//     animation-duration: 1s;
-//     animation-iteration-count: 1;
-//     animation-fill-mode: both;
-//   }
-// }
-// //43
-// //36
-// //29
-// //22
-// @keyframes contact {
-//   0% {}
-//   50% {transform: translateX(31.3vw);}
-//   100% {transform: translateX(31.3vw) translateY(15rem);}
-// }
