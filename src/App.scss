@@ -14,7 +14,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 :root {
   font-size: 16px;
-  font-family: 'Lato';
+  font-family: 'Lato', Lucida, sans-serif;;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 
-//Landing Welcome Screen
+//Welcome Section
 
 .welcome-panel-left {
   background-color: $grapefruit;
@@ -59,11 +59,10 @@ body {
 .welcome-section {
   width: 100vw;
   height: 100vh;
-  font-family: 'Bebas Neue', cursive;
   display: flex;
   background: linear-gradient(90deg, rgb(203, 206, 216) 0%, rgba(218,233,255,.9) 100%);
   overflow:hidden;
-  font-family: 'Sawarabi Gothic', sans-serif;
+  font-family: 'Sawarabi Gothic', 'Noto Sans JP';
   position: relative;
   align-items: center;
   justify-content: center;
@@ -113,7 +112,7 @@ body {
   }
 }
 
-//Navbar Start
+//Navbar Section
 
 .eric-sk-cheung {
   position: absolute;
@@ -125,10 +124,7 @@ body {
   background-image: url('./images/ericskc.jpg');
   background-size: cover;
   opacity: 0;
-  // animation-name: enter;
-  // animation-delay: 1000ms;
-  // animation-duration: 600ms;
-  // animation-fill-mode: forwards;
+  z-index: 100;
 }
 
 @keyframes enter {
@@ -139,6 +135,7 @@ body {
 [data-aos="navbar-relocate-eric"] {
   &.aos-animate {
     transform: translateX(88vw);
+    position: fixed;
     opacity: 1;
   }
 }
@@ -151,7 +148,7 @@ body {
   display: flex;
   justify-content: center;
   z-index: 1000;
-  font-family: 'Lato';
+  font-family: 'Lato', Lucida, sans-serif;
   font-size: 1.1rem;
   ul {
     list-style: none;
@@ -201,7 +198,7 @@ body {
   width: 10vw;
   height: 100vh;
   z-index: 1000;
-  font-family: 'Lato';
+  font-family: 'Lato', Lucida, sans-serif;
   font-size: 1.1rem;
   visibility: hidden;
   display: flex;
@@ -345,7 +342,7 @@ li {
     color: white;
   }
   a:hover, .contact-email:hover {
-    text-shadow: 2px 2px 2px rgb(255, 197, 36);
+    text-shadow: 2px 2px 2px $grapefruit;
     color: white;
   }
   a:visited {
@@ -376,11 +373,11 @@ li {
   100%{opacity: 0}
 }
 
-//Name
+//Name Section
 .name-section {
   width: 100vw;
   height: 100vh;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Lucida, sans-serif;
   background-image: url('images/gate.jpg');
   background-size: cover;
   background-position: center;
@@ -403,7 +400,7 @@ li {
   width: 100vw;
   h1 {
     color: transparent;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", Lucida, sans-serif;
     margin: 0;
     font-size: 12rem;
     background-image: url('images/gate.jpg');
@@ -425,7 +422,7 @@ li {
     border-top: 1rem solid rgba(255, 255, 255, 0.75);
     border-bottom: 1rem solid rgba(255, 255, 255, 0.75);
     height: 13.5rem;
-    width: 37rem;
+    width: 36rem;
     transform: scaleX(0);
     transition: 1000ms;
     box-sizing: border-box;
@@ -435,6 +432,8 @@ li {
     transform: scaleX(1);
   }
 }
+
+//Profile
 
 .profile-sliders {
   display: flex;
@@ -516,7 +515,7 @@ li {
   justify-content: center;
   color: rgb(245, 237, 240);
   position: relative;
-  font-family: 'Lato';
+  font-family: 'Lato', Lucida, sans-serif;
   background: rgb(96,108,136);
   background: linear-gradient(180deg, rgba(96,108,136,1) 11%, rgba(63,76,107,1) 55%);
 }
@@ -539,11 +538,28 @@ li {
   p.text {
     margin-top: 0;
   }
+
+  .text.desc {
+    margin-top: 3rem;
+  }
   .text:hover {
     text-shadow: 2px 2px 2px $brown;
     transition: 600ms
   }
 }
+
+.header-bar {
+  padding: .5rem;
+  min-height: 10vh;
+  background: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(1);
+  color: white;
+}
+
+//Projects Section
 
 .projects-section {
   height: 100vh;
@@ -551,11 +567,16 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: 'Spartan';
+  font-family: 'Spartan', Lucida, sans-serif;
   background-image: url('./images/wood.jpg');
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  .projects-content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+  }
   .panels {
     display: flex;
     min-height: 90vh;
@@ -586,48 +607,19 @@ li {
       height: 7rem;
     }
     h2.project-title {
-      font-family: "Lato";
+      font-family: "Lato", Lucida, sans-serif;
       text-transform: uppercase;
+      align-items: center;
     }
-    .project-text {
-      min-height: 12rem;
-    }
-  }
-  .projects-header {
-    left: 0;
-    right: 0;
-    filter: brightness(1);
-    color: white;
-  }
-  .projects-header-bar {
-    padding: .5rem;
-    min-height: 10vh;
-    background: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 .navbar-tab {
   min-height: 60vh;
-  min-width: 5.7rem;
-  width: 10vw;
+  min-width: 11vw;
+  width: 11vw;
   background: $brown;
   opacity: .75;
-}
-
-.panel-one {
-  background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
-}
-.panel-two {
-  background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
-}
-.panel-three {
-  background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
-}
-.panel-four {
-  background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
 }
 
 .panel > * {
@@ -641,13 +633,29 @@ li {
 }
 
 .panel > *:first-child {
-  transform: translateY(-100%);
+  transform: translateY(-10%);
   min-height: 10rem;
   visibility: hidden;
+  opacity: 0;
+  width: 0;
+  transition: 600ms ease;
 }
 
 .panel.open-active > *:first-child {
   transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  min-width: 90%;
+  z-index: 4;
+}
+
+.panel > *:nth-child(2) {
+  transform: translateY(-100%);
+}
+
+.panel.open-active > *:nth-child(2) {
+  transform: translateY(0);
+  height: 4rem;
 }
 
 .panel > *:last-child {
@@ -678,6 +686,8 @@ li {
   flex: 4;
   font-size: 1rem;
 }
+
+//Resume Section
 
 .resume-section {
   background-image: url('./images/pieces.jpg');
@@ -755,7 +765,7 @@ li {
   z-index: 1;
   position: relative;
   .image-three {
-    width: 33vw;
+    width: 33.3vw;
     object-fit: cover;
     transition: 600ms;
     opacity: 0;
@@ -771,7 +781,7 @@ li {
     display: flex;
     flex-direction: column;
     h1 {
-      font-family: 'Bebas Neue';
+      font-family: 'Bebas Neue', Lucida, sans-serif;
       font-size: 3rem;
     }
   }
@@ -801,6 +811,8 @@ li {
   }
   .blogs-content {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: rgba(43, 48, 58, .85);
     min-height: 90vh;
     padding: 0 10vw;
@@ -811,6 +823,71 @@ li {
     width: 80vw;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
-    padding: 1rem 5rem 2rem 5rem;
+    padding: 0 5rem 1rem 5rem;
+  }
+}
+
+.blog-slide {
+  width: 60vw;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+a.blog-link {
+  font-family: "Spartan", Lucida, sans-serif;
+  font-size: 1rem;
+  color: white;
+  height: 100%;
+  padding-top: 1.2rem;
+  transition: 600ms ease-in-out;
+}
+
+a.blog-link:hover {
+  color: $grapefruit;
+}
+
+button.control-arrow.control-next,
+button.control-arrow.control-prev {
+  width: 7.5vw;
+}
+
+button.control-arrow.control-next:hover,
+button.control-arrow.control-prev:hover {
+  
+}
+
+.carousel .slide {
+  background: $brown !important;
+}
+
+.contact-info {
+  width: 79vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  p {
+    transition: 600ms ease;
+  }
+  p:hover {
+    color: $grapefruit;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  min-width: 6vw;
+  width: 10vw;
+  height: 6vh;
+  font-size: 2rem;
+  a {
+    color: white;
+    transition: 600ms ease;
+  }
+  a:hover {
+    color: $grapefruit;
   }
 }

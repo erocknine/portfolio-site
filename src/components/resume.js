@@ -5,7 +5,7 @@ import { Icon } from 'semantic-ui-react'
 export default function Resume() {
   return (
     <section className="resume-section">
-      <div id="resume" className="resume-header-bar">
+      <div id="resume" className="header-bar">
         <h1>RESUME</h1>
       </div>
       <div className="resume-content">

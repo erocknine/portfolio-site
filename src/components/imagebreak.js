@@ -10,14 +10,13 @@ export function ImageBreak(props) {
 }
 
 export function ImageBreakThree() {
-  const imageLeft = ["images/hotchicken.jpg", "images/serra.jpg", "images/overeasy.jpg", "images/akasaka.jpg"]
-  const imageMiddle = ["images/niagara.jpg", "images/affogato.jpg", "images/path.jpg", "images/mario.jpg"]
-  const imageRight = ["images/montreal.jpg", "images/shibuya.jpg", "images/beach.jpg", "images/ramen.jpg"]
+  const imageLeft = ["images/imagebreak/hotchicken.jpg", "images/imagebreak/serra.jpg", "images/imagebreak/overeasy.jpg", "images/imagebreak/akasaka.jpg"]
+  const imageMiddle = ["images/imagebreak/niagara.jpg", "images/imagebreak/affogato.jpg", "images/imagebreak/path.jpg", "images/imagebreak/mario.jpg"]
+  const imageRight = ["images/imagebreak/montreal.jpg", "images/imagebreak/shibuya.jpg", "images/imagebreak/beach.jpg", "images/imagebreak/ramen.jpg"]
 
   const [currentImage, setCurrentImage] = useState(0)
 
   useEffect(() => {
-
     if (currentImage === 4) {
       setCurrentImage(0)
     }
@@ -25,10 +24,10 @@ export function ImageBreakThree() {
     return () => {
       clearTimeout(timer)
     }
-  })
+  }, [currentImage])
 
   const Image = ({ image }) => {
-    return <img src={image} className="image-three" />
+    return <img src={image} alt="Eric's life pictures" className="image-three" />
   }
 
   return (

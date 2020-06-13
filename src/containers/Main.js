@@ -5,7 +5,6 @@ import {ImageBreak, ImageBreakThree} from '../components/imagebreak'
 import Projects from '../components/projects'
 import Resume from '../components/resume'
 import Blogs from '../components/blogs'
-import Conclusion from '../components/conclusion'
 
 export default function Main() {
 
