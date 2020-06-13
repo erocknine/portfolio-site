@@ -161,10 +161,10 @@ body {
   }
 }
 
-@keyframes copied {
-  20% {opacity: 1}
-  80% {opacity: 1}
-  100%{opacity: 0}
+[data-aos="navbar-relocate-top"] {
+  &.aos-animate {
+    visibility: hidden;
+  }
 }
 
 [data-aos="navbar-relocate-projects-top"] {
@@ -368,6 +368,12 @@ li {
     color: white;
     cursor: pointer;
   }
+}
+
+@keyframes copied {
+  20% {opacity: 1}
+  80% {opacity: 1}
+  100%{opacity: 0}
 }
 
 //Name
@@ -805,5 +811,6 @@ li {
     width: 80vw;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
+    padding: 1rem 5rem 2rem 5rem;
   }
 }

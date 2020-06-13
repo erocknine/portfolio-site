@@ -8,7 +8,13 @@ export default function Navbar() {
 
   return (
     <Fragment>
-      <nav className="navbar-top">
+      <nav className="navbar-top"
+        data-aos={`navbar-relocate-top`}
+        data-aos-anchor="trigger-navbar-relocate"
+        data-aos-anchor-placement="top-top"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="1100"
+      >
       <AnchorLink href="#profile" className="eric-sk-cheung" 
         data-aos={`navbar-relocate-eric`}
         data-aos-anchor="trigger-navbar-relocate"
