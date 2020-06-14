@@ -53,6 +53,15 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     z-index: 4;
   }
 
+  .panel > *:nth-child(3) {
+    transform: initial;
+  }
+  
+  .panel.open-active > *:nth-child(3) {
+    transform: initial;
+    height: initial;
+  }
+
   .panel.open-active > :last-child {
     visibility: visible;
   }
