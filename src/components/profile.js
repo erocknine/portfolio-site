@@ -33,7 +33,7 @@ export default function Profile() {
           <p className="text"><Icon name="angle double right"/>Full-stack Software Engineer</p>
           <p className="text"><Icon name="angle double right"/>Trilingual, fluent in English and Chinese, and conversational in Japanese</p>
 
-          <p className="text desc">I am constantly charmed by the complexities of programming and coding technologies, and amazed by what has been created before me. My goal for every project is to be functional yet visually appealing, intuitive yet creative.</p>
+          <p className="text desc">I am constantly charmed by the complexities of programming and coding technologies, and amazed by what's been created before me. My goal for every project is to be visually appealing yet functional, creative yet intuitive.</p>
             
           <p className="text desc">I love traveling, gaming, and eating as many different kinds of food as possible! I’ve taught English in Japan, owned and operated a food business in Hawaii, and self-published a novel while in NYC.</p>
         </ScrollAnimation>
