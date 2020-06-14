@@ -35,7 +35,7 @@ export default function Resume() {
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Kings of Fortune</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Writer, Brooklyn, NY, 2015</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Self-published a fiction novel titled 'Kings of Fortune' on Amazon Createspace.</p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Received positive reviews with 5 stars on San Francisco Book Review, 4 of 5 stars on Portland Book Review, and featured Kirkus review.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Received positive reviews with 5 stars on San Francisco Book Review, 4 of 5 stars on Portland Book Review, and featured review on Kirkus magazine.</p></ScrollAnimation>
             </div>
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Casita House</h3></ScrollAnimation>

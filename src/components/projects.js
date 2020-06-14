@@ -15,10 +15,10 @@ export default function Projects() {
       </div>
       <div className="projects-content">
         <div className="panels">
-          <Panel title={"CurbAlert"} text={'Curbalert allows users to post images and details of things people are giving or throwing away in their area, becoming viewable on a public map. Assisted by Google Directions, users can make their way to hidden treasures that are simply going to waste.'} tech={'React JS, Ruby Rails, PostgreSQL, Google Directions API, Geolocation API, Leaflet API, AWS S3 Cloud, React CSS Transition Group, Semantic UI, React Sortable HOC'} images={curbalert}/>
-          <Panel title={"Hangouts"} text={'Hangouts allows friended users to conveniently schedule hangouts at restaurants in areas mutually close to all parties. Hangsout will suggest restaurants with an integrated Yelp Search at a conveniently calculated location.'} tech={'React JS, Ruby Rails, PostgreSQL, Yelp API, Geolocation API, Leaflet API, React CSS Transition Group, Semantic UI'} images={hangouts}/>
-          <Panel title={"Super Pet Bros. Unleashed"} text={'If you\'ve ever had a friend who claimed their pet is better than yours, then have no fear because Super Pet Bros. is here! In this game, users can create a profile for their pet, set personality type, stats and moves, and battle other pets in a pokemon-style gameplay.'} tech={'Javascript, Ruby Rails, PostgreSQL'} images={superpet}/>
           <Panel title={"KARA-OK!"} text={'A joyful night of singing your favorite songs can become disappointing if you can\'t remember the lyrics. KARA-OK! saves the night by allowing users to search for song lyrics and add them to playlists for a convenient sing-along session.'} tech={'Ruby Rails, PostgreSQL, Lyrics API'} images={karaok}/>
+          <Panel title={"Super Pet Bros. Unleashed"} text={'If you\'ve ever had a friend who claimed their pet is better than yours, then have no fear because Super Pet Bros. is here! In this game, users can create a profile for their pet, set personality type, stats and moves, and battle other pets in a pokemon-style gameplay.'} tech={'Javascript, Ruby Rails, PostgreSQL'} images={superpet}/>
+          <Panel title={"Hangouts"} text={'Hangouts allows friended users to conveniently schedule hangouts at restaurants in areas mutually close to all parties. Hangsout will suggest restaurants with an integrated Yelp Search at a conveniently calculated location.'} tech={'React JS, Ruby Rails, PostgreSQL, Yelp API, Geolocation API, Leaflet API, React CSS Transition Group, Semantic UI'} images={hangouts}/>
+          <Panel title={"CurbAlert"} text={'Curbalert allows users to post images and details of things people are giving or throwing away in their area, becoming viewable on a public map. Assisted by Google Directions, users can make their way to hidden treasures that are simply going to waste.'} tech={'React JS, Ruby Rails, PostgreSQL, Google Directions API, Geolocation API, Leaflet API, AWS S3 Cloud, React CSS Transition Group, Semantic UI, React Sortable HOC'} images={curbalert}/>
         </div>
         <div className="navbar-tab" />
       </div>
@@ -34,10 +34,7 @@ const Panel = ({ number, title, text, tech, images }, props) => {
 
     return images.map(image => 
     <div onClick={() => setOpen(true)}>
-      <a href="#" target="_blank" rel="noopener noreferrer" className="blog-link">
-        VIEW DEMO VIDEO
-        <img src={image} alt={title} className="blog-slide"/>
-      </a>
+      <img src={image} alt={title} className="blog-slide"/>
     </div>
     )
   }
@@ -55,3 +52,7 @@ const Panel = ({ number, title, text, tech, images }, props) => {
       </div>
   )
 }
+
+{/* <a href="#" target="_blank" rel="noopener noreferrer" className="blog-link">
+  VIEW DEMO VIDEO
+</a> */}

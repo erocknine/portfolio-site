@@ -605,7 +605,7 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    cursor: pointer;
+    // cursor: pointer;
     background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
     .project-title {
       display: flex;
@@ -666,7 +666,7 @@ li {
 }
 
 .panel > *:nth-child(3) {
-  transform: translateY(-20%);
+  transform: translateY(-15%);
 }
 
 .panel.open-active > *:nth-child(3) {
@@ -730,7 +730,7 @@ li {
     background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
     max-width: 80vw;
     h2, h3 {
-      margin: 1rem 0 0.5rem 0;
+      margin: 1rem 0 0.5rem 1rem;
       transition: 600ms ease;
     }
     p {
@@ -741,18 +741,18 @@ li {
       color: $grapefruit;
     }
     .resume-history {
-      padding-left: 3rem;
+      padding-left: 1rem;
     }
     .resume-education {
-      padding-left: 3rem;
+      padding-left: 1rem;
     }
     .resume-text-sub {
-      margin: .5rem 0;
+      margin: .5rem 0 0 2rem;
       font-size: 1.1rem;
       transition: 600ms ease;
     }
     .resume-text-desc {
-      padding-left: 1rem;
+      padding-left: 3rem;
       font-size: 1.1rem;
       transition: 600ms ease;
     }
