@@ -34,7 +34,7 @@ export default function Resume() {
             </div>
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Kings of Fortune</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Writer, Brooklyn, NY, 2014</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Writer, Brooklyn, NY, 2015</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Self-published a fiction novel on Amazon Createspace.</p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Book received positive reviews with 5 stars on San Francisco Book Review, and 4 of 5 stars on Portland Book Review.</p></ScrollAnimation>
             </div>
