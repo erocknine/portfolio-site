@@ -661,17 +661,17 @@ li {
 .panel > *:last-child {
   transform: translateY(50vh);
   visibility: hidden;
+  line-height: 2rem;
 }
 
 .panel.open-active > *:last-child {
   transform: translateY(0);
-  font-size: .8rem;
+  font-size: 1rem;
   visibility: visible;
   max-width: 25vw;
   line-height: 2rem;
 }
 
-.panel p:hover,
 .panel h2:hover {
   color: $grapefruit;
   transition: 600ms;
@@ -720,7 +720,7 @@ li {
     p {
       margin: 0;
     }
-    p:hover, h2:hover, h3:hover {
+    h3:hover {
       text-shadow: 1px 1px 1px rgb(73, 82, 90);
       color: $grapefruit;
     }
@@ -850,11 +850,6 @@ a.blog-link:hover {
 button.control-arrow.control-next,
 button.control-arrow.control-prev {
   width: 7.5vw;
-}
-
-button.control-arrow.control-next:hover,
-button.control-arrow.control-prev:hover {
-  
 }
 
 .carousel .slide {

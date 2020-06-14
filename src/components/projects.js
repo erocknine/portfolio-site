@@ -15,9 +15,9 @@ export default function Projects() {
       </div>
       <div className="projects-content">
         <div className="panels">
-          <Panel title={"CurbAlert"} text={'Ever wonder what nice things people are giving away in the city? Curbalert allows users to view or create posts of things people are giving or throwing away in their area. Charted on a map fueled by  Google Directions, users can make their way to hidden treasures that are going to waste.'} tech={'React JS, Ruby Rails, PostgreSQL, Geolocation API, Google Directions API, Leaflet API, AWS S3, React CSS Transition Group, Semantic UI, React Sortable HOC'} images={curbalert}/>
-          <Panel title={"Hangouts"} text={'If you\'ve ever planned a hangout with friends only find out the location is too far for comfort, fear no more. Hangouts allows friended users to conveniently schedule hangouts at restaurants at areas  mutually close to all parties. Hangsout will calculate the best location, and suggest restaurants with an integrated Yelp search.'} tech={'React JS, Ruby Rails, PostgreSQL, Yelp API, Geolocation API, Leaflet API, React CSS Transition Group, Semantic UI'} images={hangouts}/>
-          <Panel title={"Super Pet Bros. Unleashed"} text={'People are very pet obsessed nowadays, and if you\'ve ever had a friend who claimed their pet is better than yours, then Super Pet Bros. is here! In this game, users can create a profile for their pet, set personality type, stats and moves, and to battle other pets in a pokemon-style gameplay.'} tech={'Javascript, Ruby Rails, PostgreSQL'} images={superpet}/>
+          <Panel title={"CurbAlert"} text={'Curbalert allows users to view or create posts of things people are giving or throwing away in their area. Charted on a map fueled by  Google Directions, users can make their way to hidden treasures that are going to waste.'} tech={'React JS, Ruby Rails, PostgreSQL, Geolocation API, Google Directions API, Leaflet API, AWS S3, React CSS Transition Group, Semantic UI, React Sortable HOC'} images={curbalert}/>
+          <Panel title={"Hangouts"} text={'Hangouts allows friended users to conveniently schedule hangouts at restaurants in areas mutually close to all parties. Hangsout will calculate the best location, and suggest restaurants with an integrated Yelp search.'} tech={'React JS, Ruby Rails, PostgreSQL, Yelp API, Geolocation API, Leaflet API, React CSS Transition Group, Semantic UI'} images={hangouts}/>
+          <Panel title={"Super Pet Bros. Unleashed"} text={'People are very pet obsessed nowadays, and if you\'ve ever had a friend who claimed their pet is better than yours, then Super Pet Bros. is here! In this game, users can create a profile for their pet, set personality type, stats and moves, and battle other pets in a pokemon-style gameplay.'} tech={'Javascript, Ruby Rails, PostgreSQL'} images={superpet}/>
           <Panel title={"KARA-OK!"} text={'A joyful night of singing your favorite songs can be disappointing if you can\'t remember any of the lyrics. KARA-OK! saves the night by allowing users to search for song lyrics and youtube videos, and add them to playlists for a convenient sing-along session.'} tech={'Ruby Rails, PostgreSQL, Lyrics API'} images={karaok}/>
         </div>
         <div className="navbar-tab" />
@@ -43,7 +43,7 @@ const Panel = ({ number, title, text, tech, images }, props) => {
   }
 
   return (
-      <div className={open ? `panel open-active`:`panel`} onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <div className={open ? `panel open-active`:`panel`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
         <div className="project-slides">
           <Carousel infiniteLoop={true} showThumbs={false}>
             {renderSlides()}

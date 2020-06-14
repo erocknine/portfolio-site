@@ -45,7 +45,8 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       font-size: .8rem;
     }
   }
-  
+
+
   .panel.open-active > *:first-child {
     transform: translateY(0);
     min-width: 20%;
@@ -130,6 +131,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   :root {
     font-size: 8px;
   }
+  
   .welcome-section {
     .signature {
       font-size: 18rem;
@@ -222,6 +224,17 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     width: 20vw;
     font-weight: bold;
   }
+  .nav-item {
+    transition: 600ms;
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes navbarfade {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
   .nav-contact-open {
     width: 88vw;
     font-size: 2rem;
@@ -297,20 +310,22 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   }
 
   .panel > *:first-child {
-    transform: translateY(-100%);
-    min-height: 10rem;
-    visibility: hidden;
+    transform: initial;
+    min-width: 100%;
+    visibility: visible;
+    opacity: 1;
   }
 
   .panel.open-active > *:first-child {
     transform: translateY(0);
-    min-width: 95%;
+    min-width: 100%;
   }
 
   .panel > *:last-child {
     transform: translateY(0);
     visibility: visible;
     margin-bottom: 2vh;
+    line-height: 3rem;
   }
 
   .panel.open-active > *:last-child {
@@ -318,8 +333,16 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     font-size: 1.5rem;
     visibility: visible;
     max-width: initial;
-    line-height: initial;
+    line-height: 3rem;
     margin-bottom: 2vh;
+  }
+
+  .panel > *:nth-child(2) {
+    transform: initial;
+  }
+  
+  .panel.open-active > *:nth-child(2) {
+    transform: initial;
   }
 
   .panel p:hover,

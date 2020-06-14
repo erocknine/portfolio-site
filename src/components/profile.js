@@ -38,7 +38,7 @@ export default function Profile() {
           <p className="text desc">I love traveling, gaming, and eating as many different kinds of food as possible! I’ve taught English in Japan, owned and operated a food business in Hawaii, and self-published a novel while in NYC.</p>
         </ScrollAnimation>
 
-        <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true}><h3 className="text">// Technical Skills</h3></ScrollAnimation>
+        <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true}><h3 className="text">{`// Technical Skills`}</h3></ScrollAnimation>
         <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={100}><p className="text"><Icon name="angle double right"/>Languages & Frameworks - React, Redux, Javascript, Ruby, Rails, NodeJS</p></ScrollAnimation>
         <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={100}><p className="text"><Icon name="angle double right"/>Databases - Express, MongoDB, PostgreSQL, SQL</p></ScrollAnimation>
         <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={100}><p className="text"><Icon name="angle double right"/>Style Frameworks - CSS, Sass, Bootstrap, Material IO, Semantic UI </p></ScrollAnimation>

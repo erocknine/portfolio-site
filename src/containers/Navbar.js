@@ -23,10 +23,10 @@ export default function Navbar() {
         data-aos-delay="1100"
       >
         <ul>
-          <ScrollAnimation offset={0} animateIn='fadeInDown' animateOnce={true}><Projects position={'top'}>Projects</Projects></ScrollAnimation>
-          <ScrollAnimation offset={0} animateIn='fadeInDown' animateOnce={true} delay={250}><Resume position={'top'}>Resume</Resume></ScrollAnimation>
-          <ScrollAnimation offset={0} animateIn='fadeInDown' animateOnce={true} delay={500}><Blogs position={'top'}>Blogs</Blogs></ScrollAnimation>
-          <ScrollAnimation offset={0} animateIn='fadeInDown' animateOnce={true} delay={750}><Contact position={'top'}>Contact</Contact></ScrollAnimation>
+          <ScrollAnimation offset={25} animateIn='fadeInDown' animateOnce={true}><Projects position={'top'}>Projects</Projects></ScrollAnimation>
+          <ScrollAnimation offset={25} animateIn='fadeInDown' animateOnce={true} delay={250}><Resume position={'top'}>Resume</Resume></ScrollAnimation>
+          <ScrollAnimation offset={25} animateIn='fadeInDown' animateOnce={true} delay={500}><Blogs position={'top'}>Blogs</Blogs></ScrollAnimation>
+          <ScrollAnimation offset={25} animateIn='fadeInDown' animateOnce={true} delay={750}><Contact position={'top'}>Contact</Contact></ScrollAnimation>
         </ul>
       </nav>
       <nav className="navbar-right">
