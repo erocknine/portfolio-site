@@ -665,6 +665,15 @@ li {
   height: 4rem;
 }
 
+.panel > *:nth-child(3) {
+  transform: translateY(-20%);
+}
+
+.panel.open-active > *:nth-child(3) {
+  transform: translateY(0);
+  height: 5.5rem;
+}
+
 .panel > *:last-child {
   transform: translateY(50vh);
   visibility: hidden;
