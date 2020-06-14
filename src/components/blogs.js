@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Icon } from 'semantic-ui-react'
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function Blogs() {
+
+  const [copy, setCopy] = useState(false)
+
+  const handleCopy = () => {
+    setCopy(true)
+    setTimeout(() => setCopy(false), 7000)
+  }
 
   return (
     <section className="blogs-section">
@@ -39,7 +47,9 @@ export default function Blogs() {
         <div className="contact-info">
           <p>Eric Sai Kit Cheung</p>
           <p>Brooklyn, NY</p>
-          <p>Eric.saikit.cheung@gmail.com</p>
+          <CopyToClipboard text={'Eric.saikit.cheung@gmail.com'} onCopy={() => handleCopy()}>
+            <p className="contact-email-bottom"><span className={copy ? "copied-open":"copied-closed"}><strong>Copied!</strong>&nbsp;</span>Eric.saikit.cheung@gmail.com</p>
+          </CopyToClipboard>
           <div className="contact-links">
             <a href="https://www.instagram.com/erock_esquire/" target="_blank" rel="noopener noreferrer"><Icon name='instagram' /></a>
             <a href="https://www.linkedin.com/in/eric-sk-cheung/" target="_blank" rel="noopener noreferrer"><Icon name='linkedin' /></a>

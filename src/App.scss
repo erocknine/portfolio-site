@@ -125,6 +125,7 @@ body {
   background-size: cover;
   opacity: 0;
   z-index: 100;
+  visibility: visible;
 }
 
 @keyframes enter {
@@ -138,6 +139,13 @@ body {
     position: fixed;
     opacity: 1;
   }
+}
+
+.ulClone {
+  display: flex;
+  justify-content: space-evenly;
+  visibility: hidden;
+  position: fixed;
 }
 
 .navbar-top {
@@ -348,29 +356,28 @@ li {
   a:visited {
     color: white;
   }
-  .copied-closed {
-    width: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-  .copied-open {
-    transition: 300ms ease-in-out;
-    opacity: 0;
-    animation-name: copied;
-    animation-duration: 9s;
-    text-shadow: 2px 2px 4px $brown;
-  }
   .contact-email {
     z-index: 10;
     color: white;
     cursor: pointer;
   }
 }
-
 @keyframes copied {
   20% {opacity: 1}
   80% {opacity: 1}
   100%{opacity: 0}
+}
+.copied-closed {
+  width: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.copied-open {
+  transition: 300ms ease-in-out;
+  opacity: 0;
+  animation-name: copied;
+  animation-duration: 9s;
+  text-shadow: 2px 2px 4px $brown;
 }
 
 //Name Section
@@ -886,4 +893,10 @@ button.control-arrow.control-prev {
   a:hover {
     color: $grapefruit;
   }
+}
+
+.contact-email-bottom {
+  position: relative;
+  right: 2vw;
+  cursor: pointer;
 }

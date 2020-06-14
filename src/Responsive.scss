@@ -124,6 +124,11 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       color: $grapefruit;
     }
   }
+  .contact-email-bottom {
+    position: relative;
+    right: 3.5vw;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -211,11 +216,60 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     }
   }
   
+  .eric-sk-cheung {
+    filter: brightness(1.1);
+    z-index: 200;
+  }
+
+  .ulClone {
+    visibility: visible;
+    z-index: 300;
+    width: 100vw;
+    justify-content: space-evenly;
+    transition: 600ms;
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 750ms;
+    opacity: 0;
+  }
+  .ulClone:first-child {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+  }
+  .ulClone:nth-child(2) {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 250ms;
+  }
+  .ulClone:nth-child(3) {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+  }
+  .ulClone:last-child {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 750ms;
+  }
+
+  @keyframes navbarfade {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+  
   .navbar-top {
     background-color: rgba(0,0,0, .25);
     height: 7vh;
+    z-index: 100;
   }
   .navbar-top ul {
+    z-index: 300;
     width: 100vw;
     justify-content: space-evenly;
   }
@@ -223,6 +277,25 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     font-size: 1.8rem;
     width: 20vw;
     font-weight: bold;
+    height: 3rem;
+  }
+  .nav-link:hover:before {
+    height: 3rem;
+    width: 7rem;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+    border-right: none;
+    border-bottom: none;
+    transition: height 250ms linear, width 200ms linear 250ms;
+  }
+  .nav-link:hover:after {
+    height: 3rem;
+    width: 7rem;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+    border-left: none;
+    border-top: none;
+    transition: height 250ms linear, width 200ms linear 250ms;
   }
   .nav-item {
     transition: 600ms;
@@ -230,16 +303,17 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     animation-duration: 600ms;
     animation-fill-mode: forwards;
   }
-
   @keyframes navbarfade {
-    0% {opacity: 0}
+    0% {opacity: 1}
     100% {opacity: 1}
   }
+  
   .nav-contact-open {
     width: 88vw;
     font-size: 2rem;
     top: 6vh;
   }
+
   .profile-left, .profile-right {
     display: none;
   }
@@ -468,6 +542,11 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     a:hover {
       color: $grapefruit;
     }
+  }
+  .contact-email-bottom {
+    position: relative;
+    right: 7vw;
+    cursor: pointer;
   }
 
 }
