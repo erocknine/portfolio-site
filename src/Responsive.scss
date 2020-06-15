@@ -674,9 +674,8 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   }
   
   .blogs-section {
-    min-height: 93vh;
     .blogs-content {
-      min-height: 83vh;
+      min-height: initial;
       height: auto;
       padding: 0;
     }
