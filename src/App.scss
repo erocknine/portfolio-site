@@ -631,7 +631,7 @@ li {
 
 .panel > *:first-child {
   transform: translateY(-10%);
-  min-height: 10rem;
+  min-height: 17vh;
   visibility: hidden;
   opacity: 0;
   width: 0;
@@ -651,7 +651,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 7rem;
+  height: 10vh;
   font-family: "Lato", Lucida, sans-serif;
   text-transform: uppercase;
   align-items: center;
@@ -663,7 +663,7 @@ li {
 }
 
 .panel > *:nth-child(3) {
-  transform: translateY(-15%);
+  transform: translateY(0);
 }
 
 .panel:hover > *:nth-child(3) {
@@ -679,12 +679,12 @@ li {
 
 .panel:hover > *:last-child {
   transform: translateY(0);
-  font-size: 1rem;
   visibility: visible;
   opacity: 1;
   line-height: 2rem;
   max-width: 30vw;
   height: auto;
+  max-height: 10vh;
 }
 
 .panel h2:hover {
@@ -699,7 +699,6 @@ li {
 
 .panel:hover {
   flex: 4;
-  font-size: 1rem;
 }
 
 //Resume Section

@@ -1,7 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 
 export default function Projects() {
+
+  // <a href="#" target="_blank" rel="noopener noreferrer" className="blog-link">
+  //   VIEW DEMO VIDEO
+  // </a>
 
   const karaok = ["images/project-images/kara-ok/kara01.png", "images/project-images/kara-ok/kara02.png", "images/project-images/kara-ok/kara03.png", "images/project-images/kara-ok/kara04.png"]
   const superpet = ["images/project-images/super-pet/pet01.png", "images/project-images/super-pet/pet02.png", "images/project-images/super-pet/pet03.png", "images/project-images/super-pet/pet04.png"]
@@ -26,7 +30,7 @@ export default function Projects() {
   )
 }
 
-const Panel = ({ number, title, text, tech, images }, props) => {
+const Panel = ({ title, text, tech, images }, props) => {
 
   const renderSlides = () => {
 
@@ -38,19 +42,16 @@ const Panel = ({ number, title, text, tech, images }, props) => {
   }
 
   return (
-      <div className="panel">
-        <div className="project-slides">
-          <Carousel infiniteLoop={true} showThumbs={false}>
-            {renderSlides()}
-          </Carousel>
-        </div>
-        <h2 className="project-title">{title}</h2>
-        <p className="project-text">{text}</p>
-        <p className="project-tech">{tech}</p>
+    <div className="panel">
+      <div className="project-slides">
+        <Carousel infiniteLoop={true} showThumbs={false}>
+          {renderSlides()}
+        </Carousel>
       </div>
+      <h2 className="project-title">{title}</h2>
+      <p className="project-text">{text}</p>
+      <p className="project-tech">{tech}</p>
+    </div>
   )
 }
 
-{/* <a href="#" target="_blank" rel="noopener noreferrer" className="blog-link">
-  VIEW DEMO VIDEO
-</a> */}

@@ -3,9 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export function ImageBreak(props) {
   return (
-    <section className={`image-section-${props.num}`}>
-      
-    </section>
+    <section className={`image-section-${props.num}`} />
   )
 }
 
