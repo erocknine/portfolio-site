@@ -837,7 +837,7 @@ li {
     justify-content: space-between;
     background-color: rgba(43, 48, 58, .85);
     min-height: 90vh;
-    padding: 0 10vw 2vh 10vw;
+    padding: 0 10vw 1rem 10vw;
   }
   .blogs-text {
     max-width: 79vw;
@@ -876,7 +876,7 @@ a.blog-link:hover {
 
 .contact-info {
   width: 79vw;
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
