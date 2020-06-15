@@ -881,12 +881,13 @@ button.control-arrow.control-prev {
   width: 79vw;
   height: 20vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   color: white;
   align-items: center;
   p {
     transition: 600ms ease;
+    margin-bottom: 1vh;
   }
   p:hover {
     color: $grapefruit;
@@ -897,7 +898,7 @@ button.control-arrow.control-prev {
   display: flex;
   justify-content: space-between;
   min-width: 6vw;
-  width: 10vw;
+  width: 13vw;
   height: 6vh;
   font-size: 2rem;
   a {
