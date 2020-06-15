@@ -837,7 +837,7 @@ li {
     justify-content: space-between;
     background-color: rgba(43, 48, 58, .85);
     min-height: 90vh;
-    padding: 0 10vw;
+    padding: 0 10vw 2vh 10vw;
   }
   .blogs-text {
     max-width: 79vw;
@@ -845,7 +845,7 @@ li {
     width: 80vw;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
-    padding: 0 5rem 1rem 5rem;
+    padding: 0 5rem 0 5rem;
   }
 }
 
@@ -854,27 +854,24 @@ li {
   max-height: 60vh;
   object-fit: contain;
 }
+button.control-arrow.control-next,
+button.control-arrow.control-prev {
+  width: 7.5vw;
+}
+.carousel .slide {
+  background: $brown !important;
+}
 
 a.blog-link {
   font-family: "Spartan", Lucida, sans-serif;
   font-size: 1rem;
   color: white;
   height: 100%;
-  padding-top: 1.2rem;
   transition: 600ms ease-in-out;
 }
 
 a.blog-link:hover {
   color: $grapefruit;
-}
-
-button.control-arrow.control-next,
-button.control-arrow.control-prev {
-  width: 7.5vw;
-}
-
-.carousel .slide {
-  background: $brown !important;
 }
 
 .contact-info {
@@ -887,7 +884,7 @@ button.control-arrow.control-prev {
   align-items: center;
   p {
     transition: 600ms ease;
-    margin-bottom: 1vh;
+    margin-bottom: 1.5vh;
   }
   p:hover {
     color: $grapefruit;
@@ -901,6 +898,7 @@ button.control-arrow.control-prev {
   width: 13vw;
   height: 6vh;
   font-size: 2rem;
+  margin-top: auto;
   a {
     color: white;
     transition: 600ms ease;
