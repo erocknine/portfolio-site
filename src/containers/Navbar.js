@@ -15,13 +15,13 @@ export default function Navbar() {
         data-aos-easing="ease-in-out"
         data-aos-delay="1100"
       >
-      <AnchorLink href="#profile" className="eric-sk-cheung" 
-        data-aos={`navbar-relocate-eric`}
-        data-aos-anchor="trigger-navbar-relocate"
-        data-aos-anchor-placement="top-top"
-        data-aos-easing="ease-in-out"
-        data-aos-duration={1500}>
-      </AnchorLink>
+        <AnchorLink href="#profile" className="eric-sk-cheung" 
+          data-aos={`navbar-relocate-eric`}
+          data-aos-anchor="trigger-navbar-relocate"
+          data-aos-anchor-placement="top-top"
+          data-aos-easing="ease-in-out"
+          data-aos-duration={1500}>
+        </AnchorLink>
         <ul className="ulReal">
           <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true}><Projects position={'top'}>Projects</Projects></ScrollAnimation>
           <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true} delay={250}><Resume position={'top'}>Resume</Resume></ScrollAnimation>
