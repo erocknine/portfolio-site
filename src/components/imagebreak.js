@@ -34,8 +34,9 @@ export function ImageBreakThree() {
       <Image image={imageMiddle[currentImage]}/>
       <Image image={imageRight[currentImage]}/>
       <div className="text-desc">
-        <ScrollAnimation offset={25} animateIn="fadeIn" delay={200}><h1>Places I've been</h1></ScrollAnimation>
-        <ScrollAnimation offset={25} animateIn="fadeIn" delay={200}><h1>food I've eaten</h1></ScrollAnimation>
+        <ScrollAnimation offset={25} animateIn="fadeIn" delay={200}><h1>Adventures</h1></ScrollAnimation>
+        <ScrollAnimation offset={25} animateIn="fadeIn" delay={200}><h1>Food</h1></ScrollAnimation>
+        <ScrollAnimation offset={25} animateIn="fadeIn" delay={200}><h1>Life</h1></ScrollAnimation>
       </div>
     </section>
   )
