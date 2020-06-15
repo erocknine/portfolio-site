@@ -28,19 +28,17 @@ export default function Projects() {
 
 const Panel = ({ number, title, text, tech, images }, props) => {
 
-  const [open, setOpen] = useState(false)
-
   const renderSlides = () => {
 
     return images.map(image => 
-    <div onClick={() => setOpen(true)}>
+    <div>
       <img src={image} alt={title} className="blog-slide"/>
     </div>
     )
   }
 
   return (
-      <div className={open ? `panel open-active`:`panel`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <div className="panel">
         <div className="project-slides">
           <Carousel infiniteLoop={true} showThumbs={false}>
             {renderSlides()}
