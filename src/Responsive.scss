@@ -46,7 +46,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     }
   }
 
-
   .panel.open-active > *:first-child {
     transform: translateY(0);
     min-width: 20%;
@@ -357,7 +356,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     }
     .panels {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       min-height: 40vh;
     }
     .panel {
