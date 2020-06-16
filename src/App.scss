@@ -20,7 +20,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 //Welcome Section
@@ -207,7 +207,7 @@ body {
   height: 100vh;
   z-index: 1000;
   font-family: 'Lato', Lucida, sans-serif;
-  font-size: 1.25vw;
+  font-size: 1.15vw;
   visibility: hidden;
   display: flex;
   align-items: center;
