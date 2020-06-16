@@ -207,7 +207,7 @@ body {
   height: 100vh;
   z-index: 1000;
   font-family: 'Lato', Lucida, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.25vw;
   visibility: hidden;
   display: flex;
   align-items: center;
@@ -663,6 +663,7 @@ li {
   font-family: "Lato", Lucida, sans-serif;
   text-transform: uppercase;
   align-items: center;
+  font-size: 1.8vw;
 }
 
 .panel:hover > *:nth-child(2) {
@@ -672,10 +673,13 @@ li {
 
 .panel > *:nth-child(3) {
   transform: translateY(0);
+  font-size: 1vw;
+  margin-top: 1vh;
 }
 
 .panel:hover > *:nth-child(3) {
   transform: translateY(0);
+  font-size: 1vw;
 }
 
 .panel > *:last-child {
@@ -689,10 +693,11 @@ li {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
-  line-height: 2rem;
+  line-height: 4vh;
   max-width: 30vw;
   height: auto;
   max-height: 10vh;
+  font-size: 1vw;
 }
 
 .panel h2:hover {
