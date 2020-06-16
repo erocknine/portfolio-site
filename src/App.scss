@@ -843,9 +843,9 @@ li {
     max-width: 79vw;
     max-height: 70vh;
     width: 80vw;
-    background-color: white;
+    background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
     border-radius: 0 0 1rem 1rem;
-    padding: 0 5rem 0 5rem;
+    padding: 0 5rem 1vh 5rem;
   }
 }
 
