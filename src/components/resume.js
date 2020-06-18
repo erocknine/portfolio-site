@@ -23,13 +23,13 @@ export default function Resume() {
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Banzai Phresh</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}> <p className="resume-text-sub"><strong>Owner/Sole Proprietor, Honolulu, HI, December 2017 - June 2018</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Owned and operated a 6-month pop-up restaurant in Ala Moana Mall, Hawaii.</p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Overlooked restaurant design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 100 customers a day, maintained a 30% profit margin, with 4.5 stars from reviews on yelp.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Oversaw restaurant design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 100 customers a day, maintained a 30% profit margin, with 4.5 stars from reviews on yelp.</p></ScrollAnimation>
             </div>
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Banzai Phresh</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Owner/Sole Proprietor, Brooklyn, NY, April 2016 - September 2017</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Owned and operated an outdoor food booth for two seasons at Smorgasburg Market, Brooklyn.</p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Overlooked booth design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 200 customers a day and maintained a 25% profit margin.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Oversaw booth design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 200 customers a day and maintained a 25% profit margin.</p></ScrollAnimation>
             </div>
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>ZipCar</h3></ScrollAnimation>
