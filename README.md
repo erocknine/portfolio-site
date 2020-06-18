@@ -1,7 +1,7 @@
 ERIC S.K. CHEUNG  
 eric.saikit.cheung@gmail.com | https://ericskcheung.com/
 
-//Trilingual Full-stack web developer fluent in Chinese and Japanese with experience in JavaScript, Ruby on Rails, React and Redux, and a background in hospitality management. I am constantly enthralled by web development and motivated to create something visually appealing and intuitive to users. I’ve taught English in Japan, owned and operated a food business in Hawaii, and written a book while in NYC.
+Trilingual Full-stack web developer fluent in Chinese and Japanese with experience in JavaScript, Ruby on Rails, React and Redux, and a background in hospitality management. I am constantly enthralled by web development and motivated to create something visually appealing and intuitive to users. I’ve taught English in Japan, owned and operated a food business in Hawaii, and written a book while in NYC.
 
 //TECHNICAL SKILLS  
 React, Redux, Javascript, Ruby, Rails, SQL, HTML, CSS, Bootstrap, Semantic UI React
