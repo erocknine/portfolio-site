@@ -33,7 +33,6 @@ export default function Projects() {
 const Panel = ({ title, text, tech, images }, props) => {
 
   const renderSlides = () => {
-
     return images.map(image => 
     <div>
       <img src={image} alt={title} className="blog-slide"/>
