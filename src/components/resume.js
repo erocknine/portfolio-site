@@ -32,7 +32,7 @@ export default function Resume() {
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Oversaw booth design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 200 customers a day and maintained a 25% profit margin.</p></ScrollAnimation>
             </div>
             <div>
-              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>ZipCar</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Zipcar</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Fleet Associate, Brooklyn, NY, 2015</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Accomplished daily tasks involving handling and managing Zipcars all around Brooklyn. Issues included fixing flat tires, dead batteries, oil changes, and retrieving cars.</p></ScrollAnimation>
             </div>
