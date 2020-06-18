@@ -1,12 +1,12 @@
 ERIC S.K. CHEUNG  
 eric.saikit.cheung@gmail.com | https://ericskcheung.com/
 
-Trilingual Full-stack web developer fluent in Chinese and Japanese with experience in JavaScript, Ruby on Rails, React and Redux, and a background in hospitality management. I am constantly enthralled by web development and motivated to create something visually appealing and intuitive to users. I’ve taught English in Japan, owned and operated a food business in Hawaii, and written a book while in NYC.
+//Trilingual Full-stack web developer fluent in Chinese and Japanese with experience in JavaScript, Ruby on Rails, React and Redux, and a background in hospitality management. I am constantly enthralled by web development and motivated to create something visually appealing and intuitive to users. I’ve taught English in Japan, owned and operated a food business in Hawaii, and written a book while in NYC.
 
-TECHNICAL SKILLS  
+//TECHNICAL SKILLS  
 React, Redux, Javascript, Ruby, Rails, SQL, HTML, CSS, Bootstrap, Semantic UI React
 
-TECHNICAL PROJECTS
+//TECHNICAL PROJECTS
 
 Curbalert - May, 2020  
 React web app that allows users to see postings of things people are giving or throwing away in the city. 
@@ -28,7 +28,7 @@ TV Guide - February, 2020
 Ruby app that allows users to search for a movie or show specifically to discover which mainstream streaming service(Netflix, Hulu, HBO, Disney+, etc.) owned by the user currently airs the movie/show.  
 ❖ Utilizes Guidebox API, a movie/show database. Return JSON is parsed and returned with details of movie/show including cast, duration, year released, and finally all streaming networks that currently air the movie/show.  
 
-EXPERIENCE
+//EXPERIENCE
 
 Bigeye Sushi, Assistant Manager  
 Brooklyn, NY, Oct 2018 - Oct 2019  
@@ -46,7 +46,7 @@ Brooklyn, NY, 2014
 
 Previously, Zipcar, Brooklyn, NY - Fleet Associate, 2015 & Jibun Mirai, Tokyo, Japan - English Teacher, 2013
 
-EDUCATION
+//EDUCATION
 
 Flatiron School - 2020  
 ❖  Full Stack Web Development, JavaScript, Ruby on Rails, SQL, and React
