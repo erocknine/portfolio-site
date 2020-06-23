@@ -41,7 +41,7 @@ export default function Profile() {
         <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true}><h3 className="text">{`// Technical Skills`}</h3></ScrollAnimation>
         <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={100}><p className="text"><Icon name="angle double right"/>Languages & Frameworks - React, Redux, Javascript, Ruby, Rails, NodeJS</p></ScrollAnimation>
         <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={100}><p className="text"><Icon name="angle double right"/>Databases - Express, MongoDB, PostgreSQL, SQL</p></ScrollAnimation>
-        <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={100}><p className="text"><Icon name="angle double right"/>Style Frameworks - CSS, Sass, Bootstrap, Material IO, Semantic UI </p></ScrollAnimation>
+        <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={100}><p className="text"><Icon name="angle double right"/>Style - CSS, Sass, Bootstrap, Material IO, Semantic UI </p></ScrollAnimation>
       </div>
     </section>
   )

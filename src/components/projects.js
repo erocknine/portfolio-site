@@ -10,7 +10,7 @@ export default function Projects() {
   const karaok = ["images/project-images/kara-ok/kara01.png", "images/project-images/kara-ok/kara02.png", "images/project-images/kara-ok/kara03.png", "images/project-images/kara-ok/kara04.png"]
   const superpet = ["images/project-images/super-pet/pet01.png", "images/project-images/super-pet/pet02.png", "images/project-images/super-pet/pet03.png", "images/project-images/super-pet/pet04.png"]
   const hangouts = ["images/project-images/hangouts/hangouts01.png", "images/project-images/hangouts/hangouts02.png", "images/project-images/hangouts/hangouts03.png", "images/project-images/hangouts/hangouts04.png"]
-  const curbalert = ["images/project-images/curbalert/curbalert01.png", "images/project-images/curbalert/curbalert02.png", "images/project-images/curbalert/curbalert03.png", "images/project-images/curbalert/curbalert04.png"]
+  const curbalert = ["images/project-images/curbalert/curbalert-start.gif", "images/project-images/curbalert/curbalert-directions.gif", "images/project-images/curbalert/curbalert03.png", "images/project-images/curbalert/curbalert04.png"]
 
   return (
     <section className="projects-section">

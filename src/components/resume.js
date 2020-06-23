@@ -11,7 +11,7 @@ export default function Resume() {
       <div className="resume-content">
 
         <div className="resume-text">
-          <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>HISTORY</h2></ScrollAnimation>
+          <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>EXPERIENCE</h2></ScrollAnimation>
           <div className="resume-history">
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Bigeye Sushi</h3></ScrollAnimation>
@@ -51,7 +51,7 @@ export default function Resume() {
 
           <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>EDUCATION</h2></ScrollAnimation>
           <div className="resume-education">
-            <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Flatiron Coding School</h3></ScrollAnimation>
+            <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Flatiron Software Engineering School</h3></ScrollAnimation>
             <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>February 2020 - May 2020</strong></p></ScrollAnimation>
             <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={400}><p className="resume-text-desc"><Icon name="angle double right"/>Full Stack Web Development, JavaScript, Ruby on Rails, SQL, and React</p></ScrollAnimation>
             <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={300}><h3>Soka University of America</h3></ScrollAnimation>
