@@ -24,7 +24,6 @@ export default function Projects() {
           <Panel title={"Hangouts"} text={'Tired of being invited to places that are too far for comfort? Well, Hangouts allows friended users to conveniently schedule get-togethers with Yelp suggested restaurants in areas mutually close to all parties.'} tech={'// React JS, Ruby Rails, PostgreSQL, Yelp API, Geolocation API, Leaflet API, React Transition Group, Semantic UI'} images={hangouts}/>
           <Panel title={"CurbAlert"} text={'Curbalert allows users to post images and details of things people are giving or throwing away in their area, becoming viewable on a public map. Assisted by Google Directions, users can make their way to hidden treasures that are simply going to waste.'} tech={'// React JS, Ruby Rails, PostgreSQL, Google Directions API, Geolocation API, Leaflet API, AWS S3 Cloud, React Transition Group, Semantic UI'} images={curbalert}/>
         </div>
-        <div className="navbar-tab" />
       </div>
     </section>
   )

@@ -532,7 +532,7 @@ li {
   color: $gunmetal;
   position: relative;
   font-family: 'Lato', Lucida, sans-serif;
-  background: linear-gradient(90deg, rgba(218,233,255,1) 0%, rgba(251,252,255,1) 50%, rgb(171, 208, 233) 100%); 
+  background: linear-gradient(90deg, rgba(218,233,255,1) 0%, rgba(230, 240, 255, 0.9) 50%, rgb(171, 208, 233) 100%); 
 }
 
 .profile-text {
@@ -576,14 +576,6 @@ li {
 
 //Projects Section
 
-.navbar-tab {
-  min-height: 60vh;
-  min-width: 11vw;
-  width: 11vw;
-  background: $brown;
-  opacity: .75;
-}
-
 .projects-section {
   height: auto;
   min-height: 100vh;
@@ -599,8 +591,9 @@ li {
   .projects-content {
     display: flex;
     justify-content: flex-end;
-    width: 100vw;
     min-height: 91vh;
+    background-color: rgba(43, 48, 58, .85);
+    padding-right: 10vw;
   }
   .panels {
     display: flex;
