@@ -601,10 +601,15 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     max-height: initial;
   }
   
-  .panel h2:hover, .panel p:hover {
+  .panel h2:hover {
     color: $grapefruit;
     transition: 600ms;
     text-shadow: 1px 1px 1px rgb(92, 98, 104);
+  }
+
+  .panel p:hover {
+    color: $grapefruit;
+    transition: 600ms;
   }
   
   .panel p:nth-child(2) {
@@ -641,8 +646,11 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         margin: 0;
         font-size: 2rem;
       }
-      p:hover, h2:hover, h3:hover {
+      h2:hover, h3:hover {
         text-shadow: 1px 1px 1px rgb(73, 82, 90);
+        color: $grapefruit;
+      }
+      p:hover {
         color: $grapefruit;
       }
       .resume-history {
