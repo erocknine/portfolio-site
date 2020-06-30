@@ -14,9 +14,18 @@ export default function Resume() {
           <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>EXPERIENCE</h2></ScrollAnimation>
           <div className="resume-history">
             <div>
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Flatiron School</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Software Engineering Student, Brooklyn, NY, February 2020 - June 2020</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Acquired technical knowledge and skills for frontend & backend web development</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc-sub"><Icon name="angle right"/>React, Redux, Javascript, Ruby, Rails, SQL, PostgreSQL, HTML, CSS, SASS</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Completed 5 collaboration projects using all technologies learned including APIs & frameworks</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc-sub"><Icon name="angle right"/>AWS S3 Cloud, Google Directions API, Google Geocode API, Geolocation API, Yelp Search API, Leaflet API, Guidebox API, CSS Transition Group, Semantic UI, Bootstrap</p></ScrollAnimation>
+            </div>
+            <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Bigeye Sushi</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Manager, Brooklyn, NY, October 2018 - October 2019</strong></p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Managed staff, EOD financials, inventory, pop-up events, and food prep at Sushi restaurant in downtown Brooklyn.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Managed staff, EOD financials, inventory, and food prep at Sushi restaurant in downtown Brooklyn.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Coordinated and directed pop-up events at WeWork facilities and street fairs, managing staff, food supply and setup, and transportation to event sites.</p></ScrollAnimation>
             </div>
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Banzai Phresh</h3></ScrollAnimation>
@@ -29,11 +38,11 @@ export default function Resume() {
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Owned and operated an outdoor food booth for two seasons at Smorgasburg Market, Brooklyn.</p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Oversaw booth design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 200 customers a day and maintained a 25% profit margin.</p></ScrollAnimation>
             </div>
-            <div>
+            {/* <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Zipcar</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Fleet Associate, Brooklyn, NY, 2015</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><Icon name="angle double right"/>Accomplished daily tasks of maintaining and managing Zipcars all around Brooklyn. Issues included exploring unknown problems, fixing flat tires, dead batteries, oil changes, and retrieving cars.</p></ScrollAnimation>
-            </div>
+            </div> */}
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Kings of Fortune</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Writer, Brooklyn, NY, 2014</strong></p></ScrollAnimation>
