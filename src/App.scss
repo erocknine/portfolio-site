@@ -726,10 +726,19 @@ li {
     padding: 0 10vw;
   }
   .resume-text {
-    padding: 1rem 5rem 2rem 5rem;
+    padding: 2rem 5rem;
     background: $linearwhite;
     max-width: 80vw;
     color: $gunmetal;
+    .resume-download {
+      text-align: center;
+      a {
+        border-radius: 5px;
+        color: white;
+        padding: .75rem;
+        background: linear-gradient(85deg, rgba(253,116,108,1) 0%, rgba(255,144,104,1) 100%);
+      }
+    }
     h2, h3 {
       margin: 1rem 0 0.5rem 1rem;
       transition: 600ms ease;

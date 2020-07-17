@@ -11,6 +11,9 @@ export default function Resume() {
       <div className="resume-content">
 
         <div className="resume-text">
+          <div class="resume-download">
+            <a href="ERIC_SK.CHEUNG_RESUME.pdf" download="">DOWNLOAD</a>
+          </div>
           <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>EXPERIENCE</h2></ScrollAnimation>
           <div className="resume-history">
             <div>
