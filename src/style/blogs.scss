@@ -1,0 +1,99 @@
+$white: rgb(231, 229, 229);
+$brown: rgb(43, 48, 58);
+$gunmetal: rgb(28, 48, 65);
+$grapefruit: rgba(255, 94, 98, 1);
+$grapefruitclear: rgba(255, 94, 98, .95);
+$citrusclear: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
+$citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, rgba(255,131,97,1) 100%);
+$linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
+
+.blogs-section {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./images/comets.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  .blogs-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(43, 48, 58, .85);
+    min-height: 90vh;
+    padding: 0 10vw 1rem 10vw;
+  }
+  .blogs-text {
+    max-width: 79vw;
+    max-height: 70vh;
+    width: 80vw;
+    background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
+    border-radius: 0 0 1rem 1rem;
+    padding: 0 5rem 1vh 5rem;
+  }
+}
+
+.blog-slide {
+  width: 60vw;
+  max-height: 60vh;
+  object-fit: contain;
+}
+button.control-arrow.control-next,
+button.control-arrow.control-prev {
+  width: 7.5vw;
+}
+.carousel .slide {
+  background: $brown !important;
+}
+
+a.blog-link {
+  font-family: "Spartan", Lucida, sans-serif;
+  font-size: 1rem;
+  color: white;
+  height: 100%;
+  transition: 600ms ease-in-out;
+  padding-top: 1rem;
+}
+
+a.blog-link:hover {
+  color: $grapefruit;
+}
+
+.contact-info {
+  width: 79vw;
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  p {
+    transition: 600ms ease;
+    margin-bottom: 1.5vh;
+  }
+  p:hover {
+    color: $grapefruit;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  min-width: 6vw;
+  width: 13vw;
+  height: 6vh;
+  font-size: 2rem;
+  margin-top: auto;
+  a {
+    color: white;
+    transition: 600ms ease;
+  }
+  a:hover {
+    color: $grapefruit;
+  }
+}
+
+.contact-email-bottom {
+  position: relative;
+  right: 2vw;
+  cursor: pointer;
+}

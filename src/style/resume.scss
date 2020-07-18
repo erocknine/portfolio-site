@@ -1,0 +1,65 @@
+$white: rgb(231, 229, 229);
+$gunmetal: rgb(28, 48, 65);
+$grapefruit: rgba(255, 94, 98, 1);
+$grapefruitclear: rgba(255, 94, 98, .95);
+$citrusclear: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
+$citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, rgba(255,131,97,1) 100%);
+$linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
+
+.resume-section {
+  background-image: url('../images/pieces.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  .resume-content {
+    display: flex;
+    background-color: rgba(43, 48, 58, .85);
+    min-height: 90vh;
+    padding: 0 10vw;
+  }
+  .resume-text {
+    padding: 2rem 5rem;
+    background: $linearwhite;
+    max-width: 80vw;
+    color: $gunmetal;
+    .resume-download {
+      text-align: center;
+      a {
+        border-radius: 5px;
+        color: white;
+        padding: .75rem;
+        background: linear-gradient(85deg, rgba(253,116,108,1) 0%, rgba(255,144,104,1) 100%);
+      }
+    }
+    h2, h3 {
+      margin: 1rem 0 0.5rem 1rem;
+      transition: 600ms ease;
+    }
+    p {
+      margin: 0;
+    }
+    h2:hover, h3:hover, p:hover {
+      color: $grapefruit;
+    }
+    .resume-history {
+      padding-left: 1rem;
+    }
+    .resume-education {
+      padding-left: 1rem;
+    }
+    .resume-text-sub {
+      margin: .5rem 0 0 2rem;
+      font-size: 1.1rem;
+      transition: 600ms ease;
+    }
+    .resume-text-desc {
+      padding-left: 3rem;
+      font-size: 1.1rem;
+      transition: 600ms ease;
+    }
+    .resume-text-desc-sub {
+      padding-left: 4rem;
+      font-size: 1.1rem;
+      transition: 600ms ease;
+    }
+  }
+}
