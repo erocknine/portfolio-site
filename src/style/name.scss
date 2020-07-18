@@ -1,0 +1,111 @@
+$white: rgb(231, 229, 229);
+$gunmetal: rgb(28, 48, 65);
+$grapefruit: rgba(255, 94, 98, 1);
+$grapefruitclear: rgba(255, 94, 98, .95);
+$citrusclear: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
+$citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, rgba(255,131,97,1) 100%);
+$linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
+
+.name-section {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Bebas Neue', Lucida, sans-serif;
+  background-image: url('../images/gate.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.name-section-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grapefruitclear;
+  height: 100vh;
+}
+
+.name-section-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .name-section-name-hover {
+    animation-name: expand;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  h1 {
+    color: transparent;
+    font-family: "Bebas Neue", Lucida, sans-serif;
+    margin: 0;
+    font-size: 12rem;
+    background-image: url('../images/gate.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -ms-background-clip: text;
+  }
+  .name-section-name:hover {
+    color: rgb(235, 235, 235);
+    text-shadow: 3px 3px 4px rgb(129, 109, 111);
+    transition: 1000ms ease-in-out;
+  }
+  .name-section-name:before {
+    content: '';
+    border: none;
+    border-top: 1rem solid rgba(255, 255, 255, 0.75);
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.75);
+    height: 13.5rem;
+    width: 36rem;
+    transform: scaleX(0);
+    transition: 1000ms ease;
+    box-sizing: border-box;
+    position: absolute;
+  }
+  .name-section-name:hover:before {
+    transform: scaleX(1);
+  }
+  .name-section-name-hover:before {
+    content: '';
+    border: none;
+    border-top: 1rem solid rgba(255, 255, 255, 0.75);
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.75);
+    height: 13.5rem;
+    width: 36rem;
+    transform: scaleX(0);
+    transition: 1000ms ease;
+    box-sizing: border-box;
+    position: absolute;
+  }
+  .name-section-name-hover:hover:before {
+    transform: scaleX(1);
+    transition-delay: 1s;
+  }
+}
+
+@keyframes expand {
+  0% {letter-spacing: -5rem;}
+  100% {letter-spacing: 0;}
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .name-section-image {
+    h1 {
+      background-image: url('../images/gate.jpg');
+      background-size: 150vh;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

@@ -274,3 +274,192 @@ li {
   animation-duration: 9s;
   text-shadow: 2px 2px 4px $brown;
 }
+
+@media only screen and (max-width: 800px) {
+  .navbar-right {
+    font-size: 1rem;
+  }
+
+  .nav-contact-open {
+    background-color: rgba(0, 0, 0, .25);
+    top: 12vh;
+    right: 2vw;
+    width: 21rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  [data-aos="navbar-relocate-eric"] {
+    &.aos-animate {
+      transform: scale(2) translateX(22vw);
+      position: fixed;
+      opacity: 1;
+    }
+  }
+  
+  [data-aos="navbar-relocate-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-projects-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-resume-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-blogs-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-contact-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-projects-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+
+  [data-aos="navbar-relocate-resume-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+
+  [data-aos="navbar-relocate-blogs-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+
+  [data-aos="navbar-relocate-contact-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+  
+  .eric-sk-cheung {
+    filter: brightness(1.1);
+    z-index: 200;
+  }
+
+  .ulClone {
+    visibility: visible;
+    z-index: 300;
+    width: 100vw;
+    justify-content: space-evenly;
+    transition: 600ms;
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 750ms;
+    opacity: 0;
+  }
+  .ulClone:first-child {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+  }
+  .ulClone:nth-child(2) {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 250ms;
+  }
+  .ulClone:nth-child(3) {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+  }
+  .ulClone:last-child {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 750ms;
+  }
+
+  @keyframes navbarfade {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+  
+  .navbar-top {
+    background-color: rgba(0,0,0, .25);
+    height: 7rem;
+    z-index: 300;
+  }
+  .navbar-top .ulReal {
+    z-index: 400;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .nav-link {
+    font-size: 1.8rem;
+    width: 20vw;
+    font-weight: bold;
+    height: 3rem;
+  }
+  .nav-link:hover:before {
+    height: 3rem;
+    width: 7rem;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+    border-right: none;
+    border-bottom: none;
+    transition: height 250ms linear, width 200ms linear 250ms;
+  }
+  .nav-link:hover:after {
+    height: 3rem;
+    width: 7rem;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+    border-left: none;
+    border-top: none;
+    transition: height 250ms linear, width 200ms linear 250ms;
+  }
+  .nav-item {
+    transition: 600ms;
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes navbarfade {
+    0% {opacity: 1}
+    100% {opacity: 1}
+  }
+  
+  .nav-contact-open {
+    width: 88vw;
+    font-size: 2rem;
+    top: 6rem;
+  }
+
+  .navbar-tab {
+    display: none;
+  }
+}

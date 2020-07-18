@@ -17,7 +17,7 @@ export default function Blogs() {
     <section className="blogs-section">
 
       <div id="blogs" className="header-bar">
-        <h2>BLOGS</h2>
+        <h1 className="blogs-header">BLOGS</h1>
       </div>
 
       <div className="blogs-content">

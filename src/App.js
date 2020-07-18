@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './App.scss';
+import './style/navbar.scss'
+import './style/name.scss'
+import './style/projects.scss'
+import './style/resume.scss'
+import './style/blogs.scss'
 import './Responsive.scss'
 import Main from './containers/Main'
 import Navbar from './containers/Navbar'

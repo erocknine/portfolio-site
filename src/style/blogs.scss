@@ -10,7 +10,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 .blogs-section {
   display: flex;
   flex-direction: column;
-  background-image: url('./images/comets.jpg');
+  background-image: url('../images/comets.jpg');
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
@@ -96,4 +96,121 @@ a.blog-link:hover {
   position: relative;
   right: 2vw;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .blogs-section {
+    .blogs-content {
+      min-height: 80vw;
+      height: auto;
+      padding: 0;
+    }
+    .blogs-text {
+      max-width: initial;
+      max-height: 70vh;
+      width: 88vw;
+      background-color: white;
+      border-radius: 0 0 1rem 1rem;
+      padding: 0;
+    }
+  }
+
+  .blog-slide {
+    width: 100vw;
+    max-height: initial;
+    object-fit: contain;
+  }
+      
+  .contact-info {
+    width: 100vw;
+    height: 45vh;
+    margin-top: 4rem;
+    p {
+      transition: 600ms ease;
+    }
+    p:hover {
+      color: $grapefruit;
+    }
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 30vw;
+    width: 80vw;
+    height: 10vh;
+    font-size: 2rem;
+    margin-top: 2rem;
+    a {
+      color: white;
+      transition: 600ms ease;
+      font-size: 2rem;
+    }
+    a:hover {
+      color: $grapefruit;
+    }
+  }
+  .contact-email-bottom {
+    position: relative;
+    right: 3.5vw;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blogs-section {
+    .blogs-content {
+      min-height: initial;
+      height: auto;
+      padding: 0;
+    }
+    .blogs-text {
+      max-width: initial;
+      max-height: 70vh;
+      width: 100vw;
+      background-color: white;
+      border-radius: 0 0 1rem 1rem;
+      padding: 0;
+    }
+  }
+
+  .blog-slide {
+    width: 100vw;
+    max-height: initial;
+    object-fit: contain;
+  }
+      
+  .contact-info {
+    width: 100vw;
+    height: 40vh;
+    margin-top: 4rem;
+    p {
+      transition: 600ms ease;
+    }
+    p:hover {
+      color: $grapefruit;
+    }
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 30vw;
+    width: 80vw;
+    height: 10vh;
+    font-size: 2rem;
+    a {
+      color: white;
+      transition: 600ms ease;
+      font-size: 4rem;
+    }
+    a:hover {
+      color: $grapefruit;
+    }
+  }
+  .contact-email-bottom {
+    position: relative;
+    right: 7vw;
+    cursor: pointer;
+  }
 }

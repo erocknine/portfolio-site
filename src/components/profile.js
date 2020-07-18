@@ -27,7 +27,7 @@ export default function Profile() {
       </div>
 
       <div id="profile" className="profile-text">
-        <h2 className="text">Eric Sai Kit Cheung</h2>
+        <h1 className="text">Eric Sai Kit Cheung</h1>
         
         <p className="text"><Icon name="angle double right"/>Full-stack Software Engineer</p>
         <p className="text"><Icon name="angle double right"/>Trilingual, fluent in English and Chinese, and conversational in Japanese</p>
