@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HangoutsDoc = (props) => {
-  const { projectDoc } = props;
+  const { projectDoc, handleProject } = props;
 
   return (
     <div className={projectDoc === 'hangouts' ? `projects-document hangouts`: "projects-document"}>
@@ -107,7 +107,7 @@ const HangoutsDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
-          <h3>function bigMaths()</h3>
+          <h3>function bigMaths( )</h3>
         </div>
 
         <div className={ projectDoc === 'hangouts' ? "project-portion-stack":"project-portion closed" }>
@@ -156,6 +156,10 @@ const HangoutsDoc = (props) => {
         <div className={ projectDoc === 'hangouts' ? "project-portion-stack":"project-portion closed" }>
           <p className="p-solo">Upon loading this page, invited friends would be added to an array where the midpoint formula would work through their coordinate keys. The calculated midpoint would sit in a state until the user made a change, either by uninviting a friend (which would rerun the midpoint formula) or searching for restaurants with keywords.</p>
           <p className="p-solo">Our front-end sends the search term and midpoint coordinates to our Rails back-end Yelp request. The restaurants in the response JSON would render onto the map and into the select box as viable options. The user could then select from these restaurants, choose a date & time and create the hangout, which would appear on all users' dashboard on the home page.</p>
+        </div>
+
+        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" } onClick={() => handleProject("hangouts")}>
+          <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 
       </div>

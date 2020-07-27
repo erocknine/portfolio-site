@@ -1,7 +1,7 @@
 import React from 'react'
 
 const KaraDoc = (props) => {
-  const { projectDoc } = props;
+  const { projectDoc, handleProject } = props;
 
   return (
     <div className={projectDoc === 'kara' ? `projects-document kara`: "projects-document"}>
@@ -90,6 +90,10 @@ const KaraDoc = (props) => {
         <div className={ projectDoc === 'kara' ? "project-portion-stacked" : "project-portion closed" }>
           <p className="p-solo">Once a song is added, a lyrics page is dynamically generated following the playlist name the song belongs to, and the song number within the playlist. The song title and artist is extracted from the Lyrics API response JSON and rendered at the top, while the lyrics render onto the main body of the page. There are HTML page break tags included in the lyrics from the API itself, so I included a Regular expression method, .gsub (.replace in JS), to remove them in order to match my own CSS formatting of the lyrics. Of course, the feature to personally edit the lyrics is also available to the user.</p>
           <p className="p-solo">An extra feature I included was the ability to embed a youtube video of the song. A user can input the youtube video URL which will render an iframe container onto a fixed position on the page.</p>
+        </div>
+
+        <div className={ projectDoc === 'kara' ? "project-portion":"project-portion closed" } onClick={() => handleProject("kara")}>
+          <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 
       </div>

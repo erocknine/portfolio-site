@@ -39,32 +39,33 @@ export default function Projects() {
           <AnchorLink href={ open && projectDoc === "curbalert" ? null:"#curbalert" } className="projects-card curbalert">
             <Card project={projects[0]} hover={hover} active={active} projectDoc={projectDoc} projectName={"curbalert"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
-          <CurbalertDoc project={projects[0]} projectDoc={projectDoc} projectName={"curbalert"}/>
+          <CurbalertDoc project={projects[0]} projectDoc={projectDoc} projectName={"curbalert"} handleProject={handleProject}/>
 
           <AnchorLink href={ open && projectDoc === "hangouts" ? null:"#hangouts" } className="projects-card hangouts">
             <Card project={projects[1]} hover={hover} active={active} projectDoc={projectDoc} projectName={"hangouts"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
-          <HangoutsDoc project={projects[1]} projectDoc={projectDoc} projectName={"hangouts"}/>
+          <HangoutsDoc project={projects[1]} projectDoc={projectDoc} projectName={"hangouts"} handleProject={handleProject}/>
           
           <AnchorLink href={ open && projectDoc === "superpet" ? null:"#superpet" } className="projects-card superpet">
             <Card project={projects[2]} hover={hover} active={active} projectDoc={projectDoc} projectName={"superpet"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
-          <SuperpetDoc project={projects[2]} projectDoc={projectDoc} projectName={"superpet"}/>
+          <SuperpetDoc project={projects[2]} projectDoc={projectDoc} projectName={"superpet"} handleProject={handleProject}/>
 
           <AnchorLink href={ open && projectDoc === "kara" ? null:"#kara" } className="projects-card kara">
             <Card project={projects[3]} hover={hover} active={active} projectDoc={projectDoc} projectName={"kara"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
-          <KaraDoc project={projects[3]} projectDoc={projectDoc} projectName={"kara"}/>
+          <KaraDoc project={projects[3]} projectDoc={projectDoc} projectName={"kara"} handleProject={handleProject}/>
 
-          <AnchorLink href={ open && projectDoc === "hies" ? null:"#projects" } offset="-450" className="projects-card hies">
+          <AnchorLink href={ open && projectDoc === "hies" ? null:"#anchor" } className="projects-card hies">
             <Card project={projects[4]} hover={hover} active={active} projectDoc={projectDoc} projectName={"hies"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
-          <HiesDoc project={projects[4]} projectDoc={projectDoc} projectName={"hies"}/>
+          <HiesDoc project={projects[4]} projectDoc={projectDoc} projectName={"hies"} handleProject={handleProject}/>
 
-          <AnchorLink href={ open && projectDoc === "goroom" ? null:"#projects" } offset="-450" className="projects-card goroom">
+          <AnchorLink href={ open && projectDoc === "goroom" ? null:"#anchor" } className="projects-card goroom">
             <Card project={projects[5]} hover={hover} active={active} projectDoc={projectDoc} projectName={"goroom"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
-          <GoroomDoc project={projects[5]} projectDoc={projectDoc} projectName={"goroom"}/>
+          <GoroomDoc project={projects[5]} projectDoc={projectDoc} projectName={"goroom"} handleProject={handleProject}/>
+          <div id="anchor"/>
 
         </div>
       </div>
@@ -77,7 +78,7 @@ const Card = (props) => {
   const { title } = props.project;
 
   return (
-    <div className={`projects-card ${projectName}`} onClick={() => handleProject(projectName)} onMouseEnter={() => {setHover(true);setActive(`${projectName}`)}} onMouseLeave={() => {setHover(false);setActive("")}}>
+    <div id="goroom" className={`projects-card ${projectName}`} onClick={() => handleProject(projectName)} onMouseEnter={() => {setHover(true);setActive(`${projectName}`)}} onMouseLeave={() => {setHover(false);setActive("")}}>
       
       <div className={hover && (active !== projectName && active !== "") ? `projects-card ${projectName} false`:`projects-card ${projectName}`}>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const CurbalertDoc = (props) => {
-  const { projectDoc } = props;
+  const { projectDoc, handleProject } = props;
   const [ large, setLarge ] = useState(false)
 
   return (
@@ -194,6 +194,10 @@ const CurbalertDoc = (props) => {
             <img className="image-solo" src="images/project-images/curbalert/curbalert04.jpg" alt="Item post magnification"/>
             <span>The sole remaining 80's themed aesthetic left behind from a previous visual concept of the project</span>
           </div>
+        </div>
+
+        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" } onClick={() => handleProject("curbalert")}>
+          <a href="#projects"><img className="return"src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 
       </div>

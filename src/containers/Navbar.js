@@ -1,8 +1,8 @@
 import React, { useState, Fragment } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Icon } from 'semantic-ui-react'
+// import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Navbar() {
 
@@ -15,13 +15,13 @@ export default function Navbar() {
         data-aos-easing="ease-in-out"
         data-aos-delay="1100"
       >
-        <AnchorLink href="#profile" className="eric-sk-cheung" 
+        <a href="#profile" className="eric-sk-cheung" 
           data-aos={`navbar-relocate-eric`}
           data-aos-anchor="trigger-navbar-relocate"
           data-aos-anchor-placement="top-top"
           data-aos-easing="ease-in-out"
           data-aos-duration={1500}>
-        </AnchorLink>
+        </a>
         <ul className="ulReal">
           <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true}><Projects position={'top'}>Projects</Projects></ScrollAnimation>
           <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true} delay={250}><Resume position={'top'}>Resume</Resume></ScrollAnimation>
@@ -57,9 +57,9 @@ const Projects = (props) => {
       data-aos-delay={props.position === 'right' ? "1000": "0"}
       data-aos-duration={props.position === 'top' ? "1000":"250"}
     >
-      <AnchorLink href="#projects" className="nav-link">
+      <a href="#projects" className="nav-link">
         { props.children }
-      </AnchorLink>
+      </a>
     </li>
   );
 }
@@ -74,9 +74,9 @@ const Resume = (props) => {
       data-aos-delay={props.position === 'right' ? "750": "0"}
       data-aos-duration={props.position === 'top' ? "750":"500"}
     >
-      <AnchorLink href="#resume" className="nav-link">
+      <a href="#resume" className="nav-link">
         { props.children }
-      </AnchorLink>
+      </a>
     </li>
   );
 }
@@ -91,9 +91,9 @@ const Blogs = (props) => {
       data-aos-delay={props.position === 'right' ? "500": "0"}
       data-aos-duration={props.position === 'top' ? "500":"750"}
     >
-      <AnchorLink href="#blogs" className="nav-link">
+      <a href="#blogs" className="nav-link">
         { props.children }
-      </AnchorLink>
+      </a>
     </li>
   );
 }
@@ -143,9 +143,9 @@ const ProjectsClone = (props) => {
       data-aos-delay={props.position === 'right' ? "1000": "0"}
       data-aos-duration={props.position === 'top' ? "1000":"250"}
     >
-      <AnchorLink href="#projects" className="nav-link">
+      <a href="#projects" className="nav-link">
         { props.children }
-      </AnchorLink>
+      </a>
     </li>
   );
 }
@@ -160,9 +160,9 @@ const ResumeClone = (props) => {
       data-aos-delay={props.position === 'right' ? "750": "0"}
       data-aos-duration={props.position === 'top' ? "750":"500"}
     >
-      <AnchorLink href="#resume" className="nav-link">
+      <a href="#resume" className="nav-link">
         { props.children }
-      </AnchorLink>
+      </a>
     </li>
   );
 }
@@ -177,9 +177,9 @@ const BlogsClone = (props) => {
       data-aos-delay={props.position === 'right' ? "500": "0"}
       data-aos-duration={props.position === 'top' ? "500":"750"}
     >
-      <AnchorLink href="#blogs" className="nav-link">
+      <a href="#blogs" className="nav-link">
         { props.children }
-      </AnchorLink>
+      </a>
     </li>
   );
 }

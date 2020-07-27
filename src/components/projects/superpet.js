@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SuperpetDoc = (props) => {
-  const { projectDoc } = props;
+  const { projectDoc, handleProject } = props;
 
   return (
     <div className={projectDoc === 'superpet' ? `projects-document superpet`: "projects-document"}>
@@ -102,6 +102,10 @@ const SuperpetDoc = (props) => {
 
         <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/superpet/superpet05.png" alt="Victory in battle!"/>
+        </div>
+
+        <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" } onClick={() => handleProject("superpet")}>
+          <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 
       </div>
