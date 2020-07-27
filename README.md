@@ -10,18 +10,18 @@ React, Redux, Javascript, Ruby, Rails, SQL, HTML, CSS, Bootstrap, Semantic UI Re
 
 Curbalert - May, 2020  
 React web app that allows users to see postings of things people are giving or throwing away in the city. 
-❖  Created with React JS Frontend, and Ruby Rails with PostgreSQL Backend.  
+❖  Created with React JS Front-end, and Ruby Rails with PostgreSQL Back-end.  
 ❖  Utilized Geolocation API to find users’ current locations upon login, Google Geocode API to translate street addresses into latitude/longitude, Google Directions API, and plotted points on map provided by Leaflet API.  
 ❖  Designed and styled pages & page layouts, navbar, and friends list. Utilized React-Sortable-Hoc library for draggable components, React CSS transition group to provide animation transitions for navbar and friends list, AWS S3 for storing images on cloud, and Semantic UI for forms.
 
 Hangouts - April, 2020  
 React web app that allows friended users to view each other’s locations on map to conveniently schedule hangouts at restaurants mutually close to all parties.  
-❖  Created with React JS Frontend, and Ruby Rails with PostgreSQL Backend.  
-❖  Utilized Yelp API for restaurant suggestions on backend. Geolocation API, Google Geocode API to translate street addresses into latitude/longitude, and plotted points on map provided by Leaflet API, all placed on frontend.
+❖  Created with React JS Front-end, and Ruby Rails with PostgreSQL Back-end.  
+❖  Utilized Yelp API for restaurant suggestions on back-end. Geolocation API, Google Geocode API to translate street addresses into latitude/longitude, and plotted points on map provided by Leaflet API, all placed on front-end.
 
 Super Pet Bros. Unleashed - March, 2020  
 JavaScript web game that allows users to create a profile for their pet, set personality type, stats and moves, to battle other pet profiles in a pokemon-style gameplay.  
-❖  Created with Vanilla Javascript Frontend, and Ruby Rails with PostgreSQL Backend.  
+❖  Created with Vanilla Javascript Front-end, and Ruby Rails with PostgreSQL Back-end.  
 ❖  Designed and styled pages & page layouts, navbar, pet list, and battle page. Implemented sound effects, theme music and randomized battle backgrounds with JS, and attack animations and effects with CSS to add another level of excitement for users.
 
 TV Guide - February, 2020  

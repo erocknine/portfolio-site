@@ -1,8 +1,5 @@
 import { useEffect } from 'react'
 
-//const instance = useRef(null)
-//<div ref={instance}>{useScript(instance)}</div>
-
 const useScript = (ref) => {
   useEffect(() => {
     const script = document.createElement('script');

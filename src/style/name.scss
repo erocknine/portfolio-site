@@ -106,6 +106,31 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       background-size: 150vh;
       background-repeat: no-repeat;
       background-position: center;
+      font-size: 16rem;
+    }
+    .name-section-name:before {
+      content: '';
+      border: none;
+      border-top: 1rem solid rgba(255, 255, 255, 0.75);
+      border-bottom: 1rem solid rgba(255, 255, 255, 0.75);
+      height: 19rem;
+      width: 50rem;
+      transform: scaleX(0);
+      transition: 1000ms ease;
+      box-sizing: border-box;
+      position: absolute;
+    }
+    .name-section-name-hover:before {
+      content: '';
+      border: none;
+      border-top: 1rem solid rgba(255, 255, 255, 0.75);
+      border-bottom: 1rem solid rgba(255, 255, 255, 0.75);
+      height: 19rem;
+      width: 50rem;
+      transform: scaleX(0);
+      transition: 1000ms ease;
+      box-sizing: border-box;
+      position: absolute;
     }
   }
 }

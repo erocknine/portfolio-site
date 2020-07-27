@@ -5,6 +5,7 @@ import {ImageBreak, ImageBreakThree} from '../components/imagebreak'
 import Projects from '../components/projects'
 import Resume from '../components/resume'
 import Blogs from '../components/blogs'
+import Feature from '../components/feature'
 
 export default function Main() {
 
@@ -12,11 +13,11 @@ export default function Main() {
     <main className="main-container">
       <Name/>
       <Profile/>
-      <ImageBreak num={"one"}/>
-      <Projects/>
       <ImageBreakThree/>
+      <Projects/>
+      <Feature />
       <Resume/>
-      <ImageBreak num={"two"}/>
+      <ImageBreak num={"one"}/>
       <Blogs/>
     </main>
   )

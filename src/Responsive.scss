@@ -10,10 +10,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     width: 10vw;
     height: 10vw;
   }
-  
-  .profile-left, .profile-right {
-    display: none;
-  }
 
   .header-bar {
     font-size: 2rem;
@@ -24,6 +20,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   :root {
     font-size: 8px;
   }
+
   
   .welcome-section {
     .signature {
@@ -31,18 +28,10 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       height: 24rem;
       width: 24rem;
     }
-  }
-
-  .profile-left, .profile-right {
-    display: none;
-  }
-  .profile-section {
-    .profile-text {
-      max-width: initial;
-      font-size: 2rem;
-    }
-    h1, h2, h3 {
-      font-size: 3rem;
+    .signature-pressed {
+      font-size: 18rem;
+      height: 24rem;
+      width: 24rem;
     }
   }
 

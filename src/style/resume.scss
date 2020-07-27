@@ -17,7 +17,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     padding: 0 10vw;
   }
   .resume-text {
-    padding: 2rem 5rem;
+    padding: 2rem 10rem 2rem 6rem;
     background: $linearwhite;
     max-width: 80vw;
     color: $gunmetal;
@@ -39,6 +39,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     }
     p {
       margin: 0;
+      display: inline-block;
     }
     h2:hover, h3:hover, p:hover {
       color: $grapefruit;
@@ -49,16 +50,20 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     .resume-education {
       padding-left: 1rem;
     }
+    .resume-text-block {
+      display: flex;
+    }
     .resume-text-sub {
       margin: .5rem 0 0 2rem;
       font-size: 1.1rem;
       transition: 600ms ease;
     }
     .resume-text-desc {
-      padding-left: 3rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
       transition: 600ms ease;
-      margin: .5rem 0;
+      margin: .5rem 0 .5rem 3rem;
+      background: url('../images/double_right.png') no-repeat left top;
+      padding-left: 2rem;
     }
     .resume-text-desc-sub {
       padding-left: 4rem;
@@ -132,9 +137,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         padding-left: .5rem;
       }
       .resume-text-desc {
-        padding-left: 1rem;
         font-size: 2rem;
         transition: 600ms ease;
+        margin: 1rem;
       }
       .resume-text-desc-sub {
         padding-left: 4rem;
