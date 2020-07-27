@@ -36,22 +36,22 @@ export default function Projects() {
       <div className="projects-content">
         <div className="projects-cards">
 
-          <AnchorLink href={ open && projectDoc === "curbalert" ? null:"#curbalert" } className="projects-card curbalert">
+          <AnchorLink href={ open && projectDoc === "curbalert" ? null:"#anchor" } className="projects-card curbalert">
             <Card project={projects[0]} hover={hover} active={active} projectDoc={projectDoc} projectName={"curbalert"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
           <CurbalertDoc project={projects[0]} projectDoc={projectDoc} projectName={"curbalert"} handleProject={handleProject}/>
 
-          <AnchorLink href={ open && projectDoc === "hangouts" ? null:"#hangouts" } className="projects-card hangouts">
+          <AnchorLink href={ open && projectDoc === "hangouts" ? null:"#anchor" } className="projects-card hangouts">
             <Card project={projects[1]} hover={hover} active={active} projectDoc={projectDoc} projectName={"hangouts"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
           <HangoutsDoc project={projects[1]} projectDoc={projectDoc} projectName={"hangouts"} handleProject={handleProject}/>
           
-          <AnchorLink href={ open && projectDoc === "superpet" ? null:"#superpet" } className="projects-card superpet">
+          <AnchorLink href={ open && projectDoc === "superpet" ? null:"#anchor" } className="projects-card superpet">
             <Card project={projects[2]} hover={hover} active={active} projectDoc={projectDoc} projectName={"superpet"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
           <SuperpetDoc project={projects[2]} projectDoc={projectDoc} projectName={"superpet"} handleProject={handleProject}/>
 
-          <AnchorLink href={ open && projectDoc === "kara" ? null:"#kara" } className="projects-card kara">
+          <AnchorLink href={ open && projectDoc === "kara" ? null:"#anchor" } className="projects-card kara">
             <Card project={projects[3]} hover={hover} active={active} projectDoc={projectDoc} projectName={"kara"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
           </AnchorLink>
           <KaraDoc project={projects[3]} projectDoc={projectDoc} projectName={"kara"} handleProject={handleProject}/>
