@@ -75,7 +75,6 @@ const GoroomDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/goroom/goroom_sketch2.png" alt="Wireframe sketch of Neumorphic button design layout"/>
           <img className="image" src="images/project-images/goroom/goroom_test.png" alt="Test neumorphic button design layout"/>
         </div>
 
