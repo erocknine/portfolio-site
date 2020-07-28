@@ -16,20 +16,20 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     min-height: 90vh;
     padding: 0 10vw;
   }
+  .resume-download {
+    text-align: center;
+    a {
+      border-radius: 5px;
+      color: white;
+      padding: .75rem;
+      background: linear-gradient(85deg, rgba(253,116,108,1) 0%, rgba(255,144,104,1) 100%);
+    }
+  }
   .resume-text {
-    padding: 2rem 10rem 2rem 6rem;
+    padding: 2rem 6rem 2rem 6rem;
     background: $linearwhite;
     max-width: 80vw;
     color: $gunmetal;
-    .resume-download {
-      text-align: center;
-      a {
-        border-radius: 5px;
-        color: white;
-        padding: .75rem;
-        background: linear-gradient(85deg, rgba(253,116,108,1) 0%, rgba(255,144,104,1) 100%);
-      }
-    }
     h2 {
       font-family: 'Josefin Sans', sans-serif;
     }
@@ -63,7 +63,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       transition: 600ms ease;
       margin: .5rem 0 .5rem 3rem;
       background: url('../images/double_right.png') no-repeat left top;
-      padding-left: 2rem;
+      padding: 0 2rem;
     }
     .resume-text-desc-sub {
       padding-left: 4rem;
