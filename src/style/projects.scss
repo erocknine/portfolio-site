@@ -604,9 +604,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
             margin: 1rem 0;
             max-width: 91vw;
           }
-          .image-solo {
+          // .image-solo {
 
-          }
+          // }
           .image.clickable {
             cursor: pointer;
             transition: 600ms ease-in-out;
@@ -620,7 +620,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
             width: 8rem;
           }
         }
-
 
       }
     }
