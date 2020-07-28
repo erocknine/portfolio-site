@@ -515,7 +515,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 10;
-        grid-row-end: 110;
+        grid-row-end: 10;
       }
 
       .projects-document {
@@ -614,6 +614,10 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
           .image-large {
             transform: scale(1.1);
             transition: 600ms ease-in-out;
+          }
+          .return {
+            height: 8rem;
+            width: 8rem;
           }
         }
 
