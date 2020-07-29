@@ -12,27 +12,62 @@ export default function Resume() {
 
         <div className="resume-text">
           <div className="resume-download">
-            <a href="https://ericskcheung.com/ERIC_SK.CHEUNG_RESUME.pdf" target="_blank" rel="noopener noreferrer">DOWNLOADABLE</a>
+            <a href="https://ericskcheung.com/ERIC_SK_CHEUNG_RESUME.pdf" target="_blank" rel="noopener noreferrer">DOWNLOADABLE</a>
           </div>
           <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>EXPERIENCE</h2></ScrollAnimation>
           <div className="resume-history">
             <div>
-              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>FLATIRON SCHOOL</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Software Engineering Student, Brooklyn, NY, February 2020 - June 2020</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>HIES Inc.</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, July 2020 - August 2020</strong></p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Developed</strong> full-stack web applications using React, Redux, Javascript, Ruby, Rails, SQL, PostgreSQL, HTML, CSS, SASS</p></ScrollAnimation>
-              
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Completed</strong> collaboration projects using APIs & frameworks such as AWS S3 Cloud, Google Directions API, Google Geocode API, Geolocation API, Yelp Search API, Leaflet API, Guidebox API, CSS Transition Group, Semantic UI</p></ScrollAnimation>
-              
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Engineered</strong> codebase synchronizing Geolocation & Google Geocode API to translate latitude/longitude coordinates into common addresses. Also incorporated Google Directions API by decoding address polylines and accessing response keys, to be plotted on map provided by Leaflet API.</p></ScrollAnimation>
-              
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Designed</strong> page layouts & user interface for multiple collaboration projects. Created custom hero images & logos with Adobe illustrator, implemented custom SVG images & icons into React components, executed page styling using custom CSS/SASS working in unison with React conditional renders, and Semantic UI for uniform forms and icons.</p></ScrollAnimation>
-              
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Redesigned & rebranded static company website for HIES Inc., an environmental services company, for future integration into current site domain. Built using React JS, SASS, and PIXI.js.</p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Incorporated</strong> PIXI.js to website built with React front-end to create realistic water effect with Javascript on hero image. Styled page with custom SASS, React transition group for dropdown transitions, and made responsive on mobile and tablet.</p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Recreated</strong> company logo & hero image with higher resolution using Adobe Photoshop and Illustrator. Original website text trimmed for key points to be included in redesign. Color palette and images chosen based on company's efforts and theme toward environmental conservation and sustainability.</p></ScrollAnimation>
+
+
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>CURBALERT</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, June 2020</strong></p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Curbalert allows users to post images and details of items people are giving or throwing away in their area, becoming viewable on a public map. Built using React JS & Redux front-end and Ruby & Rails with PostgreSQL back-end.</p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Engineered</strong> codebase synchronizing Geolocation & Google Geocode API to translate latitude/longitude coordinates into common addresses. Also incorporated Google Directions API by decoding address polylines and accessing response keys to be plotted on map provided by Leaflet API.</p></ScrollAnimation>
+
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Collaborated</strong> functionality between AWS S3 and Rails Active Storage to store user images on cloud bucket for convenient access by Rails REST API. Response URL provided by AWS S3 allowed users a preview of image after upload before persisting to post.</p></ScrollAnimation>
-              
+
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Incorporated</strong> React transition group library to allow transition animations between conditional renders of DOM elements in React. Implemented React-Sortable-Hoc library in combination with Array-Move package to provide user capability of dragging components within DOM.</p></ScrollAnimation>
-              
+
+
+
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>HANGOUTS</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, May 2020</strong></p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Hangouts allows friended users to conveniently schedule get-togethers with Yelp suggested restaurants in areas mutually close to all parties. Built using React JS & Redux front-end and Ruby & Rails with PostgreSQL back-end.</p></ScrollAnimation>
+
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Architected</strong> a Rails back-end call to YELP Search API to provide restaurant suggestions at user requested coordinates, and return response data to be visually displayed on map provided by Leaflet API on front-end. Utilized specific URL parameters for specific conditions in requests.</p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Engineered</strong> codebase synchronizing Geolocation & Google Geocode API to translate latitude/longitude coordinates into common addresses. Coded script to calculate prime midpoint location between multiple user coordinates.</p></ScrollAnimation>
+
+
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>SUPER PET BROS. UNLEASHED</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, April 2020</strong></p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">In this game, users can create a profile for their pet, set personality type, stats and moves, and battle other users' pets in pokemon-style gameplay. Built using JavaScript front-end and Ruby & Rails with PostgreSQL back-end.</p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Implemented</strong> battle animations, sound effects and background music using a combination of JavaScript functions working harmoniously with CSS. Created web audio player allowing user to play multiple tracks during battle with pause, play, and skip with JavaScript class utilizing JavaScript's Audio Constructor.</p></ScrollAnimation>
+
+
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>KARA-OK!</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, March 2020</strong></p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">KARA-OK! allows users to search for song lyrics and add them to playlists for a convenient sing-along session. Built using Ruby & Rails with PostgreSQL.</p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Built</strong> back-end API for users to search for song lyrics by requesting from Lyrics API. JSON responses are extracted and Regex to generate dynamic song lyric pages to be added to user's playlists.</p></ScrollAnimation>
+
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Implemented</strong> user authentication using Rails Bcrypt for password encryption.</p></ScrollAnimation>
+              
+
 
             </div>
             <div>
