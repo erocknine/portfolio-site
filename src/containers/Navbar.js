@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from 'react'
+import '../style/navbar.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Icon } from 'semantic-ui-react'

@@ -90,7 +90,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   position: relative;
   font-family: 'Lato', Lucida, sans-serif;
   background: linear-gradient(90deg, rgba(218,233,255,1) 0%, rgba(230, 240, 255, 0.9) 50%, rgb(171, 208, 233) 100%); 
-  padding-bottom: 2rem;
+  padding: 4rem;
 }
 
 .profile-text {
@@ -104,10 +104,13 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   font-size: 1.1rem;
   padding: 1rem 0;
   .text {
-    margin: 1rem;
+    margin-bottom: 1rem;
   }
   p.text {
     margin-top: 0;
+  }
+  h1.text {
+    color: $grapefruit;
   }
   .text.desc {
     margin-top: 1rem;

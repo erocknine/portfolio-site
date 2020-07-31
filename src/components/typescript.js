@@ -1,6 +1,9 @@
 import { useEffect } from 'react'
 
-const useScript = (ref) => {
+//const instance = useRef(null)
+//<div ref={instance}>{useScript(instance)}</div>
+
+export default function useScript(ref) {
   useEffect(() => {
     const script = document.createElement('script');
 
@@ -40,7 +43,7 @@ const useScript = (ref) => {
       }, delta);
     };
     
-    const element = document.querySelector('.image-desc-text');
+    const element = document.querySelector('.typescript');
     type(["Imagine", "Design", "Create"], element, 1000)
     `
 
@@ -50,5 +53,3 @@ const useScript = (ref) => {
 
   }, [ref])
 }
-
-export default useScript;

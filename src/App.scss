@@ -70,9 +70,10 @@ body {
   background: linear-gradient(90deg, rgb(203, 206, 216) 0%, rgba(218,233,255,.9) 100%);
   overflow:hidden;
   font-family: 'Sawarabi Gothic', 'Noto Sans JP';
-  position: relative;
+  position: absolute;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
   .signature {
     display: flex;
     align-items: center;
@@ -119,8 +120,6 @@ body {
   }
 }
 
-//Profile
-
 .header-bar {
   padding: .5rem;
   min-height: 10vh;
@@ -138,16 +137,77 @@ body {
   }
 }
 
-.image-section-one {
+.particles {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
+  // background: linear-gradient(180deg, rgba(255, 94, 98, 1) 0%, rgba(255,144,147,1) 37%, rgba(238,205,163,1) 100%);
+  // background-image: url("");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: 50% 50%;
+  opacity: 1;
+}
+
+.image-section-type {
+  background: $linearwhite;
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typescript {
+  position: absolute;
+  color: $grapefruit;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+}
+
+.jesuslight {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(140deg, rgba(148,187,233,0.1) 25%, rgba(255,255,255,0.3) 55%, rgba(148,187,233,0.1) 85%);
+  animation-name: jesuslight;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes jesuslight {
+  20% { 
+    opacity: 1; 
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {  
+    opacity: 1; 
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.image-section-astro {
   background-image: url('./images/astro.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 60vh;
   position: relative;
 }
 
-.image-section-two {
+.image-section-tea {
+  background-image: url('./images/matcha.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.image-section-tea {
   background-image: url('./images/matcha.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -198,4 +258,69 @@ body {
 @keyframes slideshow {
   5% {opacity: 1}
   100% {opacity: 1}
+}
+
+@media only screen and (max-width: 800px) {
+  .eric-sk-cheung {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .header-bar {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .welcome-section {
+    .signature {
+      font-size: 18rem;
+      height: 24rem;
+      width: 24rem;
+    }
+    .signature-pressed {
+      font-size: 18rem;
+      height: 24rem;
+      width: 24rem;
+    }
+  }
+
+  .header-bar {
+    h1.projects-header,
+    h1.resume-header,
+    h1.blogs-header {
+      font-family: 'Josefin Sans', sans-serif;
+      margin-top: 1vh;
+      font-size: 3rem;
+    }
+  }
+
+  .jesuslight {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(125deg, rgba(148,187,233,0.1) 25%, rgba(255,255,255,0.3) 55%, rgba(148,187,233,0.1) 85%);
+  }
+
+  .particles {
+    height: 40vh;
+  }
+  
+  .image-section-type {
+    height: 40vh;
+  }
+    
+  .image-section-astro {
+    height: 30vh;
+    background-attachment: initial;
+  }
+  .image-section-tea {
+    height: 30vh;
+  }
+  .image-section-three {
+    height: 30vh;
+  }
 }

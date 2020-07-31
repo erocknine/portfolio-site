@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../style/projects.scss'
 // import { Carousel } from "react-responsive-carousel";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import CurbalertDoc from './projects/curbalert'

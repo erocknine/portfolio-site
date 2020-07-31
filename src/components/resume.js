@@ -1,5 +1,6 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
+import '../style/resume.scss'
 // import { Icon } from 'semantic-ui-react'
 
 export default function Resume() {

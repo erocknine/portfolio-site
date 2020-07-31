@@ -1,8 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import useScript from './typescript'
 
 export function ImageBreak(props) {
   return (
-    <section className={`image-section-${props.num}`} />
+    <section className={`image-section-${props.value}`} >
+      <div className="jesuslight"></div>
+    </section>
+  )
+}
+
+export function TypeBreak(props) {
+  const instance = useRef(null)
+
+  return (
+    <section className="image-section-type">
+      <h1 className="typescript" ref={instance}>{useScript(instance)}</h1>
+      {props.children}
+    </section>
   )
 }
 
