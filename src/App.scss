@@ -17,7 +17,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 :root {
   font-size: 16px;
-  font-family: 'Lato', Lucida, sans-serif;
+  font-family: 'Spartan', Lucida, sans-serif;
 }
 
 html {
@@ -197,22 +197,6 @@ body {
   background-position: center;
   height: 60vh;
   position: relative;
-}
-
-.image-section-tea {
-  background-image: url('./images/matcha.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-}
-
-.image-section-tea {
-  background-image: url('./images/matcha.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
 }
 
 .image-section-three {

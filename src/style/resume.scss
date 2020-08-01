@@ -18,6 +18,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
   }
   .resume-download {
     text-align: center;
+    margin: 1rem 0;
     a {
       border-radius: 5px;
       color: white;
@@ -31,6 +32,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
     max-width: 80vw;
     color: $gunmetal;
     border-radius: 1rem;
+    font-family: 'Spartan';
     h2 {
       font-family: 'Josefin Sans', sans-serif;
     }
@@ -59,20 +61,22 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
     }
     .resume-text-sub {
       margin: .5rem 0 0 2rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
       transition: 600ms ease;
     }
     .resume-text-info {
       margin: .5rem 0 .5rem 3rem;
-      font-size: 1rem;
+      font-size: .9rem;
       transition: 600ms ease;
+      line-height: 1.5rem;
     }
     .resume-text-desc {
       margin: .5rem 0 .5rem 3rem;
-      font-size: 1rem;
+      font-size: .9rem;
       transition: 600ms ease;
       background: url('../images/bullet.png') no-repeat left top;
       padding: 0 2rem;
+      line-height: 1.5rem;
     }
     .resume-text-desc-sub {
       padding-left: 4rem;
@@ -147,13 +151,15 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
       }
       .resume-text-info {
         margin: .5rem 0 .5rem 3rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         transition: 600ms ease;
+        line-height: 3rem;
       }
       .resume-text-desc {
-        font-size: 2rem;
+        font-size: 1.8rem;
         transition: 600ms ease;
         margin: 1rem;
+        line-height: 3rem;
       }
       .resume-text-desc-sub {
         padding-left: 4rem;

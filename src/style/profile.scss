@@ -88,7 +88,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   flex-direction: column;
   color: $gunmetal;
   position: relative;
-  font-family: 'Lato', Lucida, sans-serif;
+  font-family: 'Spartan', Lucida, sans-serif;
   background: linear-gradient(90deg, rgba(218,233,255,1) 0%, rgba(230, 240, 255, 0.9) 50%, rgb(171, 208, 233) 100%); 
   padding: 4rem;
 }
@@ -101,7 +101,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   justify-content: center;
   align-items: center;
   max-width: 50vw;
-  font-size: 1.1rem;
+  font-size: .9rem;
   padding: 1rem 0;
   .text {
     margin-bottom: 1rem;
@@ -114,6 +114,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   }
   .text.desc {
     margin-top: 1rem;
+    line-height: 2rem;
   }
   .text:hover {
     color: $grapefruit;
@@ -164,7 +165,7 @@ h1.text, h3.text {
   margin: 1rem 0 2rem 0;
 }
 h4.text {
-  text-transform: 'Lato';
+  text-transform: 'Spartan';
   text-transform: uppercase;
   margin: 1rem 0 2rem 0;
 }
@@ -182,10 +183,13 @@ h4.text {
   .profile-section {
     .profile-text {
       max-width: initial;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     h1, h2, h3 {
-      font-size: 3rem;
+      font-size: 2.7rem;
+    }
+    .text.desc {
+      line-height: 4rem;
     }
   }
   

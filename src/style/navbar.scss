@@ -100,7 +100,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   height: 100vh;
   z-index: 1000;
   font-family: 'Lato', Lucida, sans-serif;
-  font-size: 1.15vw;
+  font-size: 1.1rem;
   visibility: hidden;
   display: flex;
   align-items: center;
@@ -275,9 +275,15 @@ li {
   text-shadow: 2px 2px 4px $brown;
 }
 
+@media only screen and (max-width: 1000px) {
+  .navbar-right {
+    font-size: .9rem;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .navbar-right {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
   .nav-contact-open {

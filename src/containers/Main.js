@@ -15,7 +15,7 @@ export default function Main() {
       <Name />
       <Profile />
       <ImageBreak value={"astro"}/>
-      <Suspense fallback={<ImageBreak value={"tea"}/>}>
+      <Suspense fallback={<ImageBreak value={"astro"}/>}>
         <Projects />
       </Suspense>
       <TypeBreak>
