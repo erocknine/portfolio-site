@@ -137,6 +137,33 @@ body {
   }
 }
 
+.loader-section {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grapefruit;
+  svg {
+    width: 10rem;
+    color: rgb(228, 228, 228);
+  }
+}
+
+#loader {
+  animation-name: loader;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform-origin: 50% 50%;
+	will-change: transform;
+}
+
+@keyframes loader {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .particles {
   width: 100%;
   height: 60vh;
@@ -168,7 +195,7 @@ body {
 .jesuslight {
   height: 100%;
   width: 100%;
-  background: linear-gradient(140deg, rgba(148,187,233,0.1) 25%, rgba(255,255,255,0.3) 55%, rgba(148,187,233,0.1) 85%);
+  background: linear-gradient(120deg, rgba(148,187,233,0.1) 25%, rgba(255,255,255,0.3) 55%, rgba(148,187,233,0.1) 85%);
   animation-name: jesuslight;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -286,7 +313,7 @@ body {
   .jesuslight {
     height: 100%;
     width: 100%;
-    background: linear-gradient(125deg, rgba(148,187,233,0.1) 25%, rgba(255,255,255,0.3) 55%, rgba(148,187,233,0.1) 85%);
+    background: linear-gradient(120deg, rgba(148,187,233,0.1) 25%, rgba(255,255,255,0.3) 55%, rgba(148,187,233,0.1) 85%);
   }
 
   .particles {

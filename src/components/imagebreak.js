@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react'
-import useScript from './typescript'
+import React from 'react'
 
-export function ImageBreak(props) {
+export default function ImageBreak(props) {
   return (
     <section className={`image-section-${props.value}`} >
       <div className="jesuslight"></div>
@@ -9,46 +8,35 @@ export function ImageBreak(props) {
   )
 }
 
-export function TypeBreak(props) {
-  const instance = useRef(null)
+// export function ImageBreakThree() {
+//   const imageLeft = ["images/imagebreak/hotchicken.jpg", "images/imagebreak/serra.jpg", "images/imagebreak/overeasy.jpg", "images/imagebreak/akasaka.jpg"]
+//   const imageMiddle = ["images/imagebreak/niagara.jpg", "images/imagebreak/affogato.jpg", "images/imagebreak/path.jpg", "images/imagebreak/mario.jpg"]
+//   const imageRight = ["images/imagebreak/montreal.jpg", "images/imagebreak/shibuya.jpg", "images/imagebreak/beach.jpg", "images/imagebreak/ramen.jpg"]
 
-  return (
-    <section className="image-section-type">
-      <h1 className="typescript" ref={instance}>{useScript(instance)}</h1>
-      {props.children}
-    </section>
-  )
-}
+//   const [currentImage, setCurrentImage] = useState(0)
 
-export function ImageBreakThree() {
-  const imageLeft = ["images/imagebreak/hotchicken.jpg", "images/imagebreak/serra.jpg", "images/imagebreak/overeasy.jpg", "images/imagebreak/akasaka.jpg"]
-  const imageMiddle = ["images/imagebreak/niagara.jpg", "images/imagebreak/affogato.jpg", "images/imagebreak/path.jpg", "images/imagebreak/mario.jpg"]
-  const imageRight = ["images/imagebreak/montreal.jpg", "images/imagebreak/shibuya.jpg", "images/imagebreak/beach.jpg", "images/imagebreak/ramen.jpg"]
+//   useEffect(() => {
+//     if (currentImage === 4) {
+//       setCurrentImage(0)
+//     }
+//     let timer = setTimeout(() => setCurrentImage(currentImage + 1), 5000)
+//     return () => {
+//       clearTimeout(timer)
+//     }
+//   }, [currentImage])
 
-  const [currentImage, setCurrentImage] = useState(0)
+//   const Image = ({ image }) => {
+//     return <img src={image} alt="Eric's life pictures" className="image-three" />
+//   }
 
-  useEffect(() => {
-    if (currentImage === 4) {
-      setCurrentImage(0)
-    }
-    let timer = setTimeout(() => setCurrentImage(currentImage + 1), 5000)
-    return () => {
-      clearTimeout(timer)
-    }
-  }, [currentImage])
-
-  const Image = ({ image }) => {
-    return <img src={image} alt="Eric's life pictures" className="image-three" />
-  }
-
-  return (
-    <section className="image-section-three">
-      <Image image={imageLeft[currentImage]}/>
-      <Image image={imageMiddle[currentImage]}/>
-      <Image image={imageRight[currentImage]}/>
-    </section>
-  )
-}
+//   return (
+//     <section className="image-section-three">
+//       <Image image={imageLeft[currentImage]}/>
+//       <Image image={imageMiddle[currentImage]}/>
+//       <Image image={imageRight[currentImage]}/>
+//     </section>
+//   )
+// }
 
 //<ScrollAnimation offset={25} animateIn="fadeIn" delay={200}><h1>Adventures</h1></ScrollAnimation>
 //<ScrollAnimation offset={25} animateIn="fadeIn" delay={200}><h1>Food</h1></ScrollAnimation>
