@@ -39,7 +39,7 @@ export default function useScript(ref) {
       }
     
       setTimeout(function() {
-        type(["Imagine", "Design", "Create"], element, 1000);
+        type(toType, element, 1000);
       }, delta);
     };
     
