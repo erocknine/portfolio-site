@@ -121,11 +121,11 @@ body {
 }
 
 .header-bar {
-  padding: .5rem;
-  min-height: 10vh;
+  padding: 1rem 11vw;
+  min-height: 25vh;
   background: $grapefruitclear;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   filter: brightness(1);
   color: white;
@@ -133,7 +133,8 @@ body {
   h1.resume-header,
   h1.blogs-header {
     font-family: 'Josefin Sans', sans-serif;
-    margin-top: 1vh;
+    font-size: 5rem;
+    margin-top: 3vh;
   }
 }
 
@@ -301,6 +302,8 @@ body {
   }
 
   .header-bar {
+    padding: 1rem 11vw;
+    min-height: 10vh;
     h1.projects-header,
     h1.resume-header,
     h1.blogs-header {

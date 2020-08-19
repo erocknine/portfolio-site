@@ -123,28 +123,28 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 [data-aos="navbar-relocate-projects-right"] {
   &.aos-animate {
-    transform: translateY(18vh);
+    transform: translateY(22vh);
     visibility: visible;
   }
 }
 
 [data-aos="navbar-relocate-resume-right"] {
   &.aos-animate {
-    transform: translateY(28vh);
+    transform: translateY(32vh);
     visibility: visible;
   }
 }
 
 [data-aos="navbar-relocate-blogs-right"] {
   &.aos-animate {
-    transform: translateY(38vh);
+    transform: translateY(42vh);
     visibility: visible;
   }
 }
 
 [data-aos="navbar-relocate-contact-right"] {
   &.aos-animate {
-    transform: translateY(48vh);
+    transform: translateY(52vh);
     visibility: visible;
   }
 }
@@ -290,7 +290,8 @@ li {
     background-color: rgba(0, 0, 0, .25);
     top: 12vh;
     right: 2vw;
-    width: 21rem;
+    width: 20rem;
+    font-size: .9rem;
   }
 }
 

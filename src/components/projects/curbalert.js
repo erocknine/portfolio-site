@@ -10,7 +10,7 @@ const CurbalertDoc = (props) => {
         <p>Technical</p>
         <h1>CurbAlert</h1>
         <p className="text">Curbalert allows users to post images and details of items people are giving or throwing away in their area, becoming viewable on a public map. Assisted by Google Directions, users can make their way to hidden treasures that are simply going to waste</p>
-        <a href="https://curbalert.netlify.app/">View Curbalert</a>
+        <a href="https://curbalert.netlify.app/" target="_blank" rel="noopener noreferrer">View Curbalert</a>
       </div>
 
       <div className="project-content">
