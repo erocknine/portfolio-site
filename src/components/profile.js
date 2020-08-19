@@ -30,7 +30,7 @@ export default function Profile() {
       <div id="profile" className="profile-text">
         <h1 className="text">Eric Sai Kit Cheung</h1>
         <div className="profile-picture">
-          <img className="eric-sk-cheung" src="./images/ericskc.jpg"/>
+          <img className="eric-sk-cheung" src="./images/ericskc.jpg" alt="Eric Sai Kit Cheung headshot"/>
           <div className="eric-background-circle" />
         </div>
         <p className="text"><Icon name="angle double right"/>Full-stack Software Engineer</p>

@@ -3,6 +3,7 @@ $beige: rgb(240, 210, 134);
 $white: rgb(231, 229, 229);
 $gunmetal: rgb(28, 48, 65);
 $grapefruit: #ff5e62;
+$citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, rgba(255,131,97,1) 100%);
 $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
 
 .profile-sliders {
@@ -114,9 +115,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 .eric-background-circle {
   position: absolute;
-  background: $linearwhite;
-  height: 10rem;
-  width: 10rem;
+  background: $citrus;
+  height: 10.5rem;
+  width: 10.5rem;
   border-radius: 50%;
   z-index: 0;
 }
@@ -215,6 +216,11 @@ h4.text {
     z-index: 200;
     width: 15rem;
     height: 15rem;
+  }
+
+  .eric-background-circle {
+    width: 17rem;
+    height: 17rem;
   }
 
   .profile-section {
