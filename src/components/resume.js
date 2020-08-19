@@ -23,9 +23,9 @@ export default function Resume() {
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Designed & created company website for HIES Inc., an environmental services company, to be modern, manageable, and business & user-friendly. Built using React JS & Redux, SASS, and PIXI.js.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Incorporated</strong> PIXI.js to create realistic water effect on hero image, and chose natural color palette following environmental theme. Styled page with custom SASS, React transition group for dropdown transitions, and made responsive on mobile and tablet. Recreated hero image with Adobe Photoshop for higher resolution.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Incorporated</strong> PIXI.js to create realistic water effect on hero image, and chose natural color palette following environmental theme. Recreated hero image with Adobe Photoshop for higher resolution. Styled page and made responsive with custom SASS.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Reorganized</strong> HIES services (over 20) into four main categories, created individual pages per category, and composed cursory descriptions & allotted relevant images for each. Added keyword search functionality in services to allow users to conveniently search for a service.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Reorganized</strong> HIES services (over 20) into four main categories, and composed cursory descriptions & allotted relevant images for each. Added keyword search functionality in services to allow users to conveniently search for a service.</p></ScrollAnimation>
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Utilized</strong> React Router for URL address routing. Implemented EmailJS to allow clients to email HIES contact directly from website without a back-end.</p></ScrollAnimation>
 
@@ -36,11 +36,11 @@ export default function Resume() {
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Curbalert allows users to post images and details of items people are giving or throwing away in their area, becoming viewable on a public map. Built using React JS & Redux front-end and Ruby & Rails with PostgreSQL back-end.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Engineered</strong> codebase synchronizing Geolocation & Google Geocode API to translate latitude/longitude coordinates into common addresses. Also incorporated Google Directions API by decoding address polylines and accessing response keys to be plotted on map provided by Leaflet API.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Engineered</strong> codebase synchronizing Geolocation & Google Geocode API to obtain coordinates used to incorporate Google Directions API, allowing users to see directions and distance to items.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Collaborated</strong> functionality between AWS S3 and Rails Active Storage to store user images on cloud bucket for convenient access by Rails REST API. Response URL provided by AWS S3 allowed users a preview of image after upload before persisting to post.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Collaborated</strong> functionality between AWS S3 Cloud & Rails Active Storage to store user post images on cloud bucket through Rails back-end API.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Incorporated</strong> React transition group library to allow transition animations between conditional renders of DOM elements in React. Implemented React-Sortable-Hoc library in combination with Array-Move package to provide user capability of dragging components within DOM.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Incorporated</strong> React transition group library for transition animations by conditionally rendered DOM elements. Implemented React-Sortable-Hoc library in combination with Array-Move package for draggable components within DOM.</p></ScrollAnimation>
 
 
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>PROJECT: HANGOUTS</h3></ScrollAnimation>
@@ -48,9 +48,9 @@ export default function Resume() {
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Hangouts allows friended users to conveniently schedule get-togethers with Yelp suggested restaurants in areas mutually close to all parties. Built using React JS & Redux front-end and Ruby & Rails with PostgreSQL back-end.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Architected</strong> a Rails back-end call to YELP Search API to provide restaurant suggestions at user requested coordinates, and return response data to be visually displayed on map provided by Leaflet API on front-end. Utilized specific URL parameters for specific conditions in requests.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Architected</strong> a Rails back-end call to YELP Search API to provide restaurant suggestions at user current coordinates and requested coordinates, before plotting to Leaflet API maps.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Composed</strong> function to calculate a midpoint location between a group of users from coordinate data retrieved by Geolocation & Google Geocode API. Coordinates plotted to Leaflet map, simultaneously passing parameters to YELP Search API.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Composed</strong> function to calculate a midpoint location between groups of users from coordinate data retrieved by Geolocation & Google Geocode API.</p></ScrollAnimation>
 
 
               
