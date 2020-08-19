@@ -29,7 +29,10 @@ export default function Profile() {
 
       <div id="profile" className="profile-text">
         <h1 className="text">Eric Sai Kit Cheung</h1>
-        
+        <div className="profile-picture">
+          <img className="eric-sk-cheung" src="./images/ericskc.jpg"/>
+          <div className="eric-background-circle" />
+        </div>
         <p className="text"><Icon name="angle double right"/>Full-stack Software Engineer</p>
         <p className="text"><Icon name="angle double right"/>Trilingual, fluent in English and Chinese, and conversational in Japanese</p>
         <p className="text desc">I love to build aesthetically pleasing projects, find creative solutions to problems, and am an avid food adventurer and cat instagram follower. My goal for every project is to be visually appealing yet functional, creative yet intuitive.</p> 
