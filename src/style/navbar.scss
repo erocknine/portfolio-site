@@ -400,7 +400,7 @@ li {
     border-radius: 3px;
     border-right: none;
     border-bottom: none;
-    transition: height 250ms linear, width 200ms linear 250ms;
+    transition: height 100ms linear, width 200ms linear 100ms;
   }
   .nav-link:hover:after {
     height: 3rem;
@@ -409,7 +409,7 @@ li {
     border-radius: 3px;
     border-left: none;
     border-top: none;
-    transition: height 250ms linear, width 200ms linear 250ms;
+    transition: height 100ms linear, width 200ms linear 100ms;
   }
   .nav-item {
     transition: 600ms;

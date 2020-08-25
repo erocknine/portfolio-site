@@ -46,7 +46,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         top: 0;
         padding: 2rem;
         opacity: 1;
-        transition: 400ms ease-in-out;
+        transition: 200ms ease-in-out;
         h2 {
           font-family: 'Josefin Sans';
           text-transform: uppercase;
@@ -300,11 +300,11 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       text-align: right;
     }
     p.center {
-      text-align: center;
+      text-align: left;
     }
     .p-solo {
       padding: 0 10vw;
-      text-align: center;
+      text-align: left;
       margin: 1rem 0;
     }
     .project-portion {
@@ -575,7 +575,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
             line-height: 3.5rem;
             display: flex;
             align-items: center;
-            text-align: center;
+            text-align: left;
           }
           h3 {
             font-size: 3rem;
@@ -583,7 +583,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
           }
           .p-solo {
             padding: 0;
-            text-align: center;
+            text-align: left;
           }
           .project-portion {
             flex-direction: column;
