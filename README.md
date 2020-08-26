@@ -31,11 +31,11 @@ Ruby app that allows users to search for a movie or show specifically to discove
 //EXPERIENCE
 
 Freelance Web Developer / UI Designer • HIES INC • July 2020 - August 2020 • hies.netlify.app 
-Built company website for HIES Inc. using Javascript, React & Redux, SASS, PIXI.js, EmailJS, React Router
-❖  Designed UX/UI. Created & edited images using Adobe Photoshop.
-❖  Organized company’s list of over 20 services into 4 categories allowing website to be manageable, and added a keyword search feature for users to conveniently search services.
-❖  Incorporated PIXI.js to run custom script creating realistic water motion effect on hero image.
-❖  Utilized React Router for URL page routing, and EmailJS for personalized contact form.
+Built company website for HIES Inc. using Javascript, React & Redux, SASS, PIXI.js, EmailJS, React Router  
+❖  Designed UX/UI. Created & edited images using Adobe Photoshop.  
+❖  Organized company’s list of over 20 services into 4 categories allowing website to be manageable, and added a keyword search feature for users to conveniently search services.  
+❖  Incorporated PIXI.js to run custom script creating realistic water motion effect on hero image.  
+❖  Utilized React Router for URL page routing, and EmailJS for personalized contact form.  
 
 Bigeye Sushi, Assistant Manager  
 Brooklyn, NY, Oct 2018 - Oct 2019  
