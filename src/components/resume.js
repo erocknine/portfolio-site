@@ -13,13 +13,13 @@ export default function Resume() {
 
         <div className="resume-text">
           <div className="resume-download">
-            <a href="https://ericskcheung.com/ERIC_SK_CHEUNG_RESUME.pdf" target="_blank" rel="noopener noreferrer">DOWNLOADABLE</a>
+            <a href="https://ericskcheung.com/ERIC_SAIKIT_CHEUNG_RESUME.pdf" target="_blank" rel="noopener noreferrer">DOWNLOADABLE</a>
           </div>
           <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>EXPERIENCE</h2></ScrollAnimation>
           <div className="resume-history">
             <div>
-              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>HIES Inc.</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Freelance Front-end Developer / UI Designer, Brooklyn, NY, July 2020 - August 2020</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>HIES INC.</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Freelance Web Developer / UI Designer • Brooklyn, NY • July 2020 - August 2020</strong></p></ScrollAnimation>
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Designed & created company website for HIES Inc., an environmental services company, to be modern, manageable, and business & user-friendly. Built using React JS & Redux, SASS, and PIXI.js.</p></ScrollAnimation>
 
@@ -27,12 +27,12 @@ export default function Resume() {
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Reorganized</strong> HIES services (over 20) into four main categories, and composed cursory descriptions & allotted relevant images for each. Added keyword search functionality in services to allow users to conveniently search for a service.</p></ScrollAnimation>
 
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Utilized</strong> React Router for URL address routing. Implemented EmailJS to allow clients to email HIES contact directly from website without a back-end.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Utilized</strong> React Router for URL address routing. Implemented EmailJS for direct contact form.</p></ScrollAnimation>
+            </div>
 
-
-
-              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>PROJECT: CURBALERT</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, June 2020</strong></p></ScrollAnimation>
+            <div>
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>CURBALERT - TECHNICAL PROJECT</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer • June 2020</strong></p></ScrollAnimation>
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Curbalert allows users to post images and details of items people are giving or throwing away in their area, becoming viewable on a public map. Built using React JS & Redux front-end and Ruby & Rails with PostgreSQL back-end.</p></ScrollAnimation>
 
@@ -41,20 +41,20 @@ export default function Resume() {
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Collaborated</strong> functionality between AWS S3 Cloud & Rails Active Storage to store user post images on cloud bucket through Rails back-end API.</p></ScrollAnimation>
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Incorporated</strong> React transition group library for transition animations by conditionally rendered DOM elements. Implemented React-Sortable-Hoc library in combination with Array-Move package for draggable components within DOM.</p></ScrollAnimation>
+            </div>
 
-
-              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>PROJECT: HANGOUTS</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, May 2020</strong></p></ScrollAnimation>
+            <div>
+              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>HANGOUTS - TECHNICAL PROJECT</h3></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer • May 2020</strong></p></ScrollAnimation>
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Hangouts allows friended users to conveniently schedule get-togethers with Yelp suggested restaurants in areas mutually close to all parties. Built using React JS & Redux front-end and Ruby & Rails with PostgreSQL back-end.</p></ScrollAnimation>
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Architected</strong> a Rails back-end call to YELP Search API to provide restaurant suggestions at user current coordinates and requested coordinates, before plotting to Leaflet API maps.</p></ScrollAnimation>
 
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Composed</strong> function to calculate a midpoint location between groups of users from coordinate data retrieved by Geolocation & Google Geocode API.</p></ScrollAnimation>
-
+            </div>
 
               
-
               {/* <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>SUPER PET BROS. UNLEASHED</h3></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Full Stack Developer, Brooklyn, NY, April 2020</strong></p></ScrollAnimation>
 
@@ -73,24 +73,24 @@ export default function Resume() {
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Implemented</strong> user authentication using Rails Bcrypt for password encryption.</p></ScrollAnimation>
                */}
 
-
-            </div>
-            <div>
+            {/* <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>BIGEYE SUSHI</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Manager, Brooklyn, NY, October 2018 - October 2019</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Manager • Brooklyn, NY • October 2018 - October 2019</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Managed</strong> staff, EOD financials, inventory, and food prep at Sushi restaurant in downtown Brooklyn.</p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Coordinated</strong> and directed pop-up events at WeWork facilities and street fairs, managing staff, food supply and setup, and transportation to event sites.</p></ScrollAnimation>
-            </div>
+            </div> */}
+            
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>BANZAI PHRESH</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}> <p className="resume-text-sub"><strong>Owner/Sole Proprietor, Honolulu, HI, December 2017 - June 2018</strong></p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Owned</strong> and operated a 6-month pop-up restaurant in Ala Moana Mall, Hawaii.</p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Oversaw</strong> restaurant design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 100 customers a day, maintained a 30% profit margin, with 4.5 stars from reviews on yelp.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Owned & operated restaurants at Smorgasburg Market, NY, and Ala Moana Mall, Hawaii. Resolved logistics including service & product quality management, restaurant design, inventory deadlines, divison of labor, and time management.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Owner/Sole Proprietor • Honolulu, HI • December 2017 - June 2018</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Operated a 6-month pop-up restaurant in Ala Moana Mall, Hawaii</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Served</strong> 100 average customers a day, maintained a 30% profit margin, with 4.5 star reviews on yelp.</p></ScrollAnimation>
             </div>
             <div>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Owner/Sole Proprietor, Brooklyn, NY, April 2016 - September 2017</strong></p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Owned</strong> and operated an outdoor food booth for two seasons at Smorgasburg Market, Brooklyn.</p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Oversaw</strong> booth design, customer service, cooking, financials, and overall logistical operation of the business. We averaged 200 customers a day and maintained a 25% profit margin.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Owner/Sole Proprietor • Brooklyn, NY • April 2016 - September 2017</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-info">Operated an outdoor food booth for two seasons at Smorgasburg Market, Brooklyn.</p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Served</strong> 200 average customers a day and maintained a 25% profit margin.</p></ScrollAnimation>
             </div>
             {/* <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>Zipcar</h3></ScrollAnimation>
@@ -99,7 +99,7 @@ export default function Resume() {
             </div> */}
             <div>
               <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>KINGS OF FORTUNE</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Writer, Brooklyn, NY, 2014</strong></p></ScrollAnimation>
+              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Writer • Brooklyn, NY • 2014</strong></p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Self-published</strong> a fiction novel titled 'Kings of Fortune' on Amazon Createspace.</p></ScrollAnimation>
               <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Received</strong> positive reviews with 5 stars on San Francisco Book Review, 4 of 5 stars on Portland Book Review, and featured review on Kirkus magazine.</p></ScrollAnimation>
             </div>
@@ -113,10 +113,10 @@ export default function Resume() {
           <ScrollAnimation offset={25} animateIn="fadeInDown" animateOnce={true} delay={200}><h2>EDUCATION</h2></ScrollAnimation>
           <div className="resume-education">
             <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>FLATIRON SOFTWARE ENGINEERING SCHOOL</h3></ScrollAnimation>
-            <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>February 2020 - June 2020</strong></p></ScrollAnimation>
+            <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Brooklyn, NY • February 2020 - June 2020</strong></p></ScrollAnimation>
             <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={400}><p className="resume-text-desc">Full Stack Web Development, JavaScript, Ruby on Rails, SQL, and React</p></ScrollAnimation>
             <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={300}><h3>SOKA UNIVERSITY OF AMERICA</h3></ScrollAnimation>
-            <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>August 2008 - May 2012 </strong></p></ScrollAnimation>
+            <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Aliso Viejo, CA • August 2008 - May 2012 </strong></p></ScrollAnimation>
             <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={400}><p className="resume-text-desc">Bachelor of Arts: Social and Behavioral Sciences: 3.8 GPA, Magna Cum Laude</p></ScrollAnimation>
           </div>
         </div>

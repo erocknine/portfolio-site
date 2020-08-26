@@ -19,7 +19,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     flex-direction: column;
     justify-content: space-between;
     background-color: rgba(43, 48, 58, .85);
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 0 10vw 1rem 10vw;
   }
   .blogs-text {
@@ -60,7 +60,7 @@ a.blog-link:hover {
 
 .contact-info {
   width: 79vw;
-  min-height: 20vh;
+  min-height: 25vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
