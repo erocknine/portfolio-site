@@ -1,6 +1,5 @@
 import React from 'react'
 import '../style/profile.scss'
-import { Icon } from 'semantic-ui-react'
 
 export default function Profile() {
 
@@ -33,10 +32,10 @@ export default function Profile() {
           <img className="eric-sk-cheung" src="./images/ericskc.jpg" alt="Eric Sai Kit Cheung headshot"/>
           <div className="eric-background-circle" />
         </div>
-        <p className="text"><Icon name="angle double right"/>Full-stack Software Engineer</p>
-        <p className="text"><Icon name="angle double right"/>Trilingual, fluent in English and Chinese, and conversational in Japanese</p>
-        <p className="text desc">I love to build aesthetically pleasing projects, find creative solutions to problems, and am an avid food adventurer and cat instagram follower. My goal for every project is to be visually appealing yet functional, creative yet intuitive.</p> 
-        <p className="text desc">I love traveling, gaming, and eating as many different kinds of food as possible! I’ve taught English in Japan, owned & operated a food business in Hawaii, and self-published a novel while in NYC.</p>
+        <h2 className="text">SOFTWARE ENGINEER | FULL STACK WEB DEVELOPER</h2>
+        <h3 className="text">{`// Compulsive coder, trilingual author, and business owner.`} <br></br> {`// A design fanatic, creative problem solver, and gourmet glutton.`}</h3>
+        <p className="text desc">I love to build aesthetically pleasing projects, find creative solutions to problems, and wake myself from endless coding frenzies. My goal for every project is to be visually appealing yet functional, creative yet intuitive.</p>
+        <p className="text desc">I travel, game, and try to indulge in as many different kinds of food as possible. Just a glimpse of who I am, my instagram feed is often littered with British Shorthair cats and messy cheeseburgers. I’ve taught English in Japan, previously self-published a fiction novel, and owned & operated a food business in Brooklyn and Hawaii.</p>
       </div>
       <div className="profile-technical-skills">
         <h3 className="text">{`// Technical Skills`}</h3>

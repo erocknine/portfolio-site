@@ -8,7 +8,7 @@ const HiesDoc = (props) => {
       <div id="hies" className="project-title">
         <p>Design</p>
         <h1>HIES Inc.</h1>
-        <p className="text">A mock-up redesign & rebrand of static company website for HIES Inc., an environmental services company, for future integration into current site domain</p>
+        <p className="text">Full UX / UI design & Front-end build of company website for HIES Inc., an environmental services company</p>
         <a href="https://hies.netlify.app/" target="_blank" rel="noopener noreferrer">View Redesigned HIES</a>
         <a href="http://www.hiesinc.com/" target="_blank" rel="noopener noreferrer">View Original HIES</a>
       </div>
@@ -62,7 +62,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">Maintaining the HIES Inc. brand of environmental conservation and sustainability, the redesigned page includes more natural green, blue & brown colors with updated high-resolution images following nature themes, and trimmed text for brevity. This site was created with React & Redux, React Router for URL routing, and several libraries for animations and image control.</p>
+          <p className="p-solo">Maintaining the HIES Inc. brand of environmental conservation and sustainability, the redesigned page includes natural green, blue & brown colors with updated high-resolution images following nature themes, and original content text trimmed for brevity. This site was created with React & Redux, React Router for URL routing, and several libraries for animations and image control.</p>
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -73,7 +73,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">The HIES Inc. website was a static company page due for a makeover. The original page was created with older web development habits such as keyword stuffing and duplicate content, with unintuitive UX/UI design choices. The images on the page were also outdated for higher resolution monitors, and the content was plagued with an overabundance of text and disorganized pages.</p>
+          <p className="p-solo">The original HIES Inc. website was a static company page due for a makeover. The original page was created with older web development habits such as keyword stuffing and duplicate content, with unintuitive UX/UI design choices. The images on the page were also outdated for higher resolution monitors, and the content was plagued with an overabundance of text and disorganized pages. Generally, all things that hurt SEO.</p>
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -81,7 +81,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">The original concern with updating the page and trimming text was SEO optimization. I made sure to include key words relating to their business, their services, and environmental work in meta tags, included clear descriptions in image alt tags, and in the content itself.</p>
+          <p className="p-solo">With SEO optimization a priority, I made sure to include key words relating to their business, their services, environmental work in meta tags, and included clear descriptions in image alt tags and in the content itself.</p>
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -90,7 +90,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">I redesigned their company logo for sharper colors, and remade their hero image for higher resolution using Adobe Photoshop. To reinforce the hero image's theme of clean water, I implemented a visually realistic water-effect by incorporating PIXI.js to run a displacement filter script. And yes, the site went through several stylistic choices before arriving at the current one.</p>
+          <p className="p-solo">I redesigned their company logo for sharper colors, and remade their hero image for higher resolution using Adobe Photoshop. To reinforce the hero image's theme of clean water, I implemented a visually realistic water-motion effect by incorporating PIXI.js to run a displacement filter script. And yes, the site went through several stylistic choices before arriving at the current one. The CEO eventually wanted to keep their original logo.</p>
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -99,7 +99,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">Following the theme of environmental work and their company being based in Hawaii, I kept to very natural colors, such as green, blue, and brown. I chose modern and minimalistic images since the top priority was to modernize their page in the first place. Just as important if not most, their home page became more business oriented by plotting out their business process, adding a "Request a Quote" section, utilized cute & playful icons, all with user-friendliness in mind.</p>
+          <p className="p-solo">For overall design, I chose modern and minimalistic images since the main concern was to modernize their page in the first place. Just as important if not most, their home page became more business oriented by plotting out their business process, adding a "Request a Quote" section, utilized cute & playful icons, all with user-friendliness in mind.</p>
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -107,11 +107,11 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">HIES provides over 20 services, each one requiring some kind of documentation. So, to make their website more manageable, I reorganized all their services into four main categories: GIS, Consulting, Assessment, and Remediation. This redesign became a complete overhaul of their business logistics.</p>
+          <p className="p-solo">HIES provides over 20 services, each one requiring some kind of documentation. To make their website more manageable, I reorganized all their services into four main categories: GIS, Consulting, Assessment, and Remediation. This redesign project ultimately became a complete overhaul of their business logistics.</p>
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">I created a services section which included cursory details and relevant images per service, organized by categories, and included a keyword search feature to help users easily search for a service. This required creating an array of each component object along with their keywords. When a user searches, the array is filtered by which service contains the keyword, and the respective component is rendered.</p>
+          <p className="p-solo">I created a services section which included cursory details and relevant images per service, organized by categories, and included a keyword search feature to help users easily search for a service. Implementing the search feature required rendering the services from an array of service objects. When a user searches, the array is filtered for an object matching the keyword, and the respective component in the object is rendered.</p>
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
