@@ -30,7 +30,7 @@ Ruby app that allows users to search for a movie or show specifically to discove
 
 //EXPERIENCE
 
-Freelance Web Developer / UI Designer • HIES INC • July 2020 - August 2020 • hies.netlify.app 
+Freelance Web Developer / UI Designer • HIES INC • July 2020 - August 2020 • hies.netlify.app   
 Built company website for HIES Inc. using Javascript, React & Redux, SASS, PIXI.js, EmailJS, React Router  
 ❖  Designed UX/UI. Created & edited images using Adobe Photoshop.  
 ❖  Organized company’s list of over 20 services into 4 categories allowing website to be manageable, and added a keyword search feature for users to conveniently search services.  
