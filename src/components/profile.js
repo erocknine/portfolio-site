@@ -33,12 +33,13 @@ export default function Profile() {
           <div className="eric-background-circle" />
         </div>
         <h2 className="text">SOFTWARE ENGINEER | FULL STACK WEB DEVELOPER</h2>
-        <h3 className="text">{`// Compulsive coder, trilingual author, and business owner.`} <br></br> {`// A design fanatic, creative problem solver, and gourmet glutton.`}</h3>
+        <h3 className="text">{`// Compulsive coder, trilingual author, and business owner.`}</h3>
+        <h3 className="text">{`// A design fanatic, creative problem solver, and gourmet glutton.`}</h3>
         <p className="text desc">I love to build aesthetically pleasing projects, find creative solutions to problems, and wake myself from endless coding frenzies. My goal for every project is to be visually appealing yet functional, creative yet intuitive.</p>
         <p className="text desc">I travel, game, and try to indulge in as many different kinds of food as possible. Just a glimpse of who I am, my instagram feed is often littered with British Shorthair cats and messy cheeseburgers. I’ve taught English in Japan, previously self-published a fiction novel, and owned & operated a food business in Brooklyn and Hawaii.</p>
       </div>
       <div className="profile-technical-skills">
-        <h3 className="text">{`// Technical Skills`}</h3>
+        <h3 className="text">{`// TECHNICAL SKILLS`}</h3>
         <div className="profile-skills">
           <div className="profile-skill">
             <div className="profile-skill-icon">
