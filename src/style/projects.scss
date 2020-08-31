@@ -63,61 +63,14 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-template-rows: 20vw 2vh auto 2vh 20vw 2vh auto 2vh;
     }
     
-    .projects-card.curbalert {
-      background-image: url('../images/project-images/curbalert/curbalert04.png');
-      background-size: cover;
-      grid-column-start: 1;
-      grid-column-end: 1;
-      grid-row-start: 1;
-      grid-row-end: 1;
-    }
-    .projects-card.curbalert.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }
-    .projects-card.hangouts {
-      background-image: url('../images/project-images/hangouts/hangouts01.png');
-      background-size: cover;
-      background-position: 25%;
-      grid-column-start: 3;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 1;
-    }
-    .projects-card.hangouts.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }
-    .projects-card.superpet {
-      background-image: url('../images/project-images/superpet/superpet05.png');
-      background-size: cover;
-      background-position: 59%;
-      grid-column-start: 5;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 1;
-    }
-    .projects-card.superpet.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }
-    .projects-card.kara {
-      background-image: url('../images/project-images/kara/kara01.png');
-      background-size: cover;
-      background-position-x: 70%;
-      grid-column-start: 7;
-      grid-column-end: 7;
-      grid-row-start: 1;
-      grid-row-end: 1;
-    }
-    .projects-card.kara.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }
     .projects-card.hies {
-      background-image: url('../images/project-images/hies/new_hies.png');
+      background-image: url('../images/project-images/hies/hies_work.png');
       background-size: cover;
-      background-position: 7%;
+      background-position: 9%;
       grid-column-start: 1;
       grid-column-end: 1;
-      grid-row-start: 5;
-      grid-row-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1;
     }
     .projects-card.hies.false {
       filter: brightness(0.5) saturate(0) contrast(1.2);
@@ -128,10 +81,57 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       background-position: 5%;
       grid-column-start: 3;
       grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    .projects-card.goroom.false {
+      filter: brightness(0.5) saturate(0) contrast(1.2);
+    }    
+    .projects-card.curbalert {
+      background-image: url('../images/project-images/curbalert/curbalert04.png');
+      background-size: cover;
+      grid-column-start: 5;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    .projects-card.curbalert.false {
+      filter: brightness(0.5) saturate(0) contrast(1.2);
+    }
+    .projects-card.hangouts {
+      background-image: url('../images/project-images/hangouts/hangouts01.png');
+      background-size: cover;
+      background-position: 25%;
+      grid-column-start: 7;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    .projects-card.hangouts.false {
+      filter: brightness(0.5) saturate(0) contrast(1.2);
+    }
+    .projects-card.superpet {
+      background-image: url('../images/project-images/superpet/superpet05.png');
+      background-size: cover;
+      background-position: 59%;
+      grid-column-start: 1;
+      grid-column-end: 1;
       grid-row-start: 5;
       grid-row-end: 5;
     }
-    .projects-card.goroom.false {
+    .projects-card.superpet.false {
+      filter: brightness(0.5) saturate(0) contrast(1.2);
+    }
+    .projects-card.kara {
+      background-image: url('../images/project-images/kara/kara01.png');
+      background-size: cover;
+      background-position-x: 70%;
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 5;
+    }
+    .projects-card.kara.false {
       filter: brightness(0.5) saturate(0) contrast(1.2);
     }
   }
