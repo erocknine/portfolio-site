@@ -8,7 +8,7 @@ const KaraDoc = (props) => {
       <div id="kara" className="project-title">
         <p>Technical</p>
         <h1>KARA-OK!</h1>
-        <p>February 2020</p>
+        <p className="text">February 2020</p>
         <p className="text">A joyful night of singing your favorite songs can become disappointing if you can't remember the lyrics. KARA-OK! saves the night by allowing users to search for song lyrics and add them to playlists for a convenient sing-along session</p>
       </div>
 

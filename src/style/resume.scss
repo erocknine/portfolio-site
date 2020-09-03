@@ -27,7 +27,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
     }
   }
   .resume-text {
-    padding: 2rem 6rem 6rem 4rem;
+    padding: 2rem 13vw 6rem 10vw;
     background: $linearwhite;
     max-width: 80vw;
     color: $gunmetal;
@@ -90,7 +90,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
 
 @media only screen and (max-width: 800px) {
   .resume-section .resume-text {
-    padding: 1rem;
+    padding: 1rem 3.5rem 1rem 1rem;
     max-width: 78vw;
   }
 

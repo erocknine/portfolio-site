@@ -8,7 +8,7 @@ const HiesDoc = (props) => {
       <div id="hies" className="project-title">
         <p>Design</p>
         <h1>HIES Inc.</h1>
-        <p>July 2020 - August 2020</p>
+        <p className="text">July 2020 - August 2020</p>
         <p className="text">Full UX / UI design & Front-end build of company website for HIES Inc., an environmental services company</p>
         <a href="https://hies.netlify.app/" target="_blank" rel="noopener noreferrer">View Redesigned HIES</a>
         <a href="http://www.hiesinc.com/" target="_blank" rel="noopener noreferrer">View Original HIES</a>

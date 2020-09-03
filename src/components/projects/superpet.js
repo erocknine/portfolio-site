@@ -8,7 +8,7 @@ const SuperpetDoc = (props) => {
       <div id="superpet" className="project-title">
         <p>Technical</p>
         <h1>Super Pet Bros. Unleashed</h1>
-        <p>March 2020</p>
+        <p className="text">March 2020</p>
         <p className="text">If you've ever had a friend who claimed their pet is better than yours, then have no fear because Super Pet Bros. is here! In this game, users can create a profile for their pet, set personality type, stats and moves, and battle other users' pets in pokemon-style gameplay</p>
       </div>
 

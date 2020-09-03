@@ -8,7 +8,7 @@ const HangoutsDoc = (props) => {
       <div id="hangouts" className="project-title">
         <p>Technical</p>
         <h1>Hangouts</h1>
-        <p>April 2020</p>
+        <p className="text">April 2020</p>
         <p className="text">Tired of being invited to places that are too far for comfort? Well, Hangouts allows friended users to conveniently schedule get-togethers with Yelp suggested restaurants in areas mutually close to all parties</p>
       </div>
 

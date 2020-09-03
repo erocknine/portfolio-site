@@ -8,7 +8,7 @@ const GoroomDoc = (props) => {
       <div className="project-title">
         <p>Design</p>
         <h1>GO ROOM</h1>
-        <p>June 2020</p>
+        <p className="text">June 2020</p>
         <p className="text">A redesign & rebrand of GO ROOM home page, an impressive video-chat web app that offers a robust poker game, supporting up to 16 users</p>
       </div>
 

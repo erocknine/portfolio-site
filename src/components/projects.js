@@ -93,69 +93,20 @@ const Card = (props) => {
 const projects = [
   {
     title: "CurbAlert",
-    text:
-      "Curbalert allows users to post images and details of items people are giving or throwing away in their area, becoming viewable on a public map. Assisted by Google Directions, users can make their way to hidden treasures that are simply going to waste.",
-    tech:
-      "React JS, Ruby Rails, PostgreSQL, Google Directions API, Geolocation API, Leaflet API, AWS S3 Cloud, React Transition Group, Semantic UI",
-    images: [
-      "images/project-images/curbalert/curbalert-start.gif",
-      "images/project-images/curbalert/curbalert-directions.gif",
-      "images/project-images/curbalert/curbalert03.png",
-      "images/project-images/curbalert/curbalert04.png",
-    ],
   },
   {
     title: "Hangouts",
-    text:
-      "Tired of being invited to places that are too far for comfort? Well, Hangouts allows friended users to conveniently schedule get-togethers with Yelp suggested restaurants in areas mutually close to all parties.",
-    tech: "React JS, Ruby Rails, PostgreSQL, Yelp API, Geolocation API, Leaflet API, React Transition Group, Semantic UI",
-    images: [
-      "images/project-images/hangouts/hangouts01.png",
-      "images/project-images/hangouts/hangouts02.png",
-      "images/project-images/hangouts/hangouts03.png",
-      "images/project-images/hangouts/hangouts04.png",
-    ],
   },
   {
     title: "Super Pet Bros. Unleashed",
-    text:
-      "If you've ever had a friend who claimed their pet is better than yours, then have no fear because Super Pet Bros. is here! In this game, users can create a profile for their pet, set personality type, stats and moves, and battle other users' pets in a pokemon-style gameplay.",
-    tech: "Javascript, Ruby Rails, PostgreSQL",
-    images: [
-      "images/project-images/super-pet/pet01.png",
-      "images/project-images/super-pet/pet02.png",
-      "images/project-images/super-pet/pet03.png",
-      "images/project-images/super-pet/pet04.png",
-    ],
   },
   {
     title: "KARA-OK!",
-    text:
-      "A joyful night of singing your favorite songs can become disappointing if you can't remember the lyrics. KARA-OK! saves the night by allowing users to search for song lyrics and add them to playlists for a convenient sing-along session.",
-    tech: "Ruby Rails, PostgreSQL, Lyrics API",
-    images: [
-      "images/project-images/kara-ok/kara01.png",
-      "images/project-images/kara-ok/kara02.png",
-      "images/project-images/kara-ok/kara03.png",
-      "images/project-images/kara-ok/kara04.png",
-    ],
   },
   {
     title: "HIES Inc.",
-    text:
-      "A mock-up redesign of static company website for HIES Inc., an environmental services company, for future integration into current site domain. ",
-    tech: "React JS, PIXI.js, CSS Transition Group, SASS",
-    images: ["images/project-images/hies/new_hies.png",
-    "images/project-images/hies/new_hies2.png",
-    "images/project-images/hies/new_hies2.png",
-    "images/project-images/hies/original_hies.png",
-    "images/project-images/hies/original_hies2.png"],
   },
   {
     title: "Go Room",
-    text:
-      "A redesign of GO ROOM home page, a video-chat web app that offers a robust poker game, supporting up to 16 users.",
-    tech: "Angular JS, TypeScript, SASS",
-    images: ["images/project-images/goroom/goroom_new.png"],
   },
 ];

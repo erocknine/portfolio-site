@@ -57,7 +57,7 @@ export default function Profile() {
             <div className="profile-skill-icon">
               <img className="image-icon" src="images/project-images/superpet/javascript.png" alt="PIXI.js logo" />
             </div>
-            <p>Javascript</p>
+            <p>JavaScript & TypeScript</p>
           </div>
           <div className="profile-skill">
             <div className="profile-skill-icon">
