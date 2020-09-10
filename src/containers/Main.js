@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
 import Name from '../components/name'
+import Navbar from './Navbar'
 import Profile from '../components/profile'
 import Resume from '../components/resume'
 // import { ImageBreak } from '../components/imagebreak'
@@ -15,6 +16,7 @@ export default function Main() {
 
   return (
     <main className="main-container">
+      <Navbar/>
       <Name />
       <Profile />
       <Suspense fallback={<Loader/>}>

@@ -8,10 +8,18 @@ $citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, r
 $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
 
 
+.ulClone {
+  display: flex;
+  justify-content: space-evenly;
+  visibility: hidden;
+  position: fixed;
+}
+
 .navbar-top {
   top: 0;
   position: fixed;
   width: 100vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
   z-index: 1000;
@@ -27,7 +35,91 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 [data-aos="navbar-relocate-top"] {
   &.aos-animate {
-    background-color: rgba(0, 0, 0, .75)
+    visibility: hidden;
+  }
+}
+
+[data-aos="navbar-relocate-projects-top"] {
+  &.aos-animate {
+    transform: translateX(54.5vw);
+    visibility: hidden;
+  }
+}
+
+[data-aos="navbar-relocate-resume-top"] {
+  &.aos-animate {
+    transform: translateX(47vw);
+    visibility: hidden;
+  }
+}
+
+[data-aos="navbar-relocate-blogs-top"] {
+  &.aos-animate {
+    transform: translateX(40vw);
+    visibility: hidden;
+  }
+}
+
+[data-aos="navbar-relocate-contact-top"] {
+  &.aos-animate {
+    transform: translateX(33vw);
+    visibility: hidden;
+  }
+}
+
+.navbar-right {
+  right: 0;
+  position: fixed;
+  width: 10vw;
+  height: 100vh;
+  z-index: 1000;
+  font-family: 'Lato', Lucida, sans-serif;
+  font-size: 1.1rem;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2vh;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+  }
+  li {
+    position: absolute;
+    top: 0;
+  }
+}
+
+[data-aos="navbar-relocate-projects-right"] {
+  &.aos-animate {
+    transform: translateY(22vh);
+    visibility: visible;
+  }
+}
+
+[data-aos="navbar-relocate-resume-right"] {
+  &.aos-animate {
+    transform: translateY(32vh);
+    visibility: visible;
+  }
+}
+
+[data-aos="navbar-relocate-blogs-right"] {
+  &.aos-animate {
+    transform: translateY(42vh);
+    visibility: visible;
+  }
+}
+
+[data-aos="navbar-relocate-contact-right"] {
+  &.aos-animate {
+    transform: translateY(52vh);
+    visibility: visible;
   }
 }
 
@@ -46,7 +138,6 @@ li {
   align-items: center;
   justify-content: center;
   height: 2.5rem;
-  min-width: 7rem;
   margin: 1rem;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -115,14 +206,13 @@ li {
   flex-direction: column;
   justify-content: center;
   text-align: right;
+  top: 4rem;
   right: 0;
-  top: 5rem;
-  width: 22rem;
-  padding: .5rem;
   transition: 350ms ease-in-out;
   transform: translateY(10%);
-  background-color: rgba(0, 0, 0, .75);
-  border-radius: 2px;
+  width: 21rem;
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: 10px;
   font-size: 1rem;
   a {
     color: white;
@@ -158,8 +248,16 @@ li {
   text-shadow: 2px 2px 4px $brown;
 }
 
+@media only screen and (max-width: 1000px) {
+  .navbar-right {
+    font-size: .9rem;
+  }
+}
 
 @media only screen and (max-width: 800px) {
+  .navbar-right {
+    font-size: .8rem;
+  }
 
   .nav-contact-open {
     background-color: rgba(0, 0, 0, .25);
@@ -172,6 +270,122 @@ li {
 
 @media only screen and (max-width: 600px) {
   
+  [data-aos="navbar-relocate-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-projects-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-resume-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-blogs-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-contact-top"] {
+    &.aos-animate {
+      transform: initial;
+      visibility: initial;
+    }
+  }
+
+  [data-aos="navbar-relocate-projects-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+
+  [data-aos="navbar-relocate-resume-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+
+  [data-aos="navbar-relocate-blogs-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+
+  [data-aos="navbar-relocate-contact-right"] {
+    &.aos-animate {
+      transform: initial;
+      display: none;
+    }
+  }
+
+
+  .ulClone {
+    visibility: visible;
+    z-index: 300;
+    width: 100vw;
+    justify-content: space-evenly;
+    transition: 600ms;
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 750ms;
+    opacity: 0;
+  }
+  .ulClone:first-child {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+  }
+  .ulClone:nth-child(2) {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 250ms;
+  }
+  .ulClone:nth-child(3) {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+  }
+  .ulClone:last-child {
+    animation-name: navbarfade;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 750ms;
+  }
+
+  @keyframes navbarfade {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+  
+  .navbar-top {
+    background-color: rgba(0,0,0, .25);
+    height: 7rem;
+    z-index: 300;
+  }
+  .navbar-top .ulReal {
+    z-index: 400;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
   .nav-link {
     font-size: 1.8rem;
     width: 20vw;

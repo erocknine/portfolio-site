@@ -4,11 +4,12 @@ import '../style/resume.scss'
 export default function Resume() {
   return (
     <section className="resume-section">
-      <div id="resume" className="header-bar">
+      <div id="resume" />
+      <div className="header-bar">
         <h1 className="resume-header">RESUME</h1>
       </div>
-      <div className="resume-content">
 
+      <div className="resume-content">
         <div className="resume-text">
           <div className="resume-download">
             <a href="https://ericskcheung.com/ERIC_SAIKIT_CHEUNG_RESUME.pdf" target="_blank" rel="noopener noreferrer">DOWNLOADABLE</a>

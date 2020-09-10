@@ -31,9 +31,11 @@ export default function Projects() {
 
   return (
     <section className="projects-section">
-      <div id="projects" className="header-bar">
+      <div id="projects" />
+      <div className="header-bar">
         <h1 className="projects-header">PROJECTS</h1>
       </div>
+      
       <div className="projects-content">
         <div className="projects-cards">
 

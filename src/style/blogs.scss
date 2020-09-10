@@ -7,65 +7,85 @@ $citrusclear: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9)
 $citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, rgba(255,131,97,1) 100%);
 $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9) 100%);
 
+#blogs {
+  position: absolute;
+  top: -6.5rem;
+}
+
 .blogs-section {
   display: flex;
   flex-direction: column;
   background-image: url('../images/comets.jpg');
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
   width: 100vw;
   .blogs-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: rgba(43, 48, 58, .85);
-    min-height: 100vh;
-    padding: 0 10vw 1rem 10vw;
+    padding: 2rem 10vw;
   }
-  .blogs-text {
-    max-width: 79vw;
-    max-height: 70vh;
-    width: 80vw;
+  .blog-card {
+    width: 100%;
+    height: 35vh;
     background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
-    border-radius: 0 0 1rem 1rem;
-    padding: 0 5rem 1vh 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    transition: 500ms ease-in-out;
+    .blog-card__image {
+      width: 35%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .blog-card__text {
+      font-family: "Montserrat", sans-serif;
+      padding: 2rem 1rem;
+      width: 60%;
+      h2 {
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        transition: 500ms ease-in-out;
+      }
+      p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 1rem 0;
+      }
+    }
+    .blog-card__arrow {
+      width: 5%;
+      display: flex;
+      justify-content: center;
+      transition: 500ms ease-in-out;
+      svg {
+        width: 1rem;
+        color: transparent;
+      }
+    }
   }
-}
-
-.blog-slide {
-  width: 60vw;
-  max-height: 60vh;
-  object-fit: contain;
-}
-button.control-arrow.control-next,
-button.control-arrow.control-prev {
-  width: 7.5vw;
-}
-.carousel .slide {
-  background: $brown !important;
-}
-
-a.blog-link {
-  font-family: "Montserrat", Lucida, sans-serif;
-  font-size: 1rem;
-  color: white;
-  height: 100%;
-  transition: 600ms ease-in-out;
-  padding-top: 1rem;
-}
-
-a.blog-link:hover {
-  color: $grapefruit;
+  .blog-card:hover {
+    box-shadow: 5px 5px 6px rgb(56, 52, 52);
+    .blog-card__arrow {
+      background-color: $grapefruit;
+      svg {
+        color: white;
+      }
+    }
+  }
 }
 
 .contact-info {
-  width: 79vw;
+  width: 100vw;
   min-height: 25vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   color: white;
   align-items: center;
+  background-color: rgba(43, 48, 58, .85);
+  padding-bottom: 2rem;
   p {
     transition: 600ms ease;
     margin-bottom: 1.5vh;
@@ -101,30 +121,21 @@ a.blog-link:hover {
 @media only screen and (max-width: 800px) {
   .blogs-section {
     .blogs-content {
-      min-height: 80vw;
-      height: auto;
-      padding: 0;
+      padding: 2rem 0;
     }
-    .blogs-text {
-      max-width: initial;
-      max-height: 70vh;
-      width: 88vw;
-      background-color: white;
-      border-radius: 0 0 1rem 1rem;
-      padding: 0;
+    .blog-card {
+      .blog-card__text {
+        width: 58%;
+        p {
+          font-size: 1rem;
+        }
+      }
     }
-  }
-
-  .blog-slide {
-    width: 100vw;
-    max-height: initial;
-    object-fit: contain;
   }
       
   .contact-info {
     width: 100vw;
     height: 45vh;
-    margin-top: 4rem;
     p {
       transition: 600ms ease;
     }
@@ -164,14 +175,6 @@ a.blog-link:hover {
       height: auto;
       padding: 0;
     }
-    .blogs-text {
-      max-width: initial;
-      max-height: 70vh;
-      width: 100vw;
-      background-color: white;
-      border-radius: 0 0 1rem 1rem;
-      padding: 0;
-    }
   }
 
   .blog-slide {
@@ -183,7 +186,6 @@ a.blog-link:hover {
   .contact-info {
     width: 100vw;
     height: 40vh;
-    margin-top: 4rem;
     p {
       transition: 600ms ease;
     }

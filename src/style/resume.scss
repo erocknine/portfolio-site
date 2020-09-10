@@ -6,10 +6,16 @@ $citrusclear: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9)
 $citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, rgba(255,131,97,1) 100%);
 $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
 
+#resume {
+  position: absolute;
+  top: -6.5rem;
+}
+
 .resume-section {
   background-image: url('../images/pieces.jpg');
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
   .resume-content {
     display: flex;
     background-color: rgba(43, 48, 58, .85);
