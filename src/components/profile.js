@@ -12,7 +12,6 @@ export default function Profile() {
         data-aos="profile-slide-left"
         data-aos-easing="ease-in-out"
         data-aos-duration="700"
-        data-aos-delay="300"
         data-aos-mirror="true"
         ></div>
 
@@ -21,7 +20,6 @@ export default function Profile() {
         data-aos="profile-slide-right"
         data-aos-easing="ease-in-out"
         data-aos-duration="700"
-        data-aos-delay="300"
         data-aos-mirror="true"
         ></div>
       </div>

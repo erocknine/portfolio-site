@@ -1,0 +1,224 @@
+$white: rgb(231, 229, 229);
+$brown: rgb(43, 48, 58);
+$gunmetal: rgb(28, 48, 65);
+$grapefruit: rgba(255, 94, 98, 1);
+
+
+.blog-page {
+  position: relative;
+  transition: 400ms ease-in-out;
+  .blog-page__top-color {
+    height: 6.5rem;
+    background-color: $grapefruit;
+  }
+  .blog-page__blog-text {
+    padding: 5vh 25vw 10vh 25vw;
+  }
+  .blog-dark-mode {
+    position: fixed;
+    width: 3rem;
+    top: 12rem;
+    left: 12vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+  }
+  svg {
+    color: $gunmetal;
+    width: 3rem;
+  }
+  .blog-button {
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+  }
+  .blog-button.backward {
+    img {
+      position: fixed;
+      top: 8rem;
+      left: 12vw;
+      width: 3rem;
+      transform: rotate(-90deg);
+    }
+  }
+  .blog-button.forward {
+    img {
+      position: fixed;
+      top: 8rem;
+      right: 12vw;
+      width: 3rem;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.blog-page.dark {
+  transition: 400ms ease-in-out;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  a {
+    color: white;
+  }
+  .blog-text.quote {
+    border-left: 2px solid white;
+  }
+  svg {
+    color: white;
+    width: 3rem;
+  }
+}
+
+.blog-page p {
+  margin-bottom: 2rem;
+}
+
+.blog-header {
+  font-family: "Montserrat", sans-serif;
+}
+
+.blog-header.one {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.blog-header.two {
+  font-weight: 500;
+}
+.blog-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  a {
+    color: $gunmetal;
+    text-decoration: underline;
+    transition: 400ms ease-in-out;
+    margin: 0 1rem;
+  }
+  a:hover {
+    color: rgb(73, 73, 73);
+    text-decoration: underline;
+  }
+}
+.blog-image {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  .blog-image__img {
+    max-width: 100%;
+    max-height: 50vh;
+  }
+}
+
+.blog-text {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+}
+
+.blog-text.quote {
+  font-style: italic;
+  border-left: 2px solid $gunmetal;
+  padding: 1rem;
+}
+.blog-text.code {
+  font-family: "Lucida Console";
+  background-color: rgb(145, 145, 145);
+  word-wrap: break-word;
+  margin-bottom: 2rem;
+}
+.blog-text.code.nospace {
+  margin: 0;
+  line-height: 1.25rem;
+}
+.blog-text.code.p, .blog-text.code.block {
+  padding: 1.25rem;
+}
+.blog-text.code.span {
+  padding: .25rem;
+}
+.blog-text.bullet {
+  background: url('../images/bullet.png') no-repeat left top;
+  padding: 0 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .blog-page {
+    .blog-page__blog-text {
+      padding: 3vh 13vw 5vh 13vw;
+    }
+    .blog-dark-mode {
+      left: 3vw;
+    }
+    .blog-button.backward {
+      img {
+        left: 3vw;
+      }
+    }
+    .blog-button.forward {
+      img {
+        right: 3vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-page {
+    position: relative;
+    transition: 400ms ease-in-out;
+    .blog-dark-mode {
+      top: 14rem;
+      left: 2vw;
+      width: 5rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 6vw;
+      transition: 400ms ease-in-out;
+      cursor: pointer;
+    }
+    svg {
+      width: 4rem;
+    }
+    .blog-button.backward {
+      img {
+        width: 4rem;
+        left: 2vw;
+      }
+    }
+    .blog-button.forward {
+      img {
+        width: 4rem;
+        right: 2vw;
+      }
+    }
+  }
+
+  .blog-text {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 3rem;
+  }
+
+  .blog-header.one {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .blog-header.two {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .blog-links {
+    font-size: 2rem;
+  }
+
+  .blog-text.bullet {
+    background: url('../images/bullet.png') no-repeat left top;
+    padding: 0 4rem;
+  }
+
+  .blog-text.code.nospace {
+    margin: 0;
+    line-height: 2.5rem;
+  }
+}

@@ -1,25 +1,23 @@
 import React, { useState, Fragment } from 'react'
 import '../style/navbar.scss'
-import ScrollAnimation from 'react-animate-on-scroll';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Icon } from 'semantic-ui-react'
-// import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Navbar() {
 
   return (
     <Fragment>
-      <nav className="navbar-top"
-        data-aos={`navbar-relocate-top`}
-        data-aos-anchor="trigger-navbar-relocate"
+      <nav className="navbar"
+        data-aos={`navbar-shade`}
+        data-aos-anchor="trigger-navbar-shade"
         data-aos-anchor-placement="top-top"
         data-aos-easing="ease-in-out"
       >
-        <ul className="ulReal">
-          <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true}><Projects position={'top'}>Projects</Projects></ScrollAnimation>
-          <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true} delay={250}><Resume position={'top'}>Resume</Resume></ScrollAnimation>
-          <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true} delay={500}><Blogs position={'top'}>Blogs</Blogs></ScrollAnimation>
-          <ScrollAnimation offset={10} animateIn='fadeInDown' animateOnce={true} delay={750}><Contact position={'top'}>Contact</Contact></ScrollAnimation>
+        <ul className="navbar__ul">
+          <Projects>Projects</Projects>
+          <Resume>Resume</Resume>
+          <Blogs>Blogs</Blogs>
+          <Contact>Contact</Contact>
         </ul>
         
       </nav>
@@ -30,8 +28,8 @@ export default function Navbar() {
 
 const Projects = (props) => {
   return (
-    <li className="nav-item">
-      <a href="#projects" className="nav-link">
+    <li className="nav-item projects">
+      <a href="https://ericskcheung.com/main#projects" className="nav-link">
         { props.children }
       </a>
     </li>
@@ -40,8 +38,8 @@ const Projects = (props) => {
 
 const Resume = (props) => {
   return (
-    <li className="nav-item">
-      <a href="#resume" className="nav-link">
+    <li className="nav-item resume">
+      <a href="https://ericskcheung.com/main#resume" className="nav-link">
         { props.children }
       </a>
     </li>
@@ -50,8 +48,8 @@ const Resume = (props) => {
 
 const Blogs = (props) => {
   return (
-    <li className="nav-item">
-      <a href="#blogs" className="nav-link">
+    <li className="nav-item blogs">
+      <a href="https://ericskcheung.com/main#blogs" className="nav-link">
         { props.children }
       </a>
     </li>
@@ -69,13 +67,13 @@ const Contact = (props) => {
   }
 
   return (
-    <li className="nav-item">
+    <li className="nav-item contact">
       <span className="nav-link" onClick={() => setOpenContact(!openContact)}>
         { props.children }
       </span>
         <div className={openContact ? "nav-contact-open":"nav-contact-closed"}>
           <CopyToClipboard text={'Eric.saikit.cheung@gmail.com'} onCopy={() => handleCopy()}>
-            <span className="contact-email"><span className={copy ? "copied-open":"copied-closed"}><strong>Copied!</strong>&nbsp;</span>Eric.Saikit.Cheung@gmail.com<Icon circular name='mail outline' /></span></CopyToClipboard>
+            <span className="contact-email"><span className={copy ? "copied-open":"copied-closed"}><strong>COPIED!</strong>&nbsp;</span>Eric.Saikit.Cheung@gmail.com<Icon circular name='mail outline' /></span></CopyToClipboard>
 
           <a href="https://www.instagram.com/erock_esquire/" target="_blank" rel="noopener noreferrer">Instagram<Icon circular name='instagram' /></a>
           <a href="https://www.linkedin.com/in/eric-sk-cheung/" target="_blank" rel="noopener noreferrer">LinkedIn<Icon circular name='linkedin' /></a>

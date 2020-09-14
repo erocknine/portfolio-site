@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { descendingBlogs } from './blogs/blogPage'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../style/blogs.scss'
 import { Icon } from 'semantic-ui-react'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { Link } from 'react-router-dom'
 
 export default function Blogs() {
 
@@ -16,15 +18,19 @@ export default function Blogs() {
       <div className="blogs-content">
         {renderBlogCards()}
       </div>
-
       <Contact />
-
     </section>
   )
 }
 
+const scrollTop = () => {
+  let html = document.querySelector("html")
+  html.style.scrollBehavior = "auto";
+  window.scrollTo(0,0)
+}
+
 const renderBlogCards = () => {
-  return blogs.map(blog => <BlogCard title={blog.title} image={blog.image} caption={blog.caption} date={blog.date}/>)
+  return descendingBlogs.map((blog, index) => <Link to={`/blogs/${blog.url}`} key={index} onClick={() => scrollTop()}><BlogCard key={index} title={blog.title} image={blog.image} caption={blog.caption} date={blog.date}/></Link>)
 }
 
 const BlogCard = ({ title, image, caption, date}) => {
@@ -43,15 +49,7 @@ const BlogCard = ({ title, image, caption, date}) => {
   )
 }
 
-const blogs = [
-  {title: "So you wanna use RegEx, do ya?", image: "images/blog-images/js_code.jpg", caption: "Guide to becoming familiar with RegEx in Ruby and JavaScript. Not for the weak-willed.", date: "March 18, 2020"}, 
-  {title: "Don't sleep on CSS", image: "images/blog-images/css_art_popsicle.jpg", caption: "A dissertation on CSS philosophy and application that would make God cry.", date: "April 9, 2020"}, 
-  {title: "Being on point with API endpoints", image: "images/blog-images/endpoints.png", caption: "Utilizing API endpoints with an example implementing GuideBox API.", date: "May 14, 2020"}, 
-  {title: "Active Storage makes your site legit", image: "images/blog-images/aws.png", caption: "Setting up Active Storage + Amazon S3 with React Frontend / Rails Backend.", date: "September 6, 2020"}, 
-]
-
 const Contact = () => {
-
   const [copy, setCopy] = useState(false)
 
   const handleCopy = () => {

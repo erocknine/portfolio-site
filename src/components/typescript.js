@@ -1,55 +1,16 @@
-import { useEffect } from 'react'
+import React from 'react'
+import Typical from 'react-typical';
 
-//const instance = useRef(null)
-//<div ref={instance}>{useScript(instance)}</div>
+export default function TypeScript(props) {
 
-export default function useScript(ref) {
-  useEffect(() => {
-    const script = document.createElement('script');
-
-    script.setAttribute('type', 'text/javascript');
-    script.innerHTML = `
-    let loopNum = 0;
-    let txt = '';
-    let isDeleting = false;
-
-    const type = (toType, element, pause) => {
-      const i = loopNum % toType.length;
-      const fullTxt = toType[i];
-    
-      if (isDeleting) {
-        txt = fullTxt.substring(0, txt.length - 1);
-      } else {
-        txt = fullTxt.substring(0, txt.length + 1);
-      }
-    
-      element.innerText = txt;
-
-      let delta = 200 - Math.random() * 100;
-    
-      if (isDeleting) { delta /= 2; }
-    
-      if (!isDeleting && txt === fullTxt) {
-        delta = pause;
-        isDeleting = true;
-      } else if (isDeleting && txt === '') {
-        isDeleting = false;
-        loopNum++;
-        delta = 500;
-      }
-    
-      setTimeout(function() {
-        type(toType, element, 1000);
-      }, delta);
-    };
-    
-    const element = document.querySelector('.typescript');
-    type(["Imagine", "Design", "Create"], element, 1000)
-    `
-
-    script.async = true;
-
-    ref.current.appendChild(script);
-
-  }, [ref])
+  return (
+    <section className="home-type">
+      <Typical
+        steps={['Imagine', 1000, 'Design', 700, 'Create', 1300]}
+        loop={Infinity}
+        wrapper="h1"
+      />
+      {props.children}
+    </section>
+  )
 }

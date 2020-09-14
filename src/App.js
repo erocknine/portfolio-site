@@ -1,40 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.scss';
-import Main from './containers/Main'
-import Welcome from './components/welcome'
+import Main from './containers/Main';
+import Welcome from './components/welcome';
+import { BlogPage } from './components/blogs/blogPage';
 import NotFound from './components/notFound'
-import AOS from 'aos'
+import AOS from 'aos';
 import 'aos/dist/aos.css';
-import UIfx from 'uifx';
-import Sound from './sounds/switch-click.mp3'
-import DelayLink from 'react-delay-link';
 
-import { withRouter, Route, Switch, Redirect } from 'react-router-dom'
+
+import { Route, Switch, useHistory, Redirect } from 'react-router-dom';
 
 function App() {
 
   AOS.init()
-  const switchClick = new UIfx(Sound);
-
-  const [load, setLoad] = useState(false)
+  const history = useHistory();
 
   const handleLoad = () => {
-    switchClick.play()
-    setTimeout(() => setLoad(true), 3000)
+    setTimeout(() => history.push("/main"), 3000);
   }
 
   return (
     <div className="App">
-      {!load ? 
-      <DelayLink delay={3000} to="/" replace={false}>
-        <Welcome load={load} handleLoad={handleLoad} />
-      </DelayLink>:
-      <main>
-        <Switch>
-          <Route exact={true} path="/" component={Main} />
-        </Switch>
-      </main>
-      }
+      <Switch>
+        <Route exact={true} path="/" render={(props) => (
+          <Welcome handleLoad={handleLoad} />
+        )} />
+        <Route exact={true} path="/main" component={Main} />
+        <Route path="/blogs" component={BlogPage} />
+        <Route path="/404" component={NotFound} />
+        <Redirect to="/404" />
+      </Switch>
     </div>
   );
 }

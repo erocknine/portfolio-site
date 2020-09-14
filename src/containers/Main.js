@@ -3,11 +3,10 @@ import Name from '../components/name'
 import Navbar from './Navbar'
 import Profile from '../components/profile'
 import Resume from '../components/resume'
-// import { ImageBreak } from '../components/imagebreak'
 import TypeBreak from '../components/typebreak'
 import Blogs from '../components/blogs'
 import Feature from '../components/feature'
-import Loader from '../components/loader'
+import { Loader } from '../components/loader'
 
 const Projects = React.lazy(() => import('../components/projects'));
 const ImageBreak = React.lazy(() => import('../components/imagebreak'));
