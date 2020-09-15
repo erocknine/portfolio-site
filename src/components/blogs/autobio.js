@@ -202,11 +202,13 @@ export function AutoBioThree() {
 
       <p className="blog-text">Initially, they said they weren't sure my menu would work and told me to develop my concept. They were afraid I wouldn't be able to keep up the business at their high-volume market, which would make me unable to pay their rent. If they were to reserve one of their limited spots for me and I happen to fail, quit, and not come back, they would have to scramble for another vendor to replace me.</p>
       
-      <p className="blog-text">My heart sunk. If I wasn't starting this business, I would have to go back to another day job. I replied through email and enforced my conviction for my menu, and ended with, "As for experience, this is my 3rd year with Smorg and I've worked at nearly every venue from Summerstage, outdoors Seaport market, Williamsburg, Brooklyn Bridge Park, Ft. Greene, Prospect Park, so I'm already a step ahead of most people."</p>
+      <p className="blog-text">My heart sunk. If I wasn't starting this business, I would have to go back to another day job. I replied through email and enforced my conviction for my menu, and ending, "As for experience, this is my 3rd year with Smorg and I've worked at nearly every venue from Summerstage, outdoors Seaport market, Williamsburg, Brooklyn Bridge Park, Ft. Greene, Prospect Park, so I'm already a step ahead of most people."</p>
 
       <p className="blog-text">Two weeks later, they accepted my proposal and I was allowed to start! Send those follow-up emails, people. They work. I was ecstatic, beyond elated. This was the beginning of something else, something I'd never done before, something big and meaningful I'd been waiting for, finally.</p>
 
       <p className="blog-text">Then, I suddenly felt the weight of all the responsibility. Everything is different when your savings are invested into your job. Suddenly, everything matters, and there are no breaks. Livelihood is a real thing. You're in charge of everything, and there are real consequences. No wonder most people don't start their own businesses.</p>
+
+      <p className="blog-text">First thing I did was apply for a Certificate of Authority. Having one immediately makes you feel important, because it is the first thing to recognize you as a business. Then, I applied for a FSE, Food Service Establishment license, a license authorizing me to prepare and serve food. Both of these costs money.</p>
 
       <p className="blog-text">To ease the pain of stressful responsibility, I asked a friend to help me, Eddie Kim, a great cook I previously worked with at INSA. Despite Eddie being a professional cook, I had more experience with the high volume and culture of Smorgasburg, and I knew we had to create a malleable menu catering to the complex tastes of Smorgasburg customers.</p>
 
@@ -217,6 +219,10 @@ export function AutoBioThree() {
       <p className="blog-text">Before all of that though, we tested recipes for braised short-ribs, sauces, and braised pork belly. Eddie Kim's cooking is amazing, and even now, the flavor of the short-rib he made has been unattainable by me. A unicorn flavor, if you will.</p>
 
       <p className="blog-text">From this menu, I searched for reliable wholesale places for ingredients, and spent thousands on kitchen and booth equipment. Everything costs money, and I was really digging into my savings. Til this point, I never even realized utensils obviously cost money as well. As do gloves, straws, soy sauce, and containers to hold everything. The next time you grab a handful of napkins that you might not need, remember, someone had to pay for them. I had gone through half of my 10K savings in the first two weeks.</p>
+
+      <p className="blog-text">The main wholesale place for all my needs was Jetro. This place is Costco minus every single customer-friendly feature. There is no person to greet you, no colorful signs, and there are constantly active forklifts zipping through the aisles dodging people with merchandise. If you're going into the cold food section, bring a jacket, because it is an enormous walk-in fridge. And understand that Jetro membership requires a Certificate of Authority, meaning every customer there is a business owner. So in every line, people will have enormous carts with over 100 items that can cost thousands of dollars at a time. It's insane and almost overwhelming the first time I went.</p>
+
+      <p className="blog-text">Here's a price comparison. 5lbs of potatoes at average supermarket can cost about %3-5 dollars. 50lbs of potatoes at Jetro costs $12. Huge difference. After shopping at Jetro, I found it impossible to shop anywhere else.</p>
 
       <p className="blog-text">In addition to that, I needed my dad's SUV to transport the supplies, meaning he'd drive to NYC from Philly every weekend to lend me the vehicle. And though I don't regret my choices, I still feel sorrow and apologetic for what I did next.</p>
 
