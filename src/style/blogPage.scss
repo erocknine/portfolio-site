@@ -155,14 +155,10 @@ $grapefruit: rgba(255, 94, 98, 1);
       left: 3vw;
     }
     .blog-button.backward {
-      img {
-        left: 3vw;
-      }
+      left: 3vw;
     }
     .blog-button.forward {
-      img {
-        right: 3vw;
-      }
+      right: 3vw;
     }
   }
 }
@@ -184,15 +180,15 @@ $grapefruit: rgba(255, 94, 98, 1);
       width: 4rem;
     }
     .blog-button.backward {
+      left: 1vw;
       img {
         width: 4rem;
-        left: 2vw;
       }
     }
     .blog-button.forward {
+      right: 1vw;
       img {
         width: 4rem;
-        right: 2vw;
       }
     }
   }

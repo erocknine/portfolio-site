@@ -27,7 +27,7 @@ export default function Resume() {
 
               <p className="resume-text-desc"><strong>Organized</strong> company’s list of over 20 services into 4 categories improving website manageability, and added a keyword search feature for users to conveniently search services.</p>
 
-              <p className="resume-text-desc"><strong>Utilized</strong> React Router for URL page routing, and EmailJS for personalized contact form</p>
+              <p className="resume-text-desc"><strong>Utilized</strong> React Router for URL page routing, and EmailJS for personalized contact form.</p>
             </div>
 
             {/* <div>
@@ -41,7 +41,7 @@ export default function Resume() {
               <h3>BANZAI PHRESH</h3>
               <p className="resume-text-info">Owned & operated restaurants at Smorgasburg Market, NY, and Ala Moana Mall, Hawaii. Resolved logistics including service & product quality management, restaurant design, inventory deadlines, divison of labor, and time management.</p>
               <p className="resume-text-sub"><strong>Owner/Sole Proprietor • Honolulu, HI • December 2017 - June 2018</strong></p>
-              <p className="resume-text-info">Operated a 6-month pop-up restaurant in Ala Moana Mall, Hawaii</p>
+              <p className="resume-text-info">Operated a 6-month pop-up restaurant in Ala Moana Mall, Hawaii.</p>
               <p className="resume-text-desc"><strong>Served</strong> 100 average customers a day, maintained a 30% profit margin, with 4.5 star reviews on yelp.</p>
             </div>
             <div>
