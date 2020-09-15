@@ -33,7 +33,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
     }
   }
   .resume-text {
-    padding: 2rem 13vw 6rem 10vw;
+    padding: 2rem 10vw 6rem 10vw;
     background: $linearwhite;
     max-width: 80vw;
     color: $gunmetal;
@@ -56,11 +56,8 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
     h2:hover, h3:hover, p:hover {
       color: $grapefruit;
     }
-    .resume-history {
-      padding-left: 1rem;
-    }
-    .resume-education {
-      padding-left: 1rem;
+    .resume-history, .resume-education {
+      padding: 0 1rem;
     }
     .resume-text-block {
       display: flex;
