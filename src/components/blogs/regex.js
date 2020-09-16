@@ -1,4 +1,5 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function RegexBlog() {
   return (
@@ -6,9 +7,9 @@ export default function RegexBlog() {
       <h1 className="blog-header one">SO YOU WANNA USE REGEX, DO YA?</h1>
       <p className="blog-text">March 18, 2020 | 10 min</p>
       <div className="blog-links">
-        <a href="#methods">Methods</a>
-        <a href="#matching">Matching</a>
-        <a href="#flags">Flags</a>
+        <AnchorLink offset={() => 104} href="#methods">Methods</AnchorLink>
+        <AnchorLink offset={() => 104} href="#matching">Matching</AnchorLink>
+        <AnchorLink offset={() => 104} href="#flags">Flags</AnchorLink>
       </div>
 
       <p className="blog-text">Intermediate guide for familiarizing RegEx in Ruby and JavaScript. Not for the weak-willed.</p>

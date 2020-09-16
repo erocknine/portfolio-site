@@ -1,4 +1,5 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function RegexBlog() {
   return (
@@ -7,9 +8,9 @@ export default function RegexBlog() {
       <p className="blog-text">April 9, 2020 | 9 min</p>
 
       <div className="blog-links">
-        <a href="#navbar">{`/*NavBar*/`}</a>
-        <a href="#linear">{`/*Linear-Gradient Header*/`}</a>
-        <a href="#resources">{`/*Resources*/`}</a>
+        <AnchorLink offset={() => 104} href="#navbar">{`/*NavBar*/`}</AnchorLink>
+        <AnchorLink offset={() => 104} href="#linear">{`/*Linear-Gradient Header*/`}</AnchorLink>
+        <AnchorLink offset={() => 104} href="#resources">{`/*Resources*/`}</AnchorLink>
       </div>
 
       <p className="blog-text">A dissertation on CSS philosophy and application that would make God cry.</p>
