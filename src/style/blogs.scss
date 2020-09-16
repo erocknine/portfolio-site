@@ -23,7 +23,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     display: flex;
     flex-direction: column;
     background-color: rgba(43, 48, 58, .85);
-    padding: 5vh 10vw 2vh 10vw;
+    padding: 8vh 10vw 2vh 10vw;
     .blogs-content__blogs {
       a {
         color: $gunmetal;
@@ -80,7 +80,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 }
 
 .contact-info {
-  min-height: 40vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -99,10 +98,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 .contact-links {
   display: flex;
   justify-content: space-between;
-  min-width: 30vw;
-  height: 6vh;
+  min-width: 25vw;
   font-size: 2rem;
-  margin-top: auto;
+  margin: 5vh 0;
   a {
     color: white;
     transition: 600ms ease;
@@ -133,7 +131,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   }
       
   .contact-info {
-    height: 45vh;
     p {
       transition: 600ms ease;
     }
@@ -147,9 +144,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     justify-content: space-evenly;
     min-width: 30vw;
     width: 80vw;
-    height: 10vh;
     font-size: 2rem;
-    margin-top: 2rem;
     a {
       color: white;
       transition: 600ms ease;
@@ -185,7 +180,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   }
       
   .contact-info {
-    height: 40vh;
     padding-bottom: 0;
     p {
       transition: 600ms ease;
@@ -198,9 +192,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   .contact-links {
     display: flex;
     justify-content: space-evenly;
-    min-width: 30vw;
-    width: 80vw;
-    height: 10vh;
     font-size: 2rem;
     a {
       color: white;

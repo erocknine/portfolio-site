@@ -3,6 +3,8 @@ import '../style/navbar.scss'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Icon } from 'semantic-ui-react'
 
+import { HashLink as Link } from 'react-router-hash-link';
+
 export default function Navbar() {
 
   return (
@@ -14,9 +16,9 @@ export default function Navbar() {
         data-aos-easing="ease-in-out"
       >
         <ul className="navbar__ul">
-          <Projects>Projects</Projects>
-          <Resume>Resume</Resume>
-          <Blogs>Blogs</Blogs>
+          <Link smooth to={"/#projects"}><Projects>Projects</Projects></Link>
+          <Link smooth to={"/#resume"}><Resume>Resume</Resume></Link>
+          <Link smooth to={"/#blogs"}><Blogs>Blogs</Blogs></Link>
           <Contact>Contact</Contact>
         </ul>
         
@@ -29,9 +31,9 @@ export default function Navbar() {
 const Projects = (props) => {
   return (
     <li className="nav-item projects">
-      <a href="https://ericskcheung.com/main#projects" className="nav-link">
+      <span className="nav-link">
         { props.children }
-      </a>
+      </span>
     </li>
   );
 }
@@ -39,9 +41,9 @@ const Projects = (props) => {
 const Resume = (props) => {
   return (
     <li className="nav-item resume">
-      <a href="https://ericskcheung.com/main#resume" className="nav-link">
+      <span className="nav-link">
         { props.children }
-      </a>
+      </span>
     </li>
   );
 }
@@ -49,9 +51,9 @@ const Resume = (props) => {
 const Blogs = (props) => {
   return (
     <li className="nav-item blogs">
-      <a href="https://ericskcheung.com/main#blogs" className="nav-link">
+      <span className="nav-link">
         { props.children }
-      </a>
+      </span>
     </li>
   );
 }

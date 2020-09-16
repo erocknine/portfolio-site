@@ -4,8 +4,8 @@ import Sound from '../sounds/switch-click.mp3';
 
 export default function Welcome(props) {
 
-  const { handleLoad } = props
-  const [welcome, setWelcome] = useState(false)
+  const { handleWelcome } = props
+  const [sliders, setSliders] = useState(false)
   const [pressed, setPressed] = useState(false)
 
   const switchClick = new UIfx(Sound);
@@ -17,9 +17,9 @@ export default function Welcome(props) {
 
   return (
     <section className="welcome-section">
-      <h1 className={pressed ? "signature-pressed":"signature"} onMouseDown={() => handlePress()} onMouseUp={() => {setWelcome(true); setPressed(false); handleLoad()}} onMouseLeave={() => setPressed(false)}>張</h1>
+      <h1 className={pressed ? "signature-pressed":"signature"} onMouseDown={() => handlePress()} onMouseUp={() => {setSliders(true); setPressed(false); handleWelcome()}} onMouseLeave={() => setPressed(false)}>張</h1>
       
-      {welcome && <Fragment><div className="welcome-panel-left"></div>
+      {sliders && <Fragment><div className="welcome-panel-left"></div>
       <div className="welcome-panel-right"></div></Fragment>}
     </section>
   )

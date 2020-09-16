@@ -30,7 +30,6 @@ export function BlogPage() {
     }
     return next
   }
-  console.log(backward(), matched, forward())
 
   const [dark, setDark] = useState(false)
 
@@ -73,8 +72,6 @@ export const descendingBlogs = blogs.slice().sort((a, b) => b.order - a.order)
 export const ascendingBlogs = blogs.slice().sort((a, b) => a.order - b.order)
 
 const scrollTop = () => {
-  let html = document.querySelector("html")
-  html.style.scrollBehavior = "auto";
   window.scrollTo(0,0)
 }
 
