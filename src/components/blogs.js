@@ -16,9 +16,11 @@ export default function Blogs() {
       </div>
 
       <div className="blogs-content">
-        {renderBlogCards()}
+        <div className="blogs-content__blogs">
+          {renderBlogCards()}
+        </div>
+        <Contact />
       </div>
-      <Contact />
     </section>
   )
 }
@@ -62,7 +64,9 @@ const Contact = () => {
       <p>Eric Sai Kit Cheung</p>
       <p>Brooklyn, NY</p>
       <CopyToClipboard text={'Eric.saikit.cheung@gmail.com'} onCopy={() => handleCopy()}>
-        <p className="contact-email-bottom"><span className={copy ? "copied-open":"copied-closed"}><strong>Copied!</strong>&nbsp;</span>Eric.saikit.cheung@gmail.com</p>
+        <p className="contact-email-bottom">
+          <span className={copy ? "copied-open":"copied-closed"}><strong>Copied!</strong>&nbsp;</span>
+          Eric.saikit.cheung@gmail.com</p>
       </CopyToClipboard>
       <div className="contact-links">
         <a href="https://www.instagram.com/erock_esquire/" target="_blank" rel="noopener noreferrer"><Icon name='instagram' /></a>

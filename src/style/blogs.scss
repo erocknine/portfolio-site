@@ -24,8 +24,10 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     flex-direction: column;
     background-color: rgba(43, 48, 58, .85);
     padding: 2rem 10vw;
-    a {
-      color: $gunmetal;
+    .blogs-content__blogs {
+      a {
+        color: $gunmetal;
+      }
     }
   }
   .blog-card {
@@ -84,7 +86,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   flex-direction: column;
   color: white;
   align-items: center;
-  background-color: rgba(43, 48, 58, .85);
   padding-bottom: 2rem;
   p {
     transition: 600ms ease;
@@ -98,8 +99,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 .contact-links {
   display: flex;
   justify-content: space-between;
-  min-width: 6vw;
-  width: 13vw;
+  min-width: 25vw;
   height: 6vh;
   font-size: 2rem;
   margin-top: auto;
@@ -114,7 +114,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 .contact-email-bottom {
   position: relative;
-  right: 2vw;
+  right: 1.5rem;
   cursor: pointer;
 }
 
@@ -160,9 +160,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     }
   }
   .contact-email-bottom {
-    position: relative;
-    right: 3.5vw;
-    cursor: pointer;
+    right: 2rem;
   }
 }
 
@@ -214,8 +212,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     }
   }
   .contact-email-bottom {
-    position: relative;
-    right: 7vw;
-    cursor: pointer;
+    right: 3.5rem;
   }
 }
