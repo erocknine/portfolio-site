@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Switch>
         {!welcome && <Welcome handleWelcome={handleWelcome}/>}
-        <Main />
+        <Route exact={true} path="/" component={Main} />
         <Route path="/blogs" component={BlogPage} />
         <Route path="/404" component={NotFound} />
         <Redirect to="/404" />

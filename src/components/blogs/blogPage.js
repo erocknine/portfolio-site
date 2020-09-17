@@ -8,6 +8,7 @@ import '../../style/blogPage.scss';
 const Regex = React.lazy(() => import('./regex'));
 const CSS = React.lazy(() => import('./css'));
 const ActiveStorage = React.lazy(() => import('./activeStorage'));
+const Maps = React.lazy(() => import('./maps'));
 
 export function BlogPage() {
 
@@ -65,7 +66,8 @@ export const blogs = [
   {title: "Active Storage makes your site legit", image: "images/blog-images/aws.png", caption: "Setting up Active Storage + Amazon S3 with React Frontend / Rails Backend.", date: "September 6, 2020", url: "active-storage-makes-your-site-legit", order: "090620", component: ActiveStorage}, 
   {title: "My 20's - Part One - Life in Japan", image: "images/blog-images/autobio/cherry_blossom.jpg", caption: "Life usually begins after college. After graduating, I spend two years in Japan encountering Love Hotels with my girlfriend, breakdancing in Tokyo, and accidentally entering the culinary industry.", date: "June 27, 2020", url: "my-20s-part-one", order: "062720", component: AutoBioOne}, 
   {title: "My 20's - Part Two - Diving into the Food Industry", image: "images/blog-images/autobio/highline.jpg", caption: "Some people spend years searching for a passion. Returning to NYC, I self-published a novel and worked a chain of restaurant jobs before finally seeing a meaningful goal in my life.", date: "June 29, 2020", url: "my-20s-part-two", order: "062920", component: AutoBioTwo}, 
-  {title: "My 20's - Part Three - Starting a Food Business", image: "images/blog-images/autobio/banzai_smorg.jpg", caption: "Diving headfirst into a business venture isn't the best move, but planning, learning, and playing smart is what helped me succeed at Smorgasburg.", date: "July 6, 2020", url: "my-20s-part-three", order: "070620", component: AutoBioThree}
+  {title: "My 20's - Part Three - Starting a Food Business", image: "images/blog-images/autobio/banzai_smorg.jpg", caption: "Diving headfirst into a business venture isn't the best move, but planning, learning, and playing smart is what helped me succeed at Smorgasburg.", date: "July 6, 2020", url: "my-20s-part-three", order: "070620", component: AutoBioThree},
+  {title: "Having a Good ol' time with Map APIs", image: "images/blog-images/maps/map.png", caption: "How to implement Geolocation, Google Geocode, Leaflet Map, and Google Directions APIs in React Frontend.", date: "September 17, 2020", url: "using-maps", order: "091720", component: Maps}
 ]
 
 export const descendingBlogs = blogs.slice().sort((a, b) => b.order - a.order)
