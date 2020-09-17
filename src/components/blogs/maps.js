@@ -71,9 +71,11 @@ export default function MapsBlog() {
         <p>{`<Marker icon={pinUser} position={position}>`}</p>
       </div>
 
+      <p className="blog-text">If you wanted to do more things with the marker, like activate its popup when an element outside of the map is clicked, you can use <p className="blog-text">useRef</p> hook to select it. <p className="blog-text">useRef</p> should be used when needing to select any of element in Leaflet Map.</p>
+
       <p className="blog-text">Popup is a wrapper component that renders from the marker when the user interacts with the marker, through a click or a hover. Similar to Google maps, when you click a point and a box pops up with the address or rating of the location clicked. Popup is a simple wrapper, and all you need to do is write the HTML and style it to your liking.</p>
 
-      <p className="blog-text">Last, Polyline is used for wrapping the Google Directions polyline after decoding.</p>
+      <p className="blog-text">Lastly, Polyline is used for wrapping the Google Directions polyline after decoding, which takes a <span className="blog-text code span">positions</span> property. This one will have to be obtained from decoding the polyline provided by Google Directions API response object.</p>
 
       <p className="blog-text"></p>
 
