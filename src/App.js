@@ -7,7 +7,7 @@ import NotFound from './components/notFound'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import { Route, Switch, Redirect, Link } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 function App() {
 
@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        {!welcome && <Link to={"/"}><Welcome handleWelcome={handleWelcome}/></Link>}
-        <Route exact={true} path="/" component={Main} />
+        {!welcome && <Welcome handleWelcome={handleWelcome}/>}
+        <Main />
         <Route path="/blogs" component={BlogPage} />
         <Route path="/404" component={NotFound} />
         <Redirect to="/404" />
