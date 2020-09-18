@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        {!welcome && <Welcome handleWelcome={handleWelcome}/>}
+        {!welcome && <Route exact={true} path="/" render={() => <Welcome handleWelcome={handleWelcome}/>}/>}
         <Route exact={true} path="/" component={Main} />
         <Route path="/blogs" component={BlogPage} />
         <Route path="/404" component={NotFound} />
