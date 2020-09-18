@@ -191,14 +191,18 @@ export function AutoBioThree() {
       <p className="blog-text">TLDR: After being accepted into Smorgasburg, I partnered with a cook I've previously worked with hoping to ease the responsibility of owning a business. A combination of low profits in the first week and myself demanding a higher percent of the profits causes my friend to leave the partnership. Learning from previous mistakes, I refine my business model, menu, logistics, and succeed at Smorgasburg Market with a hefty profit.</p>
 
       <div className="blog-image">
-        <img className="blog-image__img" src="/images/blog-images/autobio/banzai_smorg.jpg" alt="My own booth at Smorgasburg." />
+        <img className="blog-image__img" src="/images/blog-images/autobio/banzai_smorg.jpg" alt="My own booth at Smorgasburg Market." />
       </div>
 
-      <p className="blog-text">There's been a recurring theme in my life of me making conscious decisions while unconsciously failing to see the bigger picture. Even during the time of starting my business, I was not completely aware of the overall goal. I was just trying to progress one step ahead of the step before.</p>
+      <p className="blog-text">There's been a recurring theme in my life of me making conscious decisions while unconsciously failing to see the bigger picture. Even when time came to start my business, I was not completely aware of the overall goal. I was just trying to move one step ahead of the step before.</p>
 
       <p className="blog-text">The application process to enter Smorgasburg is a daunting experience. Over a hundred businesses send their applications hoping to be selected, and among the businesses with potential to succeed with lowest risk of failure are filtered again to fit the variety of menu options available at Smorgasburg.</p>
 
       <p className="blog-text">No one wants to see fried chicken at every stall or specialty scallion pancake wraps more than once. Fortunately, the menu I presented allowed me a tasting with Smorgasburg's organizers. I went into their office, cooked my menu items, recited a script claiming how my menu was culturally significant, answered their questions, and left.</p>
+
+      <div className="blog-image">
+        <img className="blog-image__img" src="/images/blog-images/autobio/karaage.png" alt="Chicken Karaage." />
+      </div>
 
       <p className="blog-text">Initially, they said they weren't sure my menu would work and told me to develop my concept. They were afraid I wouldn't be able to keep up the business at their high-volume market, which would make me unable to pay their rent. If they were to reserve one of their limited spots for me and I happen to fail, quit, and not come back, they would have to scramble for another vendor to replace me.</p>
       
@@ -208,9 +212,13 @@ export function AutoBioThree() {
 
       <p className="blog-text">Then, I suddenly felt the weight of all the responsibility. Everything is different when your savings are invested into your job. Suddenly, everything matters, and there are no breaks. Livelihood is a real thing. You're in charge of everything, and there are real consequences. No wonder most people don't start their own businesses.</p>
 
-      <p className="blog-text">First thing I did was apply for a Certificate of Authority. Having one immediately makes you feel important, because it is the first thing to recognize you as a business. Then, I applied for a FSE, Food Service Establishment license, a license authorizing me to prepare and serve food. Both of these costs money.</p>
+      <p className="blog-text">First thing I did was apply for a Certificate of Authority. Having one immediately makes you feel important, because it is the first thing to recognize you as a business. Then, I applied for a FSE, Food Service Establishment license, a license authorizing me to prepare and serve food. This also meant I would be inspected. Both of these cost money.</p>
 
       <p className="blog-text">To ease the pain of stressful responsibility, I asked a friend to help me, Eddie Kim, a great cook I previously worked with at INSA. Despite Eddie being a professional cook, I had more experience with the high volume and culture of Smorgasburg, and I knew we had to create a malleable menu catering to the complex tastes of Smorgasburg customers.</p>
+
+      <div className="blog-image">
+        <img className="blog-image__img" src="/images/blog-images/autobio/foodoptions.png" alt="Brady brunch break down of Smorgasburg food options." />
+      </div>
 
       <p className="blog-text">The menu had to be eccentric but familiar, sophisticated but not complicated, and versatile enough for setup every morning. This was not gourmet dishes or a gastronomy experience, nor was it hot dogs and funnel cake. The food had to be something in the middle, and it had to be resilient to expiration, simple to store and transport to the outdoor markets.</p>
 
@@ -221,6 +229,10 @@ export function AutoBioThree() {
       <p className="blog-text">From this menu, I searched for reliable wholesale places for ingredients, and spent thousands on kitchen and booth equipment. Everything costs money, and I was really digging into my savings. Til this point, I never even realized utensils obviously cost money as well. As do gloves, straws, soy sauce, and containers to hold everything. The next time you grab a handful of napkins that you might not need, remember, someone had to pay for them. I had gone through half of my 10K savings in the first two weeks.</p>
 
       <p className="blog-text">The main wholesale place for all my needs was Jetro. This place is Costco minus every single customer-friendly feature. There is no person to greet you, no colorful signs, and there are constantly active forklifts zipping through the aisles dodging people with merchandise. If you're going into the cold food section, bring a jacket, because it is an enormous walk-in fridge. And understand that Jetro membership requires a Certificate of Authority, meaning every customer there is a business owner. So in every line, people will have enormous carts with over 100 items that can cost thousands of dollars at a time. It's insane and almost overwhelming the first time I went.</p>
+
+      <div className="blog-image">
+        <img className="blog-image__img" src="/images/blog-images/autobio/jetro.jpg" alt="Inside Jetro." />
+      </div>
 
       <p className="blog-text">Here's a price comparison. 5lbs of potatoes at average supermarket can cost about %3-5 dollars. 50lbs of potatoes at Jetro costs $12. Huge difference. After shopping at Jetro, I found it impossible to shop anywhere else.</p>
 
@@ -234,11 +246,19 @@ export function AutoBioThree() {
 
       <p className="blog-text">The first Saturday is always iffy. There's a chance people may not realize Smorgasburg is opening, or there's a chance everyone had been waiting for it to open. This means the market can be either extremely crowded or completely dead. And I remember it clearly, because this first Saturday was completely dead. It was cloudy, the market was slow, and we honestly did not sell a single thing. For a market that would see consistent customers for 8 hours straight and be completely dead was not a good sign.</p>
 
+      <div className="blog-image">
+        <img className="blog-image__img" src="/images/blog-images/autobio/firstday.jpg" alt="First day opening at Smorgasburg." />
+      </div>
+
       <p className="blog-text">In the middle of this, Eddie Kim and I were contemplating whether or not we should continue with this endeavor. What a horrible start to a business. But of course, the money for the weekend was already put in. $850 dollars each weekend. Not only that but I had already invested over $3000 dollars in equipment, ingredients, and licenses. We didn't expect much better for the next day.</p>
 
       <p className="blog-text">Then, Sunday comes around, it's a nice sunny day, and the market is packed. Exploding. Lines were spilling with people desperately trying to get ahead to order something, anything.</p>
 
       <p className="blog-text">Amid the panic, we started selling. Our menu item was 3 short-ribs on a buttered rice patty on the plate for $12, but when the rice ran out, we started selling 4 short-ribs. To my surprise, even with Eddie Kim's experience, he was unable to keep up. The stress had made him unfocused, and was even snippy with Raquel who was working the cash register. He apologized afterward, but the pressure was real. I wasn't stressed though, because Smorgasburg had been my life for the past 3 years. This kind of traffic wasn't unprecedented, but it did catch us off guard.</p>
+
+      <div className="blog-image">
+        <img className="blog-image__img" src="/images/blog-images/autobio/smorg.jpg" alt="Smorgasburg Market in Williamsburg." />
+      </div>
 
       <p className="blog-text">We picked up the slack, reorganized, and nearly 3 hours into the day, we had sold out of short-ribs and pork belly we brought. Maybe we weren't charging enough, or maybe 4 short-ribs were too generous. I told my parents to transport us the rest of the short-rib I had kept in the refrigerator, left behind in the morning because I had falsely assumed the day would be slow.</p>
 
@@ -256,11 +276,23 @@ export function AutoBioThree() {
 
       <p className="blog-text">Almost immediately the next day, I acquired a second refrigerator, took the short-rib out of the menu because of the horrible profit margin, and started prepping a different menu for a larger customer base. Since Raquel was taking classes part-time and working as key-holder at Vitamin Shoppe, I had to call a college friend who was now residing in NYC to help me as a cashier. Her name is Kandi Haro, and I am forever grateful for her help and her friendship. She remains one of the few friends from college I've kept in contact with, and I definitely owe her a dinner.</p>
 
+      <div className="blog-image">
+        <img className="blog-image__img" src="/images/blog-images/autobio/kandi.png" alt="Kandi." />
+      </div>
+
       <p className="blog-text">When the weekend came by, we were ready. I was cook, Kandi would work as cashier, and my father would help with any other random tasks. When the lines started, we started. We fired up the grill, started taking orders, and we kept selling all the way to the end of the day.</p>
 
       <p className="blog-text">We made it, and I couldn't believe it. For the first time in my life, I had planned with a purpose, and succeeded. In addition to that, we made a hefty sum of money I could even brag about. Another milestone, this was the most money I'd ever made. In two days, I made more than two months at Zipcar.</p>
 
       <p className="blog-text">People say breaking even is the goal for any starting business, but we did substantially better. By the end of it all, we had an average of 200 customers a day, and maintained a 25% profit margin.</p>
+
+      <p className="blog-text">Did I mention, I once sold a 7 hour-old strawberry cucumber lemonade that'd been sitting in the sun to Maggie Gylenhaal? The market was closed and I was packing up, leaving only the sample display of the lemonade on the table. Then, Maggie comes by and looks at me, but I say, "Sorry, we're sold out." I recognize her immediately, by the way. She gives me a look as though, 'Really? Are you serious?', and sure enough, says, "Really? Are you really sold out of everything?" Her body language pointing to the lemonade on the table. I didn't like her condescending tone, so I said, "Okay, $4 for the last lemonade." She smiles, walks away, and her husband approaches to pay.</p>
+
+      <p className="blog-text">I have no regrets.</p>
+
+      <div className="blog-image">
+        <img className="blog-image__img" src="/images/blog-images/autobio/lemonade.png" alt="Strawberry Cucumber lemonade." />
+      </div>
 
       <p className="blog-text">Later in the season when Raquel had more time, I was able to pay her more money in two days than an entire week at Vitamin Shoppe. I did the same for my father, who I can tell cared little for the money, and instead derived more joy from the experience of running a business with his son than anything else he'd ever done.</p>
 

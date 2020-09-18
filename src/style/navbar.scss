@@ -30,7 +30,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 [data-aos="navbar-shade"] {
   &.aos-animate {
-    background-color: rgba(0, 0, 0, .85)
+    background-color: rgba(0, 0, 0, .85);
+    transform: translateY(-.5rem);
+    height: 5rem;
   }
 }
 
@@ -192,6 +194,13 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 }
 
 @media only screen and (max-width: 600px) {
+
+  [data-aos="navbar-shade"] {
+    &.aos-animate {
+      transform: initial;
+      height: initial;
+    }
+  }
   
   .nav-link {
     font-size: 1.8rem;
