@@ -49,11 +49,11 @@ export function BlogPage() {
           {dark ? <Dark />:<Light />}
         </div>
         <div className="blog-page__blog-text">
-        <Suspense fallback={<BlogLoader/>}>
-          <Switch>
-            {renderBlogRoutes()}
-          </Switch>
-        </Suspense>
+          <Suspense fallback={<BlogLoader />}>
+            <Switch>
+              {renderBlogRoutes()}
+            </Switch>
+          </Suspense>
         </div>
       </div>
     </Fragment>

@@ -137,16 +137,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   left: 0;
   right: 0;
-  top: 40vh;
+  top: 0;
   bottom: 0;
   svg {
     width: 10rem;
-    color: rgb(117, 117, 117);
+    color:  rgb(145, 145, 145);
   }
 }
+
 
 #loader {
   animation-name: loader;

@@ -13,6 +13,7 @@ $grapefruit: rgba(255, 94, 98, 1);
   }
   .blog-page__blog-text {
     position: relative;
+    min-height: 100vh;
     padding: 5vh 25vw 10vh 25vw;
   }
   .blog-dark-mode {
@@ -68,7 +69,6 @@ $grapefruit: rgba(255, 94, 98, 1);
   }
   svg {
     color: white;
-    width: 3rem;
   }
 }
 
@@ -125,6 +125,7 @@ $grapefruit: rgba(255, 94, 98, 1);
   font-style: italic;
   border-left: 2px solid $gunmetal;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 .blog-text.code {
   font-family: "Lucida Console";
