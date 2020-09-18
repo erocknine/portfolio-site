@@ -91,9 +91,9 @@ const SuperpetDoc = (props) => {
           <h3>Battle Experience</h3>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        {/* <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <img className="image" src="images/project-images/superpet/superpet_battle.gif" alt="GIF demonstrating gameplay"/>
-        </div>
+        </div> */}
 
         <div className={ projectDoc === 'superpet' ? "project-portion-stack":"project-portion closed" }>
           <p className="p-solo">Here, Hosico battles an arch nemesis, the beef soft-shell taco. To make things more interesting, I added randomized backgrounds and side effects to our attack scripts.</p>

@@ -57,7 +57,7 @@ const HiesDoc = (props) => {
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/hies/new_hies.png" alt="Redesigned HIES home page"/>
+            <img className="image-solo" src="images/project-images/hies/new_hies.jpg" alt="Redesigned HIES home page"/>
             <span>New HIES</span>
           </div>
         </div>
@@ -86,7 +86,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ projectDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hies/hies_photoshop.png" alt="Creating new hero with photoshop"/>
+          <img className="image" src="images/project-images/hies/hies_photoshop.jpg" alt="Creating new hero with photoshop"/>
           <img className="image" src="images/project-images/hies/hies.gif" alt="GIF demonstrating water effect from PIXI.js displacement filter"/>
         </div>
 

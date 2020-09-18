@@ -119,10 +119,10 @@ const CurbalertDoc = (props) => {
           <p className="p-solo">Curbalert is meant for users on the move, which is why I designed this app to be a simple single-page application with the map sitting in the prominent forefront. Active item posts are viewable & searchable by keywords, and a dashboard is available for keeping saved item posts.</p>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        {/* <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p>I wanted users to be visually impressed when using the application, so upon login, the username is passed to the welcome animation, which also functions as a loader. I wanted to convey simplicity and class by keeping the colors a simple black & white.</p>
           <img className="image" src="images/project-images/curbalert/curbalert-start.gif" alt="GIF showing login process along with welcome animation"/>
-        </div>
+        </div> */}
 
         <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">The page layout I had in mind initially kept the navbar at the top, except I wanted to incorporate a navbar I had previously designed. With the navbar established on the left side instead, everything else required simple rearranging.</p>
