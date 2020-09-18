@@ -31,10 +31,11 @@ export default function Profile() {
           <div className="eric-background-circle" />
         </div>
         <h2 className="text">SOFTWARE ENGINEER | FULL STACK WEB DEVELOPER</h2>
-        <h3 className="text">{`// Compulsive coder, trilingual author, and business owner.`}</h3>
-        <h3 className="text">{`// A design fanatic, creative problem solver, and gourmet glutton.`}</h3>
-        <p className="text desc">Building aesthetically pleasing projects, finding creative solutions to problems, and waking myself from endless coding frenzies have become a normal pastime. My goal for every project is to be visually appealing yet functional, creative yet intuitive. There's a wealth of technology in the world, and hopefully I'll be able to explore a decent amount of it.</p>
-        <p className="text desc">I travel, game, and try to indulge in as many different kinds of food as possible. Just a glimpse of who I am, my instagram feed is often littered with British Shorthair cats and messy cheeseburgers. I’ve taught English in Japan, previously self-published a fiction novel, and owned & operated a food business in Brooklyn and Hawaii.</p>
+        <h3 className="text">{`A design fanatic, creative problem solver, and gourmet glutton.`}</h3>
+        <h3 className="text">{`Compulsive coder, trilingual author, and business owner.`}</h3>
+        <p className="text desc">Building aesthetically pleasing projects and waking myself from endless coding frenzies have become a normal pastime. My work aims to be visually appealing yet functional, creative yet intuitive. Technology keeps progressing, and it's getting harder to keep up. Hopefully, I'll be able to explore a decent amount of it.</p>
+        <p className="text desc">I travel, game, and try to indulge in as many different kinds of food as possible. An NYC native, but I've lived in Philadelphia, California, Hawaii, and Japan.</p>
+        <p className="text desc">Just a glimpse of who I am, my instagram feed is often littered with British Shorthair cats and messy cheeseburgers. I’ve taught English in Japan, previously self-published a fiction novel, and have owned & operated a food business in Brooklyn and Hawaii.</p>
       </div>
       <div className="profile-technical-skills">
         <h3 className="text">{`// TECHNICAL SKILLS`}</h3>

@@ -20,8 +20,9 @@ export default function Welcome(props) {
 
   return (
     <section className="welcome-section">
-      <Link to={`${location.pathname}`} className={pressed ? "signature pressed":"signature"} onMouseDown={() => handlePress()} onMouseUp={() => {setSliders(true); setPressed(false); handleWelcome()}} onMouseLeave={() => setPressed(false)}><h1>張</h1></Link>
-    
+      <Link to={`${location.pathname}`} className={pressed ? "signature pressed":"signature"} onMouseDown={() => handlePress()} onMouseUp={() => {setSliders(true); setPressed(false); handleWelcome()}} onMouseLeave={() => setPressed(false)}>
+        <h1>張</h1>
+      </Link>
       
       {sliders && <Fragment><div className="welcome-panel-left"></div>
       <div className="welcome-panel-right"></div></Fragment>}
