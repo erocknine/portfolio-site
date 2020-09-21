@@ -8,7 +8,7 @@ export function AutoBioOne() {
 
       <p className="blog-text">A partial venting and recollection of the prime of my life.</p>
 
-      <p className="blog-text">TLDR: My first two years after college was spent in Japan visiting Love Hotels, indulging in a comfortable Japanese life, working as an English Teacher for a work visa, then quitting and working as a cook in Shibuya. Little would I know, this would nudge me into the food industry.</p>
+      <p className="blog-text">TLDR: My first two years after college was spent in Japan visiting Love Hotels, indulging in a comfortable Japanese life, working as an English Teacher for a work visa, then quitting and working as a cook in Shibuya. Little would I know, this would throw my life into the food industry.</p>
 
       <div className="blog-image">
         <img className="blog-image__img" src="/images/blog-images/autobio/in_japan.jpg" alt="Standing in the street in Tokyo." />
@@ -20,7 +20,7 @@ export function AutoBioOne() {
 
       <p className="blog-text">Why, you ask? Well, many reasons. And though it's none of your business, I've been wanting to recollect my journey anyhow.</p>
 
-      <p className="blog-text">I'd been in the food industry for most of my 20's. I'm sure my parents were real glad I put my 4 year college degree straight to work in the kitchen. My journey to that point started from a series of food industry jobs I accidentally indulged in, ignited by my time living in Japan.</p>
+      <p className="blog-text">I've been in the food industry for most of my 20's. I'm sure my parents were real glad I put my 4 year college degree straight to work in the kitchen. My journey to that point started from a series of food industry jobs I accidentally indulged in, ignited by my time living in Japan.</p>
 
       <p className="blog-text">The year was 2012, and I was studying abroad in Tokyo, Japan, with my girlfriend of 4 years, Raquel. We met freshman year, and like a fool, I believed her when she said she was fine being just friends with benefits. Unknowingly, she was the only consistent thing in my 20's besides my complete lack of direction in life. Our relationship being without a doubt, is one of the greatest posessions I have.</p>
 
@@ -196,7 +196,7 @@ export function AutoBioThree() {
 
       <p className="blog-text">There's been a recurring theme in my life of me making conscious decisions while unconsciously failing to see the bigger picture. Even when time came to start my business, I was not completely aware of the overall goal. I was just trying to move one step ahead of the step before.</p>
 
-      <p className="blog-text">The application process to enter Smorgasburg is a daunting experience. Over a hundred businesses send their applications hoping to be selected, and among the businesses with potential to succeed with lowest risk of failure are filtered again to fit the variety of menu options available at Smorgasburg.</p>
+      <p className="blog-text">So how did I become this entrepreneurs? The application process to enter Smorgasburg is a daunting experience. Over a hundred businesses send their applications hoping to be selected, and among the businesses with potential to succeed with lowest risk of failure are filtered again to fit the variety of menu options available at Smorgasburg.</p>
 
       <p className="blog-text">No one wants to see fried chicken at every stall or specialty scallion pancake wraps more than once. Fortunately, the menu I presented allowed me a tasting with Smorgasburg's organizers. I went into their office, cooked my menu items, recited a script claiming how my menu was culturally significant, answered their questions, and left.</p>
 
@@ -210,9 +210,13 @@ export function AutoBioThree() {
 
       <p className="blog-text">Two weeks later, they accepted my proposal and I was allowed to start! Send those follow-up emails, people. They work. I was ecstatic, beyond elated. This was the beginning of something else, something I'd never done before, something big and meaningful I'd been waiting for, finally.</p>
 
-      <p className="blog-text">Then, I suddenly felt the weight of all the responsibility. Everything is different when your savings are invested into your job. Suddenly, everything matters, and there are no breaks. Livelihood is a real thing. You're in charge of everything, and there are real consequences. No wonder most people don't start their own businesses.</p>
+      <p className="blog-text">Then, I suddenly felt the weight of all the responsibility.</p>
+
+      <p className="blog-text">Everything is different when your savings are invested into your job. Suddenly, everything matters, and there are no breaks. Livelihood is a real thing. You're in charge of everything, and there are real consequences. No wonder most people don't start their own businesses.</p>
 
       <p className="blog-text">First thing I did was apply for a Certificate of Authority. Having one immediately makes you feel important, because it is the first thing to recognize you as a business. Then, I applied for a FSE, Food Service Establishment license, a license authorizing me to prepare and serve food. This also meant I would be inspected. Both of these cost money.</p>
+
+      <p className="blog-text">I'll admit, I was feeling overwhelmed. Self-doubt is a bitch. So is anxiety.</p>
 
       <p className="blog-text">To ease the pain of stressful responsibility, I asked a friend to help me, Eddie Kim, a great cook I previously worked with at INSA. Despite Eddie being a professional cook, I had more experience with the high volume and culture of Smorgasburg, and I knew we had to create a malleable menu catering to the complex tastes of Smorgasburg customers.</p>
 
@@ -220,21 +224,31 @@ export function AutoBioThree() {
         <img className="blog-image__img" src="/images/blog-images/autobio/foodoptions.png" alt="Brady brunch break down of Smorgasburg food options." />
       </div>
 
-      <p className="blog-text">The menu had to be eccentric but familiar, sophisticated but not complicated, and versatile enough for setup every morning. This was not gourmet dishes or a gastronomy experience, nor was it hot dogs and funnel cake. The food had to be something in the middle, and it had to be resilient to expiration, simple to store and transport to the outdoor markets.</p>
+      <p className="blog-text">Let me tell you about Smorgasburg. It is an overpriced food tasting of, albeit, original but mediocre tasting food. There's only a few places I would actually eat at again. The business thrives on young people, tourists, and couples trying to do something fun in a festive summer atmosphere.</p>
+      
+      <p className="blog-text">So here are the rules to a good menu at Smorg. The dish has to be eccentric but familiar, sophisticated but not complicated, and versatile enough for easy prep and setup every morning. This was not gourmet dishes or a gastronomy experience, nor was it hot dogs and funnel cake. The food had to be something in the middle, and it had to be resilient to expiration, simple to store and transport to the outdoor markets.</p>
+
+      <p className="blog-text">I started when raindrop cake first started, and everyone had seen videos and pictures of their cute, round, smooth gelatin cakes. They had advertisements on facebook, buzzfeed, tasty, and everyone was raving about it without realizing raindrop cake consisted of water, a hint of sugar, and agar gelatin sold at $7.</p>
 
       <p className="blog-text">Unknowingly, by the end of the first season I open, my menu will have changed 3 times, from braised short ribs to buttered-rice burgers and pork belly, to fried chicken karaage and curry fish balls.</p>
 
       <p className="blog-text">Before all of that though, we tested recipes for braised short-ribs, sauces, and braised pork belly. Eddie Kim's cooking is amazing, and even now, the flavor of the short-rib he made has been unattainable by me. A unicorn flavor, if you will.</p>
 
-      <p className="blog-text">From this menu, I searched for reliable wholesale places for ingredients, and spent thousands on kitchen and booth equipment. Everything costs money, and I was really digging into my savings. Til this point, I never even realized utensils obviously cost money as well. As do gloves, straws, soy sauce, and containers to hold everything. The next time you grab a handful of napkins that you might not need, remember, someone had to pay for them. I had gone through half of my 10K savings in the first two weeks.</p>
+      <p className="blog-text">From this menu, I searched for reliable wholesale places for ingredients, and spent thousands on kitchen and booth equipment. That was possibly the hardest part. Every step of the way costs money, and every step you take is another one you will have to take back if you decide to turn around.</p>
 
-      <p className="blog-text">The main wholesale place for all my needs was Jetro. This place is Costco minus every single customer-friendly feature. There is no person to greet you, no colorful signs, and there are constantly active forklifts zipping through the aisles dodging people with merchandise. If you're going into the cold food section, bring a jacket, because it is an enormous walk-in fridge. And understand that Jetro membership requires a Certificate of Authority, meaning every customer there is a business owner. So in every line, people will have enormous carts with over 100 items that can cost thousands of dollars at a time. It's insane and almost overwhelming the first time I went.</p>
+      <p className="blog-text">With that said, the next time you grab a handful of napkins that you might not need, remember, someone had to pay for them. I had gone through half of my 10K savings in the first two weeks. Til this point, I never even realized utensils obviously cost money as well. As do gloves, straws, soy sauce, or even the containers to hold all of those things.</p>
+
+      <p className="blog-text">So where do business owners shop? How do they get access to exclusive goods? The main wholesale place for all my needs was Jetro.</p>
+
+      <p className="blog-text">If you consider Costco to be a real wholesale place, then you're in for a shock. Everything at Costco is overpriced compared to Jetro. This place is Costco with more bulk, lower prices, and minus every single customer-friendly feature. There is no person to greet you, no colorful signs, and there are constantly active forklifts zipping through the aisles dodging people with merchandise. If you're going into the cold food section, bring a jacket, because it is an enormous walk-in fridge.</p>
+
+      <p className="blog-text">And understand that Jetro membership requires a Certificate of Authority, meaning every customer there is a business owner. So in every line, people will have enormous carts with over 100 items that can cost thousands of dollars at a time. It's insane and almost overwhelming the first time I went.</p>
 
       <div className="blog-image">
         <img className="blog-image__img" src="/images/blog-images/autobio/jetro.jpg" alt="Inside Jetro." />
       </div>
 
-      <p className="blog-text">Here's a price comparison. 5lbs of potatoes at average supermarket can cost about %3-5 dollars. 50lbs of potatoes at Jetro costs $12. Huge difference. After shopping at Jetro, I found it impossible to shop anywhere else.</p>
+      <p className="blog-text">Here's a price comparison. 5lbs of potatoes at your average supermarket can cost about $3-5 dollars. 50lbs of potatoes at Jetro costs $12. Huge difference. After shopping at Jetro, I found it impossible to shop anywhere else.</p>
 
       <p className="blog-text">In addition to that, I needed my dad's SUV to transport the supplies, meaning he'd drive to NYC from Philly every weekend to lend me the vehicle. And though I don't regret my choices, I still feel sorrow and apologetic for what I did next.</p>
 
@@ -262,13 +276,13 @@ export function AutoBioThree() {
 
       <p className="blog-text">We picked up the slack, reorganized, and nearly 3 hours into the day, we had sold out of short-ribs and pork belly we brought. Maybe we weren't charging enough, or maybe 4 short-ribs were too generous. I told my parents to transport us the rest of the short-rib I had kept in the refrigerator, left behind in the morning because I had falsely assumed the day would be slow.</p>
 
-      <p className="blog-text">They brought it over in thirty minutes, and I upped the price and kept the short-ribs to strictly 3 pieces. Even then, the supply only lasted us another 2 hours, and we'd only sold enough to pay off the rent for the weekend. We had to close prematurely.</p>
+      <p className="blog-text">They brought it over in thirty minutes, and I upped the price and kept the short-ribs to strictly 3 pieces. I do have that managerial spirit. Even with these adjustments however, the supply only lasted us another 2 hours, and we'd only sold enough to pay off the rent for the weekend. We had to close prematurely.</p>
 
-      <p className="blog-text">Eddie Kim and I started debating what to do. The market was still busy, and we had run through all the short-rib we could've possibly prepared in our small kitchen and just barely made it past half the market day. We realized we didn't have enough resources to support this amount of business, to create enough product to sell to this population of customers. There wasn't enough room to store such a vast amount of food, nor did we have the equipment or manpower to sell it in time.</p>
+      <p className="blog-text">Eddie Kim and I started debating what to do. The market was still busy, and we had run through all the short-rib we could've possibly prepared in our small kitchen and just barely made it past half the market day. We realized we didn't have enough resources to support this amount of business, nor the resources to create and store enough product for this population of customers.</p>
 
       <p className="blog-text">I suggested to Eddie Kim a way out. If he wanted to back out of the business, I wouldn't persecute him for it. I could tell he was still bitter about the 65-35 profit split. But regardless of his decision, I would stay because in addition to the fact I had already invested thousands into the business, I had also garnered a resentment to working for other people.</p>
 
-      <p className="blog-text">From 15East to X'ian to all the other restaurants, I'd had enough. I was tired of going from one job to the next while accomplishing nothing meaningful in my life.</p>
+      <p className="blog-text">From 15East to X'ian to all the other restaurants, I'd had enough. I was tired of going from one job to the next while accomplishing nothing meaningful in my life. This was something I had to do.</p>
 
       <p className="blog-text">In response, Eddie Kim took the way out. I couldn't blame him, as success of the business looked bleak. Afterwards, he left and that was the last time I've spoken to him. I don't regret my choices, but do feel sorry for the way things turned out.</p>
 

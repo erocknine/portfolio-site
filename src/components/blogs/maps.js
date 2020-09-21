@@ -5,7 +5,7 @@ export default function MapsBlog() {
   return (
     <div className="blog-page css">
       <h1 className="blog-header one">Having a good ol' time with Map APIs</h1>
-      <p className="blog-text">September 17, 2020 | 9 min</p>
+      <p className="blog-text">September 17, 2020 | 8 min</p>
 
       <div className="blog-links">
         <AnchorLink offset={() => 104} href="#geolocation">{`Geolocation`}</AnchorLink>

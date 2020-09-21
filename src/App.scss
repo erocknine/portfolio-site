@@ -147,6 +147,27 @@ body {
   }
 }
 
+#svg-swing {
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+	transform-origin: 50% 0;
+  will-change: transform;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(50deg);
+  }
+  47%, 50% {
+    transform: rotate(-50deg);
+  }
+  97%, 100% {
+    transform: rotate(50deg);
+  }
+}
+
 
 #loader {
   animation-name: loader;
@@ -162,6 +183,7 @@ body {
 		transform: rotate(360deg);
 	}
 }
+
 
 .notfound-section {
   height: 100vh;
