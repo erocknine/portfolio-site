@@ -22,17 +22,17 @@ export function AutoBioOne() {
 
       <p className="blog-text">I've been in the food industry for most of my 20's. I'm sure my parents were real glad I put my 4 year college degree straight to work in the kitchen. My journey to that point started from a series of food industry jobs I accidentally indulged in, ignited by my time living in Japan.</p>
 
-      <p className="blog-text">The year was 2012, and I was studying abroad in Tokyo, Japan, with my girlfriend of 4 years, Raquel. We met freshman year, and like a fool, I believed her when she said she was fine being just friends with benefits. Unknowingly, she was the only consistent thing in my 20's besides my complete lack of direction in life. Our relationship being without a doubt, is one of the greatest posessions I have.</p>
+      <p className="blog-text">The year was 2012, and I was studying abroad in Tokyo, Japan, with my girlfriend of 4 years, Raquel. We met freshman year, and like a fool, I believed her when she said she was fine being just friends with benefits. Unknowingly, she was the only consistent thing in my 20's besides my complete lack of direction in life. Our relationship is without a doubt, one of the greatest posessions I have.</p>
 
       <div className="blog-image">
         <img className="blog-image__img" src="/images/blog-images/autobio/sexy_waifu.jpg" alt="My beautiful ride or die girlfriend." />
       </div>
 
-      <p className="blog-text">We studied abroad at Soka University in Hachioji Japan, and let me tell you, for a country with an enormous porn industry, their culture spends a lot of its time indulging in sex while pretending none of it exists at the very same time.</p>
+      <p className="blog-text">We studied abroad at Soka University in Hachioji Japan, and let me tell you, for a country with an enormous porn industry, their culture spends a lot of its time indulging in sex while pretending none of it exists at the very same time. Also a common recurring theme in their porn. Quite ironic.</p>
 
       <p className="blog-text">Our dorms were separated, all boys for me and all girls for Raquel. I will say right now, I was horribly frustrated. Sexually. In case it wasn't apparent in my writing. Here we were, in a foreign country with my girlfriend and we were trapped in two different living spaces for 5 months.</p>
 
-      <p className="blog-text">The only solution? The Love Hotel 15 minutes away from the dorm. During our time, we actually spent time at several of these hotels. One was further away with a really cool pipe technology I've only ever seen on TV. When time came to pay for the room, a canister would rush along this transparent pipe into an opening. You'd grab the canister, put the cash in, send the canister back through the pipe, and another one would come wooshing over with your change.</p>
+      <p className="blog-text">The only solution? The Love Hotel 15 minutes away from the dorm. By the end of our semester, we would've actually spent time at several of these hotels. One was further away with a really cool pipe technology I've only ever seen on TV. When time came to pay for the room, a canister would rush along this transparent pipe into an opening. You'd grab the canister, stuff the cash in, push the canister back through the pipe, and another one would come wooshing over with your change.</p>
 
       <p className="blog-text">These hotels were amazing. There'd be non-stop porn on every channel of the TV, an amazing bath, some had karaoke machines, and there was usually an incredible massager that I used for getting the knots on my back. Yup, massager, and that's all I used it for.</p>
 
