@@ -17,9 +17,22 @@ export default function Resume() {
 
           <h2>EXPERIENCE</h2>
           <div className="resume-history">
+            
+            <div>
+              <h3>MIKI HOUSE Americas</h3>
+              <p className="resume-text-sub"><strong>Freelance Web Developer • Brooklyn, NY • July 2020 - Present</strong></p>
+
+              <p className="resume-text-info">Develop custom features for client's Shopify store using Liquid, Javascript & CSS.</p>
+
+              <p className="resume-text-desc"><strong>Designed</strong> & implemented Upsell & Cross-sell features utilizing Limespot application analytics.</p>
+
+              <p className="resume-text-desc"><strong>Refined</strong> code to correct search feature filters and adjusted UI for better experience.</p>
+
+            </div>
+
             <div>
               <h3>HIES INC.</h3>
-              <p className="resume-text-sub"><strong>Freelance Web Developer / UI Designer • Brooklyn, NY • July 2020 - August 2020</strong></p>
+              <p className="resume-text-sub"><strong>Contract Web Developer / UI Designer • Brooklyn, NY • July 2020 - August 2020</strong></p>
 
               <p className="resume-text-info">Designed & built company website for HIES Inc., an environmental services company, to be modern, manageable, and business & user-friendly. Built using React JS & Redux, SASS, PIXI.js, React Router, and EmailJS.</p>
 
