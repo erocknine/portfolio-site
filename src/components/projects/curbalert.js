@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 const CurbalertDoc = (props) => {
-  const { projectDoc, handleProject } = props;
+  const { openDoc, handleProject } = props;
   const [ large, setLarge ] = useState(false)
 
   return (
-    <div className={ projectDoc === 'curbalert' ? `projects-document curbalert`: "projects-document"}>
-      <div id="curbalert" className="project-title">
+    <div className={ openDoc === 'curbalert' ? `projects-document curbalert`: "projects-document"}>
+      <div className="project-title">
         <p>Technical</p>
         <h1>CurbAlert</h1>
         <p className="text">May 2020</p>
@@ -95,76 +95,76 @@ const CurbalertDoc = (props) => {
 
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <h3>The Purpose</h3>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Curbalert was a passion project of mine. Anyone who's walked around NYC, or any city for that matter, have probably seen furniture or boxes on apartment steps & street curbs filled with items that aren't broken, but unwanted. I've seen perfectly usable coffee tables, board games, and endless amounts of books being tossed away on a daily basis, and it always seems like a waste.</p>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/curbalert/curbalert01.jpg" alt="Curbalert's landing page showing map, dashboard and navbar"/>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">That is why I came up with Curbalert. This application helps pay it forward by allowing users to post images & descriptions of items that are unwanted around the city. Maybe a user is walking down the street and sees a nice IKEA shelf being thrown away, or a user has to move and can't take everything with them. Using this app, a user can post those items, and other users will be able to view it on a map with built-in Google directions taking them directly to the item.</p>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <h3>Behind the Design</h3>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Curbalert is meant for users on the move, which is why I designed this app to be a simple single-page application with the map sitting in the prominent forefront. Active item posts are viewable & searchable by keywords, and a dashboard is available for keeping saved item posts.</p>
         </div>
 
-        {/* <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        {/* <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p>I wanted users to be visually impressed when using the application, so upon login, the username is passed to the welcome animation, which also functions as a loader. I wanted to convey simplicity and class by keeping the colors a simple black & white.</p>
           <img className="image" src="images/project-images/curbalert/curbalert-start.gif" alt="GIF showing login process along with welcome animation"/>
         </div> */}
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">The page layout I had in mind initially kept the navbar at the top, except I wanted to incorporate a navbar I had previously designed. With the navbar established on the left side instead, everything else required simple rearranging.</p>
         </div>
       
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <img className="image" src="images/project-images/curbalert/navbar.gif" alt="GIF demonstrating a navbar previously made using only HTML & CSS"/>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <h3>Rendering Logic</h3>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion-stacked":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion-stacked":"project-portion closed" }>
           <p className="p-solo">Back-end development might be heavy on data structure algorithms, but front-end logic is no simple beast. Not only does front-end development have to deal with design & styling, but also with rendering logic.</p>
           <p className="p-solo">In one particular situation, I mapped all the elements from an items array into a flexbox container. However, whenever the dropdown from the item element expanded, it would push down not only the item beneath it, but the entire row. Flexbox had neatly laid out all the items into the container for me, but was also disappointingly the cause of the unexpected problem.</p>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p >This wasn't necessarily a bug, but a visual nuisance to the UI. It was not a simple styling problem as I thought, and I had to resolve it. After some contemplating, I realized that the mapping function was too straightforward. It would render everything immediately into whatever container I called the function, and there was no line of CSS I could apply to the container to render it differently.</p>
           <img className="image" src="images/project-images/curbalert/curbalert07.png" alt="GIF demonstrating a navbar previously made using only HTML & CSS"/>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p>So, I decided to split the item array into odds & evens as well as split the flexbox container into two separate divs with flex-direction: column on each. Then, all I had to do was render the odd items into one column and even items into the other. My solution required a collaborative effort between React and CSS, as expected I suppose.</p>
           <img className="image" src="images/project-images/curbalert/curbalert06.png" alt="Wireframe sketch of original Curbalert page layout"/>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <h3>AWS S3 Cloud</h3>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion-stacked":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion-stacked":"project-portion closed" }>
           <p className="p-solo">Originally, I was only going to rely on Rail's built-in Active Storage, a gem that streamlines the process of associating images with your other models. Knowing I would eventually deploy the application however, I knew I couldn't store the images in my local back-end forever, so I decided to employ Amazon's AWS S3 Cloud. </p>
           <p className="p-solo">Luckily for me, once Active Storage was set up, connecting to AWS S3 Cloud was a piece of cake. In fact, navigating through AWS's countless services was much harder. With everything set up, a user can post an item, sending the object to Rails Active Storage which associates the image with the Item model, then routes the image to a bucket on AWS S3 Cloud, which will then return a url to the image itself, becoming viewable on Curbalert.</p>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <h3>Mapping with APIs</h3>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p>Geolocation API and Google Geocode API worked together to retrieve the coordinates & address of the user. This data is used to fill in the required address inputs to save the user time when creating an item post. If a user is on the move, all the user needs to do is snap a picture of the item and write a description. After posting, the item is rendered onto the Leaflet map and the active section, becoming viewable by all users.</p>
           <div className="image-block">
             <img className="image" src="images/project-images/curbalert/curbalert03.jpg" alt="Numerous active posts on map and active sidebar"/>
@@ -172,32 +172,32 @@ const CurbalertDoc = (props) => {
           </div>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <h3>Working with Leaflet Map API</h3>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion-stacked":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion-stacked":"project-portion closed" }>
           <p className="p-solo">To draw the directions on my Leaflet Map, I had to use an npm package specifically meant to decode polylines included in the response JSON from Google Directions API. Leaflet map was a chore to work with, simply because the code is written for JavaScript which relies on direct DOM manipulation, a method React frowns upon.</p>
           <p className="p-solo">There is a Leaflet React npm, but the documentation was so poor, I skipped whatever components were available in the library and manipulated the map with React hook, useRef. Only by directly selecting a certain DOM element was I able to create a button that could center the map on a specific point, in this case, an item's address.</p>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <img className={large ? "image-large":"image clickable"} src="images/project-images/curbalert/curbalert05.jpg" onClick={() => setLarge(!large)} alt="Response JSON from Google Directions API" />
           <img className="image" src="images/project-images/curbalert/curbalert02.jpg" alt="Curbalert has built-in Google Directions"/>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Sifting through the response JSON from Google Directions API was an absolute privilege. Not only was the JSON organized and intuitive to use, but knowing the directions data was being dynamically generated for any address in a fraction of a second, really demonstrated the greatness of humans and technology.</p>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
             <img className="image-solo" src="images/project-images/curbalert/curbalert04.jpg" alt="Item post magnification"/>
             <span>The sole remaining 80's themed aesthetic left behind from a previous visual concept of the project</span>
           </div>
         </div>
 
-        <div className={ projectDoc === 'curbalert' ? "project-portion":"project-portion closed" } onClick={() => handleProject("curbalert")}>
+        <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" } onClick={() => handleProject("curbalert")}>
           <a href="#projects"><img className="return"src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 

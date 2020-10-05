@@ -1,10 +1,10 @@
 import React from 'react'
 
 const KaraDoc = (props) => {
-  const { projectDoc, handleProject } = props;
+  const { openDoc, handleProject } = props;
 
   return (
-    <div className={projectDoc === 'kara' ? `projects-document kara`: "projects-document"}>
+    <div className={openDoc === 'kara' ? `projects-document kara`: "projects-document"}>
       <div id="kara" className="project-title">
         <p>Technical</p>
         <h1>KARA-OK!</h1>
@@ -46,54 +46,54 @@ const KaraDoc = (props) => {
 
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/kara/kara01.png" alt="Kara-Ok Home Page"/>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion" : "project-portion closed" }>
           <h3>The Purpose</h3>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion-stacked":"project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion-stacked":"project-portion closed" }>
           <p className="p-solo">I was brainstorming ideas for a project to build using Rails, and like I usually do when I hit coder's block, I started listening to music. Singing out loud is extremely cathartic to me, especially when it comes to catchy tunes like A-HA's "Take on Me". What tends to kill the mood though, is when I reach the part of the song I don't know the lyrics to.</p>
           <p className="p-solo">So, I came up with the idea of Kara-OK! This RESTful web application allows users to create & save lyric playlists to their favorite songs. A user will log in, name and create a playlist, then search for songs to add. Their search sends a request to a Lyrics API, and if there's a match, will automatically add the song to the playlist while dynamically generating a lyric page. Users can sort & rearrange the songs in the playlist, edit the lyrics, and embed youtube videos to the lyric page.</p>
         </div>
         
-        <div className={ projectDoc === 'kara' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion" : "project-portion closed" }>
           <h3>Design</h3>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">I wanted Kara-OK! to have a cool yet playful vibe. Hence, one of the reasons famous copyrighted character, Danboard, sits in the background of the home page. To encourage this youthful and lighthearted spirit, I followed a hard red to light beige color palette, and included stylish & clean high-resolution music themed backgrounds with stronger firm fonts.</p>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
           <img className="image" src="images/project-images/kara/kara04.png" alt="Red error banner when song isn't found"/>
           <p>One of the few animations I included is a CSS transform for this message banner whenever a user searches a song. If the request for the song search fails in the API, a catch & rescue function responds with an error message, which executes the red banner animation indicating the song was not found.</p>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
           <img className="image" src="images/project-images/kara/kara03.png" alt="Green success banner when song is found and added"/>
           <p>If the request is successful, the song is automatically added to the playlist, and a separate green banner animates indicating the song was added. I chose a bright green to clash with the colors of the page in order to enforce a feeling of change and success.</p>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion" : "project-portion closed" }>
           <h3>Lyrics Page</h3>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
             <img className="image-solo" src="images/project-images/kara/kara02.png" alt="Dynamically generated song lyric page"/>
             <span>the1975 is one of my favorite bands</span>
           </div>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion-stacked" : "project-portion closed" }>
+        <div className={ openDoc === 'kara' ? "project-portion-stacked" : "project-portion closed" }>
           <p className="p-solo">Once a song is added, a lyrics page is dynamically generated following the playlist name the song belongs to, and the song number within the playlist. The song title and artist is extracted from the Lyrics API response JSON and rendered at the top, while the lyrics render onto the main body of the page. There are HTML page break tags included in the lyrics from the API itself, so I included a Regular expression method, .gsub (.replace in JS), to remove them in order to match my own CSS formatting of the lyrics. Of course, the feature to personally edit the lyrics is also available to the user.</p>
           <p className="p-solo">An extra feature I included was the ability to embed a youtube video of the song. A user can input the youtube video URL which will render an iframe container onto a fixed position on the page.</p>
         </div>
 
-        <div className={ projectDoc === 'kara' ? "project-portion":"project-portion closed" } onClick={() => handleProject("kara")}>
+        <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" } onClick={() => handleProject("kara")}>
           <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 

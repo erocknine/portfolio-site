@@ -1,11 +1,11 @@
 import React from 'react'
 
 const GoroomDoc = (props) => {
-  const { projectDoc, handleProject } = props;
+  const { openDoc, handleProject } = props;
 
   return (
-    <div className={projectDoc === 'goroom' ? `projects-document goroom`: "projects-document"}>
-      <div className="project-title">
+    <div className={openDoc === 'goroom' ? `projects-document goroom`: "projects-document"}>
+      <div id="goroom" className="project-title">
         <p>Design</p>
         <h1>GO ROOM</h1>
         <p className="text">June 2020</p>
@@ -36,19 +36,19 @@ const GoroomDoc = (props) => {
           </div>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/goroom/goroom_new.png" alt="Redesigned Go Room Home Page"/>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <h3>The Reimagining</h3>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Go Room's developer explained his application was lacking in styling and any kind of meaningful design. So, I decided to try and implement a few ideas I've never tried before. The end result was a complete rebranding of the video chat application, blending minimalistic modern themes with interactive elements. Everything was made possible with Angular's conditional rendering logic collaborating intimately with custom SASS styling & animations.</p>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <p>Original Go Room landing page which included a join chat room button, a start chat room button, and a fixed navbar on the bottom.</p>
           <div className="image-block">
             <img className="image" src="images/project-images/goroom/goroom_original.png" alt="Original Go Room home page"/>
@@ -56,47 +56,47 @@ const GoroomDoc = (props) => {
           </div>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <h3>Neumorphism</h3>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">For this project, I wanted to test different design concepts. The original Go Room design was minimalistic, and since the buttons were at the forefront, I believed a Neumorphic design suited the application.</p>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
             <img className="image-solo" src="images/project-images/goroom/neumorphic.png" alt="Neumorphic Design example"/>
             <span>Neumorphic Design</span>
           </div>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Neumorphism emphasizes realism and minimalistic style, and is most effective when buttons are involved. Clean, smooth color gradients with light & dark box-shadow creates that special visual effect of neumorphism.</p>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <img className="image" src="images/project-images/goroom/goroom_test.png" alt="Test neumorphic button design layout"/>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">I toyed with the concept hoping to encourage the prominence of the buttons. Unfortunately, the neumorphic effect on only two buttons wasn't enough to create any meaningful impact.</p>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <img className="image" src="images/project-images/goroom/goroom_sketch.png" alt="Wireframe sketch of final design layout"/>
           <img className="image" src="images/project-images/goroom/goroom-home.gif" alt="GIF demonstrating animations to join and start a chat room in final design"/>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Ultimately, I decided on a classy & modern touch with simple interactions emphasized by meaningful animations. Using some clever class switches, hovers, and transforms, Go Room's landing page becomes an interactive delight.</p>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/goroom/goroom_new2.png" alt="Final design layout"/>
         </div>
 
-        <div className={ projectDoc === 'goroom' ? "project-portion":"project-portion closed" } onClick={() => handleProject("goroom")}>
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" } onClick={() => handleProject("goroom")}>
           <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 

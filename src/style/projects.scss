@@ -45,18 +45,12 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
           text-transform: uppercase;
         }
       }
-      .projects-card-title.show {
-        position: absolute;
-        top: 0;
+    }
+      .projects-card-title:hover {
         padding: 2rem;
         opacity: 1;
         transition: 200ms ease-in-out;
-        h2 {
-          font-family: 'Josefin Sans';
-          text-transform: uppercase;
-        }
       }
-    }
     .projects-card:hover {
       transform: scale(1.02);
       cursor: pointer;
@@ -136,6 +130,18 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-row-end: 5;
     }
     .projects-card.kara.false {
+      filter: brightness(0.5) saturate(0) contrast(1.2);
+    }
+    .projects-card.numbertool {
+      background-image: url('../images/project-images/numbertool/og_image.png');
+      background-size: cover;
+      background-position-x: 55%;
+      grid-column-start: 5;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 5;
+    }
+    .projects-card.numbertool.false {
       filter: brightness(0.5) saturate(0) contrast(1.2);
     }
   }
@@ -231,6 +237,20 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     grid-row-end: 7;
   }
   .projects-document.goroom {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition: 1000ms ease-in-out;
+    padding: 4rem;
+    height: fit-content;
+    width: 90vw;
+    color: $gunmetal;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 7;
+  }
+  .projects-document.numbertool {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
@@ -419,6 +439,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       .projects-document.hies {
         padding: 2rem;
       }
+      .projects-document.numbertool {
+        padding: 2rem;
+      }
     }
   }
 }
@@ -430,7 +453,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       .projects-cards {
         display: grid;
         grid-template-columns: 45vw 2vw 45vw;
-        grid-template-rows: 45vw 1vw auto 1vw 45vw 1vw auto 1vw 45vw 1vw auto;
+        grid-template-rows: 45vw 1vw auto 1vw 45vw 1vw auto 1vw 45vw 1vw auto 1vw 45vw 1vw;
       }
       .projects-cards:last-child {
         margin-bottom: 2vh;
@@ -483,6 +506,12 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         grid-row-start: 9;
         grid-row-end: 9;
       }
+      .projects-card.numbertool {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 13;
+        grid-row-end: 13;
+      }
       .projects-document.curbalert {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -531,7 +560,14 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         width: 92vw;
         padding: 1.5rem;
       }
-
+      .projects-document.numbertool {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 11;
+        grid-row-end: 11;
+        width: 92vw;
+        padding: 1.5rem;
+      }
       #anchor {
         grid-column-start: 1;
         grid-column-end: 3;

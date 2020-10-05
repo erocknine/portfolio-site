@@ -6,7 +6,7 @@ export default function TypeScript(props) {
   return (
     <section className="home-type">
       <Typical
-        steps={['Imagine', 1000, 'Design', 700, 'Create', 1300]}
+        steps={['Imagine', 1800, 'Design', 1700, 'Create', 2000]}
         loop={Infinity}
         wrapper="h1"
       />

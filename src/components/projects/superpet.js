@@ -1,10 +1,10 @@
 import React from 'react'
 
 const SuperpetDoc = (props) => {
-  const { projectDoc, handleProject } = props;
+  const { openDoc, handleProject } = props;
 
   return (
-    <div className={projectDoc === 'superpet' ? `projects-document superpet`: "projects-document"}>
+    <div className={openDoc === "superpet" ? `projects-document superpet`: "projects-document"}>
       <div id="superpet" className="project-title">
         <p>Technical</p>
         <h1>Super Pet Bros. Unleashed</h1>
@@ -45,67 +45,67 @@ const SuperpetDoc = (props) => {
 
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/superpet/superpet02.png" alt="Super pet battle"/>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <h3>The Application</h3>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Super Pet Bros. Unleashed is a JavaScript web game with a battle system reminiscent of Pokemon, except the Pokemon are pets that users can create. This was a collaborative team project with our front-end built using vanilla JavaScript and back-end using Rails & PostgreSQL.</p>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion":"project-portion closed" }>
           <img className="image" src="images/project-images/superpet/superpet_sketch.png" alt="Wireframe sketch of Super pet page layouts"/>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Just like Pokemon, our pets had stats for Attack, Defense, and Speed, along with personality types that affected these stats. Personality wasn't a necessary feature, in fact it wasn't even an element in our back-end Pet model, but I knew users would enjoy a familiar connection with their pet avatar especially if they were creating it after their actual pet. For the moves, we made sure to brainstorm the cutest move names to avoid any implications of dog fighting.</p>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <h3>C is for CREATE</h3>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <p>The Create page included form inputs for name, avatar image, personality, stat point allotment and move selection. The stat adjustments included specific logic to control the number of points a user can allot with restricted min & max numbers of each stat for game balancing. </p>
           <img className="image" src="images/project-images/superpet/superpet04.png" alt="Final create page"/>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <p>Initially, I underestimated the logic required for selecting and limiting a specific number of objects from a checkbox list. Ideally, a user has to select 4 moves from the checkbox list, no more and no less. As soon as 4 are selected, the other checkboxes have to be disabled, and if one is unchecked, they all must be re-enabled. What seemed to require simple JavaScript logic turned into a nightmare of an algorithm, and I had to rewrite the code three times before finally coming upon a solution that worked.</p>
           <img className="image" src="images/project-images/superpet/superpet_code.png" alt="Javascript code for checkbox selection" />
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <img className="image" src="images/project-images/superpet/superpet03.png" alt="Players can battle celebrity pets like Undead Grumpy Cat"/>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <p className="p-solo">We seeded the database with a number of internet pet celebrities for the players to fight. After finishing the Create page however, we realized the game wasn't just a pet battling game. In its state, the game allowed users to create avatars for not only pets, but for anything. You could create a Taco, upload an image of a Taco, choose attack moves and fight a dish of Jambalaya. Our game went off a tangent, and the result was brilliant!</p>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <h3>Battle Experience</h3>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion" : "project-portion closed" }>
           <img className="image" src="images/project-images/superpet/superpet_battle.gif" alt="GIF demonstrating gameplay"/>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion-stack":"project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion-stack":"project-portion closed" }>
           <p className="p-solo">Here, Hosico battles an arch nemesis, the beef soft-shell taco. To make things more interesting, I added randomized backgrounds and side effects to our attack scripts.</p>
           <p className="p-solo">Whenever an attack occurred, a sound effect would play and an img div containing an effect GIF would appear in a randomized location centered on the enemy's avatar image. I included all kinds of effect GIFs, from simple "Kapow!" text to my favorite attack animations from other games.</p>
           <p className="p-solo">The sound in my opinion, was one of the greatest features of the battle system. Implementing sound effects required writing a simple class utilizing JavaScript's Audio constructor. Besides playing attack sounds, I included background music from Street Fighter & Final Fantasy. This audio player function not only played a song automatically upon entering a battle, but allowed full functionality for the player to pause, play, and skip songs.</p>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'superpet' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/superpet/superpet05.png" alt="Victory in battle!"/>
         </div>
 
-        <div className={ projectDoc === 'superpet' ? "project-portion":"project-portion closed" } onClick={() => handleProject("superpet")}>
+        <div className={ openDoc === 'superpet' ? "project-portion":"project-portion closed" } onClick={() => handleProject("superpet")}>
           <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 

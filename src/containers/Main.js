@@ -6,10 +6,10 @@ import Resume from '../components/resume'
 import TypeBreak from '../components/typebreak'
 import Blogs from '../components/blogs'
 import Feature from '../components/feature'
+import ImageBreak from '../components/imagebreak'
 import { Loader } from '../components/loader'
 
 const Projects = React.lazy(() => import('../components/projects'));
-const ImageBreak = React.lazy(() => import('../components/imagebreak'));
 
 export default function Main() {
 
@@ -18,8 +18,8 @@ export default function Main() {
       <Navbar/>
       <Name />
       <Profile />
+      <ImageBreak value={"astro"}/>
       <Suspense fallback={<Loader/>}>
-        <ImageBreak value={"astro"}/>
         <Projects />
       </Suspense>
       <TypeBreak>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import '../style/projects.scss'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import CurbalertDoc from './projects/curbalert'
@@ -7,30 +7,60 @@ import SuperpetDoc from './projects/superpet'
 import KaraDoc from './projects/kara'
 import GoroomDoc from './projects/goroom'
 import HiesDoc from './projects/hies'
-
+import NumbertoolDoc from './projects/numbertool'
 
 export default function Projects() {
   const [open, setOpen] = useState(false);
-  const [projectDoc, setProjectDoc] = useState("")
+  const [openDoc, setOpenDoc] = useState("")
   const [hover, setHover] = useState(false)
   const [active, setActive] = useState("")
 
-  const handleProject = (projectCheck) => {
-    if(projectDoc === "") {
+  const handleProject = (name) => {
+    if(openDoc === "") {
       setOpen(true)
     }
-    if(projectDoc === projectCheck) {
+    if(openDoc === name) {
       setOpen(false)
-      setProjectDoc("")
+      setOpenDoc("")
     }
-    if(projectDoc !== projectCheck) {
-      setProjectDoc(`${projectCheck}`)
+    if(openDoc !== name) {
+      setOpenDoc(`${name}`)
     }
   }
 
+  const renderProjects = () => {
+    return projects.map((project, index) => 
+    <Fragment key={index}>
+      <ProjectDiv 
+        name={project.name}
+        title={project.title}
+        projectDoc={project.projectDoc}
+        handleProject={handleProject}
+        hover={hover}
+        active={active}
+        setHover={setHover}
+        setActive={setActive}
+        open={open}
+        openDoc={openDoc}
+      />
+      {project.projectDoc}
+    </Fragment>
+    )
+  }
+
+  const projects = [
+    {name: "curbalert", title: "CurbAlert", projectDoc: <CurbalertDoc openDoc={openDoc} handleProject={handleProject}/>}, 
+    {name: "hangouts", title: "Hangouts", projectDoc: <HangoutsDoc openDoc={openDoc} handleProject={handleProject}/>}, 
+    {name: "superpet", title: "Super Pet Bros. Unleashed", projectDoc: <SuperpetDoc openDoc={openDoc} handleProject={handleProject}/>}, 
+    {name: "kara", title: "KARA-OK!", projectDoc: <KaraDoc openDoc={openDoc} handleProject={handleProject}/>}, 
+    {name: "hies", title: "HIES Inc.", projectDoc: <HiesDoc openDoc={openDoc} handleProject={handleProject}/>}, 
+    {name: "goroom", title: "Go Room", projectDoc: <GoroomDoc openDoc={openDoc} handleProject={handleProject}/>},
+    {name: "numbertool", title: "Number Tool", projectDoc: <NumbertoolDoc openDoc={openDoc} handleProject={handleProject}/>}
+  ]
+
   return (
     <section className="projects-section">
-      <div id="projects" />
+      <div id="projects"/>
       <div className="header-bar">
         <h1 className="projects-header">PROJECTS</h1>
       </div>
@@ -38,76 +68,44 @@ export default function Projects() {
       <div className="projects-content">
         <div className="projects-cards">
 
-          <AnchorLink href={ open && projectDoc === "curbalert" ? null:"#anchor" } className="projects-card curbalert">
-            <Card project={projects[0]} hover={hover} active={active} projectDoc={projectDoc} projectName={"curbalert"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
-          </AnchorLink>
-          <CurbalertDoc project={projects[0]} projectDoc={projectDoc} projectName={"curbalert"} handleProject={handleProject}/>
+          { renderProjects() }
 
-          <AnchorLink href={ open && projectDoc === "hangouts" ? null:"#anchor" } className="projects-card hangouts">
-            <Card project={projects[1]} hover={hover} active={active} projectDoc={projectDoc} projectName={"hangouts"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
-          </AnchorLink>
-          <HangoutsDoc project={projects[1]} projectDoc={projectDoc} projectName={"hangouts"} handleProject={handleProject}/>
-          
-          <AnchorLink href={ open && projectDoc === "superpet" ? null:"#anchor" } className="projects-card superpet">
-            <Card project={projects[2]} hover={hover} active={active} projectDoc={projectDoc} projectName={"superpet"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
-          </AnchorLink>
-          <SuperpetDoc project={projects[2]} projectDoc={projectDoc} projectName={"superpet"} handleProject={handleProject}/>
-
-          <AnchorLink href={ open && projectDoc === "kara" ? null:"#anchor" } className="projects-card kara">
-            <Card project={projects[3]} hover={hover} active={active} projectDoc={projectDoc} projectName={"kara"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
-          </AnchorLink>
-          <KaraDoc project={projects[3]} projectDoc={projectDoc} projectName={"kara"} handleProject={handleProject}/>
-
-          <AnchorLink href={ open && projectDoc === "hies" ? null:"#anchor" } className="projects-card hies">
-            <Card project={projects[4]} hover={hover} active={active} projectDoc={projectDoc} projectName={"hies"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
-          </AnchorLink>
-          <HiesDoc project={projects[4]} projectDoc={projectDoc} projectName={"hies"} handleProject={handleProject}/>
-
-          <AnchorLink href={ open && projectDoc === "goroom" ? null:"#anchor" } className="projects-card goroom">
-            <Card project={projects[5]} hover={hover} active={active} projectDoc={projectDoc} projectName={"goroom"} handleProject={handleProject} setHover={setHover} setActive={setActive}/>
-          </AnchorLink>
-          <GoroomDoc project={projects[5]} projectDoc={projectDoc} projectName={"goroom"} handleProject={handleProject}/>
           <div id="anchor"/>
-
         </div>
       </div>
     </section>
   );
 }
 
-const Card = (props) => {
-  const { hover, active, projectName, handleProject, setHover, setActive } = props
-  const { title } = props.project;
+  const ProjectDiv = ({ name, title, handleProject, open, openDoc, hover, active, setHover, setActive }) => {
+    return (
+      <Fragment>
+        <AnchorLink href={ open && openDoc === name ? null:"#anchor" } className={`projects-card ${name}`}>
+          <Card 
+            name={name} 
+            title={title} 
+            hover={hover} 
+            active={active} 
+            setHover={setHover} 
+            setActive={setActive} 
+            handleProject={handleProject} 
+          />
+        </AnchorLink>
+      </Fragment>
+    )
+  }
 
-  return (
-    <div id="goroom" className={`projects-card ${projectName}`} onClick={() => handleProject(projectName)} onMouseEnter={() => {setHover(true);setActive(`${projectName}`)}} onMouseLeave={() => {setHover(false);setActive("")}}>
-      
-      <div className={hover && (active !== projectName && active !== "") ? `projects-card ${projectName} false`:`projects-card ${projectName}`}>
+  const Card = (props) => {
+    const { name, title, hover, active, setHover, setActive, handleProject } = props
+    
+    return (
+      <div className={`projects-card ${name}`}
+        onClick={() => handleProject(name)}
+      >
+        <div className={`projects-card ${name}`} />
+        <div className="projects-card-title">
+          <h2>{title}</h2>
+        </div>
       </div>
-
-      <div className={hover && (active !== projectName && active !== "") ? "projects-card-title show" : "projects-card-title"}><h2>{title}</h2></div>
-    </div>
-  );
-};
-
-
-const projects = [
-  {
-    title: "CurbAlert",
-  },
-  {
-    title: "Hangouts",
-  },
-  {
-    title: "Super Pet Bros. Unleashed",
-  },
-  {
-    title: "KARA-OK!",
-  },
-  {
-    title: "HIES Inc.",
-  },
-  {
-    title: "Go Room",
-  },
-];
+    );
+  };

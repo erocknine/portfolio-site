@@ -1,10 +1,10 @@
 import React from 'react'
 
 const HangoutsDoc = (props) => {
-  const { projectDoc, handleProject } = props;
+  const { openDoc, handleProject } = props;
 
   return (
-    <div className={projectDoc === 'hangouts' ? `projects-document hangouts`: "projects-document"}>
+    <div className={openDoc === 'hangouts' ? `projects-document hangouts`: "projects-document"}>
       <div id="hangouts" className="project-title">
         <p>Technical</p>
         <h1>Hangouts</h1>
@@ -86,39 +86,39 @@ const HangoutsDoc = (props) => {
 
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <h3>The Purpose</h3>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/hangouts/hangouts06.jpg" alt="Hangouts home page"/>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Hangouts is a React application with a truly appealing and pragmatic functionality. Imagine a group of friends planning a get-together but no one knows where. Maybe one from the group is tired of going to the same restaurants that are close for their friends but far for them.</p>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">Hangouts can calculate a meetup location with the most optimum commute for all participants, will allow a user to search for a restaurant directly from Yelp's database, and lastly, save the date for all users.</p>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <p>Even between three developers, there was no clear idea how this application should look. We only knew there would be a map, some kind of navbar, and a utilization of Yelp suggestions. So, we looked to Yelp's main page for inspiration.</p>
           <img className="image" src="images/project-images/hangouts/yelp.jpg" alt="Yelp search page"/>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <h3>function bigMaths( )</h3>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion-stack":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion-stack":"project-portion closed" }>
           <p className="p-solo">This is the first project where I've accessed map APIs and applied real-life mathematics beyond simple date & time logic. To my surprise, the process was simple enough. JavaScript has a built-in Geolocation API, and paired with Google Geocode, we were able to retrieve the coordinates and addresses of users. Only problem was to figure out the best way to calculate the midpoint between each user's coordinate.
           </p>
           <p className="p-solo">Haversine formula, which can calculate distance between two coordinates seemed a possibility. Perhaps determine the distance between two users and then divide that by half, then do the same to another user's coordinate until all coordinates have been calculated. Of course, even from the thought alone we could tell that solution would require an over excessive amount of computations.
           </p>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
             <img className="image" src="images/project-images/hangouts/midpoint_sketch.png" alt="Midpoint formula"/>
             <span>Midpoint Formula we didn't know existed</span>
@@ -129,37 +129,37 @@ const HangoutsDoc = (props) => {
           </div>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">After some research, we figured out the solution easily enough using the obvious midpoint formula, and voila! The computations were instantaneous.</p>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <h3>The Dreaded CORS Policy</h3>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <img className="image" src="images/project-images/hangouts/hangouts02.jpg" alt="Yelp suggested restaurants"/>
           <p>CORS blocks all front-end requests to Yelp Search API, a misfortune we discovered after implementing our front-end fetch request. So, we placed the Yelp request with the necessary headers in a controller function in our Rails back-end API.</p>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <h3>The MVP</h3>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <p className="p-solo">The last feature to implement was the actual functionality to create the hangout between users. In the Create Hangouts page, we used Semantic UI React elements to flesh out the forms. We also used SVG images for custom icons.</p>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <img className="image-solo" src="images/project-images/hangouts/hangouts01.jpg" alt="Yelp suggested restaurants"/>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion-stack":"project-portion closed" }>
+        <div className={ openDoc === 'hangouts' ? "project-portion-stack":"project-portion closed" }>
           <p className="p-solo">Upon loading this page, invited friends would be added to an array where the midpoint formula would work through their coordinate keys. The calculated midpoint would sit in a state until the user made a change, either by uninviting a friend (which would rerun the midpoint formula) or searching for restaurants with keywords.</p>
           <p className="p-solo">Our front-end sends the search term and midpoint coordinates to our Rails back-end Yelp request. The restaurants in the response JSON would render onto the map and into the select box as viable options. The user could then select from these restaurants, choose a date & time and create the hangout, which would appear on all users' dashboard on the home page.</p>
         </div>
 
-        <div className={ projectDoc === 'hangouts' ? "project-portion":"project-portion closed" } onClick={() => handleProject("hangouts")}>
+        <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" } onClick={() => handleProject("hangouts")}>
           <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
         </div>
 
