@@ -1,6 +1,5 @@
 import React, { useState, Fragment } from "react";
 import '../style/projects.scss'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import CurbalertDoc from './projects/curbalert'
 import HangoutsDoc from './projects/hangouts'
 import SuperpetDoc from './projects/superpet'
@@ -9,11 +8,11 @@ import GoroomDoc from './projects/goroom'
 import HiesDoc from './projects/hies'
 import NumbertoolDoc from './projects/numbertool'
 
+import { HashLink as Link } from 'react-router-hash-link';
+
 export default function Projects() {
   const [open, setOpen] = useState(false);
   const [openDoc, setOpenDoc] = useState("")
-  const [hover, setHover] = useState(false)
-  const [active, setActive] = useState("")
 
   const handleProject = (name) => {
     if(openDoc === "") {
@@ -36,10 +35,6 @@ export default function Projects() {
         title={project.title}
         projectDoc={project.projectDoc}
         handleProject={handleProject}
-        hover={hover}
-        active={active}
-        setHover={setHover}
-        setActive={setActive}
         open={open}
         openDoc={openDoc}
       />
@@ -70,39 +65,34 @@ export default function Projects() {
 
           { renderProjects() }
 
-          <div id="anchor"/>
+          <div id="project"/>
         </div>
       </div>
     </section>
   );
 }
 
-  const ProjectDiv = ({ name, title, handleProject, open, openDoc, hover, active, setHover, setActive }) => {
+  const ProjectDiv = ({ name, title, handleProject, open, openDoc }) => {
     return (
       <Fragment>
-        <AnchorLink href={ open && openDoc === name ? null:"#anchor" } className={`projects-card ${name}`}>
+        <Link smooth to={ open && openDoc === name ? "":"/#project" } className={`projects-card ${name}`}>
           <Card 
             name={name} 
             title={title} 
-            hover={hover} 
-            active={active} 
-            setHover={setHover} 
-            setActive={setActive} 
             handleProject={handleProject} 
           />
-        </AnchorLink>
+        </Link>
       </Fragment>
     )
   }
 
   const Card = (props) => {
-    const { name, title, hover, active, setHover, setActive, handleProject } = props
+    const { name, title, handleProject } = props
     
     return (
       <div className={`projects-card ${name}`}
         onClick={() => handleProject(name)}
       >
-        <div className={`projects-card ${name}`} />
         <div className="projects-card-title">
           <h2>{title}</h2>
         </div>

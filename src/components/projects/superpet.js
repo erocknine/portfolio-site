@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const SuperpetDoc = (props) => {
   const { openDoc, handleProject } = props;
@@ -106,7 +107,9 @@ const SuperpetDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'superpet' ? "project-portion":"project-portion closed" } onClick={() => handleProject("superpet")}>
-          <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
+          <Link smooth to={"/#projects"}>
+            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+          </Link>
         </div>
 
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const CurbalertDoc = (props) => {
   const { openDoc, handleProject } = props;
@@ -198,7 +199,9 @@ const CurbalertDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" } onClick={() => handleProject("curbalert")}>
-          <a href="#projects"><img className="return"src="images/project-images/return.png" alt="Return Arrow"/></a>
+          <Link smooth to={"/#projects"}>
+            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+          </Link>
         </div>
 
       </div>

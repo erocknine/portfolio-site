@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const NumbertoolDoc = (props) => {
   const { openDoc, handleProject } = props;
@@ -79,7 +80,9 @@ const NumbertoolDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" } onClick={() => handleProject("numbertool")}>
-          <a href="#projects"><img className="return" src="images/project-images/return.png" alt="Return Arrow"/></a>
+          <Link smooth to={"/#projects"}>
+            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+          </Link>
         </div>
 
       </div>

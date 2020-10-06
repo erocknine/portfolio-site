@@ -34,23 +34,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       z-index: 1;
       transition: 400ms ease-in-out;
       position: relative;
-      .projects-card-title {
-        position: absolute;
-        top: 0;
-        opacity: 0;
-        transition: 400ms ease-in-out;
-        z-index: 10;
-        h2 {
-          font-family: 'Josefin Sans';
-          text-transform: uppercase;
-        }
-      }
     }
-      .projects-card-title:hover {
-        padding: 2rem;
-        opacity: 1;
-        transition: 200ms ease-in-out;
-      }
     .projects-card:hover {
       transform: scale(1.02);
       cursor: pointer;
@@ -60,7 +44,32 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-template-columns: 21vw 2vw 21vw 2vw 21vw 2vw 21vw;
       grid-template-rows: 21vw 2vh auto 2vh 21vw 2vh auto 2vh;
     }
-    
+
+    .projects-card-title {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      transition: 200ms ease-in-out;
+      width: 100%;
+      h2 {
+        font-family: 'Josefin Sans';
+        text-transform: uppercase;
+      }
+    }
+    .projects-cards:hover > .projects-card:not(:hover) .projects-card-title {
+      position: absolute;
+      opacity: 1;
+      transition: 200ms ease-in-out;
+      padding: 1.5rem;
+      width: 100%;
+      border-radius: .3rem .3rem 0 0;
+      background:  rgba(43, 48, 58, .85);
+      h2 {
+        font-family: 'Josefin Sans';
+        text-transform: uppercase;
+      }
+    }
+
     .projects-card.hies {
       background-image: url('../images/project-images/hies/hies_work.png');
       background-size: cover;
@@ -70,9 +79,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-row-start: 1;
       grid-row-end: 1;
     }
-    .projects-card.hies.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }
     .projects-card.goroom {
       background-image: url('../images/project-images/goroom/goroom_new.png');
       background-size: cover;
@@ -81,10 +87,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 1;
-    }
-    .projects-card.goroom.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }    
+    }  
     .projects-card.curbalert {
       background-image: url('../images/project-images/curbalert/curbalert04.png');
       background-size: cover;
@@ -92,9 +95,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-column-end: 5;
       grid-row-start: 1;
       grid-row-end: 1;
-    }
-    .projects-card.curbalert.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
     }
     .projects-card.hangouts {
       background-image: url('../images/project-images/hangouts/hangouts01.png');
@@ -105,9 +105,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-row-start: 1;
       grid-row-end: 1;
     }
-    .projects-card.hangouts.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }
     .projects-card.superpet {
       background-image: url('../images/project-images/superpet/superpet05.png');
       background-size: cover;
@@ -116,9 +113,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-column-end: 1;
       grid-row-start: 5;
       grid-row-end: 5;
-    }
-    .projects-card.superpet.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
     }
     .projects-card.kara {
       background-image: url('../images/project-images/kara/kara01.png');
@@ -129,9 +123,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-row-start: 5;
       grid-row-end: 5;
     }
-    .projects-card.kara.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
-    }
     .projects-card.numbertool {
       background-image: url('../images/project-images/numbertool/og_image.png');
       background-size: cover;
@@ -140,9 +131,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-column-end: 5;
       grid-row-start: 5;
       grid-row-end: 5;
-    }
-    .projects-card.numbertool.false {
-      filter: brightness(0.5) saturate(0) contrast(1.2);
     }
   }
 }
@@ -264,7 +252,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     grid-row-start: 7;
     grid-row-end: 7;
   }
-  #anchor {
+  #project {
+    position: relative;
+    top: -4.5rem;
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 6;
@@ -453,7 +443,7 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       .projects-cards {
         display: grid;
         grid-template-columns: 45vw 2vw 45vw;
-        grid-template-rows: 45vw 1vw auto 1vw 45vw 1vw auto 1vw 45vw 1vw auto 1vw 45vw 1vw;
+        grid-template-rows: 45vw 1vw auto 1vw 45vw 1vw auto 1vw 45vw 1vw auto 1vw 45vw 1vw auto;
       }
       .projects-cards:last-child {
         margin-bottom: 2vh;
@@ -512,69 +502,70 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         grid-row-start: 13;
         grid-row-end: 13;
       }
+      #project {
+        top: -7rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 14;
+        grid-row-end: 14;
+      }
+
       .projects-document.curbalert {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 11;
-        grid-row-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 15;
         width: 92vw;
         padding: 1.5rem;
       }
       .projects-document.hangouts {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 11;
-        grid-row-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 15;
         width: 92vw;
         padding: 1.5rem;
       }
       .projects-document.superpet {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 11;
-        grid-row-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 15;
         width: 92vw;
         padding: 1.5rem;
       }
       .projects-document.kara {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 11;
-        grid-row-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 15;
         width: 92vw;
         padding: 1.5rem;
       }
       .projects-document.hies {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 11;
-        grid-row-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 15;
         width: 92vw;
         padding: 1.5rem;
       }
       .projects-document.goroom {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 11;
-        grid-row-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 15;
         width: 92vw;
         padding: 1.5rem;
       }
       .projects-document.numbertool {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 11;
-        grid-row-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 15;
         width: 92vw;
         padding: 1.5rem;
       }
-      #anchor {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 10;
-        grid-row-end: 10;
-      }
-
       .projects-document {
         grid-column-start: 1;
         grid-column-end: 1;
