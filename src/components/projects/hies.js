@@ -80,7 +80,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hies/original_hies3.png" alt="Example of original HIES page overfilled with text"/>
+          <img className="image" src="images/project-images/hies/original_hies3.jpg" alt="Example of original HIES page overfilled with text"/>
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>

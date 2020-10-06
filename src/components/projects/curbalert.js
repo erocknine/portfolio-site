@@ -193,7 +193,7 @@ const CurbalertDoc = (props) => {
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/curbalert/curbalert04.jpg" alt="Item post magnification"/>
+            <img className="image-solo" src="images/project-images/curbalert/curbalert04.jpg" alt="Item post's magnification mode."/>
             <span>The sole remaining 80's themed aesthetic left behind from a previous visual concept of the project</span>
           </div>
         </div>

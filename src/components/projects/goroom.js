@@ -50,11 +50,14 @@ const GoroomDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
-          <p>Original Go Room landing page which included a join chat room button, a start chat room button, and a fixed navbar on the bottom.</p>
           <div className="image-block">
             <img className="image" src="images/project-images/goroom/goroom_original.png" alt="Original Go Room home page"/>
             <span>Original Go Room</span>
           </div>
+        </div>
+
+        <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
+          <p className="p-solo">Original Go Room landing page which included a join chat room button, a start chat room button, and a fixed navbar on the bottom.</p>
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>

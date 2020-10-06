@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { descendingBlogs } from './blogs/blogPage'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../style/blogs.scss'
 import { Icon } from 'semantic-ui-react'
 import { CopyToClipboard } from 'react-copy-to-clipboard';

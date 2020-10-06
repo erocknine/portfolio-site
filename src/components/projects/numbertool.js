@@ -49,7 +49,10 @@ const NumbertoolDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/numbertool/og_image.png" alt="Redesigned Go Room Home Page"/>
+          <div className="image-block">
+            <img className="image" src="images/project-images/numbertool/og_image.png" alt="Number Tool in all its glory"/>
+            <span>Number Tool</span>
+          </div>
         </div>
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
@@ -66,7 +69,7 @@ const NumbertoolDoc = (props) => {
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/goroom/neumorphic.png" alt="Neumorphic Design example"/>
+            <img className="image" src="images/project-images/goroom/neumorphic.png" alt="Neumorphic Design example"/>
             <span>Neumorphic Design</span>
           </div>
         </div>
@@ -76,7 +79,19 @@ const NumbertoolDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
-          <p className="p-solo">Neumorphism emphasizes realism and minimalistic style, and is most effective when buttons are involved. Clean, smooth color gradients with light & dark box-shadow creates that special visual effect of neumorphism.</p>
+          <p className="p-solo">The key steps to implementing the basic features of neumorphic styling is to have a linear-gradient background, layered box-shadow on rounded elements such as buttons, and inset of those box-shadows for when the buttons are pressed.</p>
+        </div>
+
+        <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
+          <div className="image-block">
+            <img className="image-solo" src="images/project-images/numbertool/boxshadow.png" alt="CSS code for box-shadow on button class element."/>
+            <span>Box-shadow CSS code for neumorphic button design</span>
+          </div>
+        </div>
+
+        <div className={ openDoc === 'numbertool' ? "project-portion-stacked":"project-portion closed" }>
+          <p className="p-solo">Make sure the linear-gradient is a single color varying only by mild degrees of lighter to darker. This will create the overall style and mood of the application. Then, the box-shadow should show light shadows on one corner with dark shadows on the opposite. Pressing these buttons should have inset box-shadows with light and dark shadows on opposite sides.</p>
+          <p className="p-solo">Neumorphism is this simple, so just have fun with it!</p>
         </div>
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" } onClick={() => handleProject("numbertool")}>
