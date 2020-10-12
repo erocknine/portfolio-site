@@ -4,13 +4,13 @@ $gunmetal: rgb(28, 48, 65);
 $grapefruit: rgba(255, 94, 98, 1);
 
 
+.blog-page__top-color {
+  height: 6.5rem;
+  background-color: rgba(0, 0, 0, .85);
+}
 .blog-page {
   position: relative;
   transition: 400ms ease-in-out;
-  .blog-page__top-color {
-    height: 6.5rem;
-    background-color: $grapefruit;
-  }
   .blog-page__blog-text {
     position: relative;
     min-height: 100vh;

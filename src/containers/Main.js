@@ -9,6 +9,7 @@ import Feature from '../components/feature'
 import ImageBreak from '../components/imagebreak'
 import { Loader } from '../components/loader'
 
+
 const Projects = React.lazy(() => import('../components/projects'));
 
 export default function Main() {

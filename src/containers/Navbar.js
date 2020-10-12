@@ -18,7 +18,7 @@ export default function Navbar() {
         <ul className="navbar__ul">
           <Link smooth to={"/#projects"}><Projects>Projects</Projects></Link>
           <Link smooth to={"/#resume"}><Resume>Resume</Resume></Link>
-          <Link smooth to={"/#blogs"}><Blogs>Blogs</Blogs></Link>
+          <Link smooth to={"/blogs"} onClick={() => scrollTop()}><Blogs>Blogs</Blogs></Link>
           <Contact>Contact</Contact>
         </ul>
         
@@ -85,5 +85,9 @@ const Contact = (props) => {
   )
 }
 
-
+const scrollTop = () => {
+  let html = document.querySelector("html")
+  html.style.scrollBehavior = "auto";
+  window.scrollTo(0,0)
+}
 
