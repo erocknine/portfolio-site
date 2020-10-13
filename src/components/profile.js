@@ -13,7 +13,7 @@ export default function Profile() {
         data-aos-easing="ease-in-out"
         data-aos-duration="700"
         data-aos-mirror="true"
-        ></div>
+        />
 
         <div className="profile-right"
         data-aos-offset="200"
@@ -21,7 +21,7 @@ export default function Profile() {
         data-aos-easing="ease-in-out"
         data-aos-duration="700"
         data-aos-mirror="true"
-        ></div>
+        />
       </div>
 
       <div id="profile" className="profile-text">
