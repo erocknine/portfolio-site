@@ -132,6 +132,15 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       grid-row-start: 5;
       grid-row-end: 5;
     }
+    .projects-card.futurama {
+      background-image: url('../images/project-images/futurama/futurama_1.png');
+      background-size: cover;
+      background-position-x: 40%;
+      grid-column-start: 7;
+      grid-column-end: 7;
+      grid-row-start: 5;
+      grid-row-end: 5;
+    }
   }
 }
 
@@ -239,6 +248,20 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
     grid-row-end: 7;
   }
   .projects-document.numbertool {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition: 1000ms ease-in-out;
+    padding: 4rem;
+    height: fit-content;
+    width: 90vw;
+    color: $gunmetal;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 7;
+  }
+  .projects-document.futurama {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
@@ -432,6 +455,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
       .projects-document.numbertool {
         padding: 2rem;
       }
+      .projects-document.futurama {
+        padding: 2rem;
+      }
     }
   }
 }
@@ -502,6 +528,13 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         grid-row-start: 13;
         grid-row-end: 13;
       }
+      .projects-card.futurama {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 13;
+        grid-row-end: 13;
+      }
+      
       #project {
         top: -7rem;
         grid-column-start: 1;
@@ -559,6 +592,14 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
         padding: 1.5rem;
       }
       .projects-document.numbertool {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 15;
+        grid-row-end: 15;
+        width: 92vw;
+        padding: 1.5rem;
+      }
+      .projects-document.futurama {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 15;

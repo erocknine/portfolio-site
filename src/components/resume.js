@@ -20,14 +20,13 @@ export default function Resume() {
             
             <div>
               <h3>MIKI HOUSE Americas</h3>
-              <p className="resume-text-sub"><strong>Freelance Web Developer • Brooklyn, NY • July 2020 - Present</strong></p>
+              <p className="resume-text-sub"><strong>Freelance Web Developer • Brooklyn, NY • September 2020 - Present</strong></p>
 
               <p className="resume-text-info">Develop custom features for client's Shopify store using Liquid, Javascript & CSS.</p>
 
-              <p className="resume-text-desc"><strong>Designed</strong> & implemented Upsell & Cross-sell features utilizing Limespot application analytics.</p>
+              <p className="resume-text-desc"><strong>Designed</strong> & implemented Upsell & Cross-sell features using Limespot application analytics.</p>
 
-              <p className="resume-text-desc"><strong>Refined</strong> code to correct search feature filters and adjusted UI for better experience.</p>
-
+              <p className="resume-text-desc"><strong>Refined</strong> search feature filters, related items feature, and restyled specific UI components.</p>
             </div>
 
             <div>
@@ -78,33 +77,33 @@ export default function Resume() {
               <h3>CURBALERT</h3>
               <p className="resume-text-sub"><strong>June 2020</strong></p>
 
-              <p className="resume-text-info">Curbalert allows users to post images and details of items people are giving or throwing away in their area, becoming viewable on a public map. Built with Javascript, React & Redux, Ruby on Rails, PostgreSQL, React Router, Geolocation, Google Geocode & Directions, Leaflet, AWS S3.</p>
+              <p className="resume-text-info">Users can post images & details of unwanted items onto a public map. Built with Javascript, React & Redux, Ruby on Rails, PostgreSQL, React Router, Geolocation, Google Geocode & Directions, Leaflet, AWS S3.</p>
 
-              <p className="resume-text-desc"><strong>Engineered</strong> codebase synchronizing Geolocation & Google Geocode API to obtain coordinates. Decoded polyline from Google Directions response to draw directions between user coordinates and item.</p>
+              <p className="resume-text-desc"><strong>Codebase</strong> charts user coordinates on map by utilizing Geolocation & Google Geocode API.</p>
 
-              <p className="resume-text-desc"><strong>Collaborated</strong> functionality between AWS S3 Cloud & Rails Active Storage to store user post images on cloud bucket through Rails back-end API.</p>
+              <p className="resume-text-desc"><strong>Displays</strong> directions between user and items by decoding polyline using Google Directions API.</p>
 
-              <p className="resume-text-desc"><strong>Incorporated</strong> React transition group library for transition animations by conditionally rendered DOM elements. Implemented React-Sortable-Hoc library in combination with Array-Move package for draggable components within DOM.</p>
+              <p className="resume-text-desc"><strong>Stores </strong> user images by on AWS S3 Cloud collaborating with built-in Rails Active Storage.</p>
             </div>
 
             <div>
               <h3>HANGOUTS</h3>
               <p className="resume-text-sub"><strong>May 2020</strong></p>
 
-              <p className="resume-text-info">Hangouts allows friended users to schedule meetups at Yelp restaurants in areas mutually close to all parties. Built with Javascript, React, Ruby on Rails, PostgreSQL, React Router, Geolocation, Google Geocode, Leaflet.</p>
+              <p className="resume-text-info">Users can plan meetups at location calculated to be mutually close distance between all participants. Built with Javascript, React, Ruby on Rails, PostgreSQL, React Router, Geolocation, Google Geocode, Leaflet.</p>
 
-              <p className="resume-text-desc"><strong>Architected</strong> a Rails back-end call to YELP Search API to provide restaurant suggestions at user current coordinates and requested coordinates, before plotting to Leaflet API maps.</p>
+              <p className="resume-text-desc"><strong>Implemented</strong> YELP Search API for restaurant suggestions in RESTful Rails backend.</p>
 
-              <p className="resume-text-desc"><strong>Composed</strong> function to calculate a midpoint location between groups of users from coordinate data retrieved by Geolocation & Google Geocode API.</p>
+              <p className="resume-text-desc"><strong>Composed</strong> logic to calculate a midpoint location between groups of users from coordinate data retrieved by Geolocation & Google Geocode API.</p>
             </div>
 
             <div>
               <h3>KARA-OK!</h3>
               <p className="resume-text-sub"><strong>March 2020</strong></p>
 
-              <p className="resume-text-info">KARA-OK! allows users to search & save song lyrics to playlists for a convenient sing-along session. Built with Ruby, Rails, PostgreSQL, Lyrics API.</p>
+              <p className="resume-text-info">Users can search & save song lyrics to personalized playlists. Built with Ruby, Rails, PostgreSQL, Lyrics API.</p>
 
-              <p className="resume-text-desc"><strong>Built</strong> back-end API for users to search for song lyrics by requesting from Lyrics API. JSON responses are extracted and Regex to generate dynamic song lyric pages to be added to user's playlists.</p>
+              <p className="resume-text-desc"><strong>Built</strong> Rails backend to store song & lyric data requested from Lyrics API.</p>
 
               <p className="resume-text-desc"><strong>Implemented</strong> user authentication using Rails Bcrypt for password encryption.</p>
             </div>

@@ -7,6 +7,7 @@ import KaraDoc from './projects/kara'
 import GoroomDoc from './projects/goroom'
 import HiesDoc from './projects/hies'
 import NumbertoolDoc from './projects/numbertool'
+import FuturamaDoc from './projects/futurama'
 
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -50,7 +51,8 @@ export default function Projects() {
     {name: "kara", title: "KARA-OK!", projectDoc: <KaraDoc openDoc={openDoc} handleProject={handleProject}/>}, 
     {name: "hies", title: "HIES Inc.", projectDoc: <HiesDoc openDoc={openDoc} handleProject={handleProject}/>}, 
     {name: "goroom", title: "Go Room", projectDoc: <GoroomDoc openDoc={openDoc} handleProject={handleProject}/>},
-    {name: "numbertool", title: "Number Tool", projectDoc: <NumbertoolDoc openDoc={openDoc} handleProject={handleProject}/>}
+    {name: "numbertool", title: "Number Tool", projectDoc: <NumbertoolDoc openDoc={openDoc} handleProject={handleProject}/>},
+    {name: "futurama", title: "Futurama Quotes", projectDoc: <FuturamaDoc openDoc={openDoc} handleProject={handleProject}/>}
   ]
 
   return (
