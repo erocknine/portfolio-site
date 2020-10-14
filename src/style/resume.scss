@@ -4,7 +4,7 @@ $grapefruit: rgba(255, 94, 98, 1);
 $grapefruitclear: rgba(255, 94, 98, .95);
 $citrusclear: linear-gradient(90deg, rgba(255,84,139,.9) 0%, rgba(255,110,92,.9) 55%, rgba(255,131,97,.9) 100%);
 $citrus: linear-gradient(90deg, rgba(255,84,139,1) 0%, rgba(255,110,92,1) 55%, rgba(255,131,97,1) 100%);
-$linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1) 100%);
+$linearwhite: linear-gradient(90deg, rgb(224, 231, 255) 0%, rgba(218,233,255,1) 100%);
 
 #resume {
   position: absolute;
@@ -18,9 +18,10 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
   position: relative;
   .resume-content {
     display: flex;
+    flex-direction: column;
     background-color: rgba(43, 48, 58, .85);
     min-height: 90vh;
-    padding: 5vh 10vw;
+    padding: 3vh 10vw 5vh 10vw;
   }
   .resume-download {
     text-align: center;
@@ -33,18 +34,15 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
     }
   }
   .resume-text {
-    padding: 2rem 10vw 6rem 10vw;
+    padding: 4rem 10vw;
     background: $linearwhite;
     max-width: 80vw;
+    margin-top: 3vh;
     color: $gunmetal;
-    border-radius: 1rem;
     font-family: 'Montserrat', sans-serif;
     h2 {
       font-family: 'Montserrat', sans-serif;
-    }
-    h3 {
-      color: $grapefruit;
-      border-bottom: 4px solid #ff7474;
+      border-bottom: 6px solid #ff7474;
     }
     h2, h3 {
       margin: 1rem 0 0.5rem 1rem;
@@ -58,6 +56,9 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,1)
     }
     .resume-history, .resume-education {
       padding: 0 1rem;
+    }
+    .resume-history div, .resume-education div {
+      margin-bottom: 2rem;
     }
     .resume-text-block {
       display: flex;

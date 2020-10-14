@@ -6,7 +6,7 @@ import Resume from '../components/resume'
 import Blogs from '../components/blogs'
 import ImageBreak from '../components/imagebreak'
 import { Loader } from '../components/loader'
-// import TypeBreak from '../components/typebreak'
+import TypeBreak from '../components/typebreak'
 // import Feature from '../components/feature'
 
 
@@ -23,6 +23,7 @@ export default function Main() {
       <Suspense fallback={<Loader/>}>
         <Projects />
       </Suspense>
+      <TypeBreak/>
       <Resume />
       <Blogs />
     </main>

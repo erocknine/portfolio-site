@@ -10,11 +10,12 @@ export default function Resume() {
       </div>
 
       <div className="resume-content">
-        <div className="resume-text">
-          <div className="resume-download">
-            <a href="https://ericskcheung.com/ERIC_SAIKIT_CHEUNG_RESUME.pdf" target="_blank" rel="noopener noreferrer">DOWNLOADABLE</a>
-          </div>
+        <div className="resume-download">
+          <a href="https://ericskcheung.com/ERIC_SAIKIT_CHEUNG_RESUME.pdf" target="_blank" rel="noopener noreferrer">DOWNLOADABLE</a>
+        </div>
 
+        <div className="resume-text">
+          
           <h2>EXPERIENCE</h2>
           <div className="resume-history">
             
@@ -41,39 +42,34 @@ export default function Resume() {
 
               <p className="resume-text-desc"><strong>Utilized</strong> React Router for URL page routing, and EmailJS for personalized contact form.</p>
             </div>
-
-            {/* <div>
-              <ScrollAnimation offset={25} animateIn="flipInX" animateOnce={true} delay={200}><h3>BIGEYE SUSHI</h3></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-sub"><strong>Manager • Brooklyn, NY • October 2018 - October 2019</strong></p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Managed</strong> staff, EOD financials, inventory, and food prep at Sushi restaurant in downtown Brooklyn.</p></ScrollAnimation>
-              <ScrollAnimation offset={25} animateIn="fadeIn" animateOnce={true} delay={200}><p className="resume-text-desc"><strong>Coordinated</strong> and directed pop-up events at WeWork facilities and street fairs, managing staff, food supply and setup, and transportation to event sites.</p></ScrollAnimation>
-            </div> */}
             
             <div>
               <h3>BANZAI PHRESH</h3>
+              <p className="resume-text-sub"><strong>April 2016 - June 2018</strong></p>
               <p className="resume-text-info">Owned & operated restaurants at Smorgasburg Market, NY, and Ala Moana Mall, Hawaii. Resolved logistics including service & product quality management, restaurant design, inventory deadlines, divison of labor, and time management.</p>
-              <p className="resume-text-sub"><strong>Owner/Sole Proprietor • Honolulu, HI • December 2017 - June 2018</strong></p>
+              <p className="resume-text-sub"><strong>Owner / Sole Proprietor • Honolulu, HI • December 2017 - June 2018</strong></p>
               <p className="resume-text-info">Operated a 6-month pop-up restaurant in Ala Moana Mall, Hawaii.</p>
               <p className="resume-text-desc"><strong>Served</strong> 100 average customers a day, maintained a 30% profit margin, with 4.5 star reviews on yelp.</p>
-            </div>
-            <div>
-              <p className="resume-text-sub"><strong>Owner/Sole Proprietor • Brooklyn, NY • April 2016 - September 2017</strong></p>
-              <p className="resume-text-info">Operated an outdoor food booth for two seasons at Smorgasburg Market, Brooklyn.</p>
-              <p className="resume-text-desc"><strong>Served</strong> 200 average customers a day and maintained a 25% profit margin.</p>
-            </div>
             
-            <div>
-              <h3>KINGS OF FORTUNE</h3>
-              <p className="resume-text-sub"><strong>Writer • Brooklyn, NY • 2014 - 2015</strong></p>
-              <p className="resume-text-info">Self-published a fiction novel titled 'Kings of Fortune' on Amazon Createspace.</p>
-              <p className="resume-text-desc"><strong>Received</strong> positive reviews with 5 stars on San Francisco Book Review, 4 of 5 stars on Portland Book Review, and featured review on Kirkus magazine.</p>
+              <div>
+                <p className="resume-text-sub"><strong>Owner / Sole Proprietor • Brooklyn, NY • April 2016 - September 2017</strong></p>
+                <p className="resume-text-info">Operated an outdoor food booth for two seasons at Smorgasburg Market, Brooklyn.</p>
+                <p className="resume-text-desc"><strong>Served</strong> 200 average customers a day and maintained a 25% profit margin.</p>
+              </div>
+            
+              <div>
+                <h3>KINGS OF FORTUNE</h3>
+                <p className="resume-text-sub"><strong>Writer • Brooklyn, NY • 2014 - 2015</strong></p>
+                <p className="resume-text-info">Self-published a fiction novel titled 'Kings of Fortune' on Amazon Createspace.</p>
+                <p className="resume-text-desc"><strong>Received</strong> positive reviews with 5 stars on San Francisco Book Review, 4 of 5 stars on Portland Book Review, and featured review on Kirkus magazine.</p>
+              </div>
             </div>
-      
+
           </div>
 
           <h2>TECHNICAL PROJECTS</h2>
           <div className="resume-history">
-          <div>
+            <div>
               <h3>CURBALERT</h3>
               <p className="resume-text-sub"><strong>June 2020</strong></p>
 
@@ -112,13 +108,19 @@ export default function Resume() {
 
           <h2>EDUCATION</h2>
           <div className="resume-education">
-            <h3>FLATIRON SOFTWARE ENGINEERING SCHOOL</h3>
-            <p className="resume-text-sub"><strong>Brooklyn, NY • February 2020 - June 2020</strong></p>
-            <p className="resume-text-desc">Full Stack Web Development, JavaScript, Ruby on Rails, SQL, and React</p>
-            <h3>SOKA UNIVERSITY OF AMERICA</h3>
-            <p className="resume-text-sub"><strong>Aliso Viejo, CA • August 2008 - May 2012 </strong></p>
-            <p className="resume-text-desc">Bachelor of Arts: Social and Behavioral Sciences: 3.8 GPA, Magna Cum Laude</p>
+            <div>
+              <h3>FLATIRON SOFTWARE ENGINEERING SCHOOL</h3>
+              <p className="resume-text-sub"><strong>Brooklyn, NY • February 2020 - June 2020</strong></p>
+              <p className="resume-text-desc">Full Stack Web Development, JavaScript, Ruby on Rails, SQL, and React</p>
+            </div>
+
+            <div>
+              <h3>SOKA UNIVERSITY OF AMERICA</h3>
+              <p className="resume-text-sub"><strong>Aliso Viejo, CA • August 2008 - May 2012 </strong></p>
+              <p className="resume-text-desc">Bachelor of Arts: Social and Behavioral Sciences: 3.8 GPA, Magna Cum Laude</p>
+            </div>
           </div>
+
         </div>
 
       </div>
