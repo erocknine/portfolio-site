@@ -45,6 +45,25 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   animation-duration: 750ms;
   animation-fill-mode: forwards;
 }
+
+.nav-item.projects {
+  animation-delay: 100ms;
+}
+.nav-item.resume {
+  animation-delay: 350ms;
+}
+.nav-item.blogs {
+  animation-delay: 600ms;
+}
+.nav-item.contact {
+  animation-delay: 850ms;
+}
+
+@keyframes navFadeIn {
+  50% {opacity: 1;}
+  100%{opacity: 1; transform: translateY(0)}
+}
+
 .nav-link {
   text-decoration: none;
   padding: 1rem;
@@ -107,24 +126,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
   transition: height 250ms linear, width 200ms linear 250ms;
 }
 
-.nav-item.projects {
-  animation-delay: 100ms;
-}
-.nav-item.resume {
-  animation-delay: 350ms;
-}
-.nav-item.blogs {
-  animation-delay: 600ms;
-}
-.nav-item.contact {
-  animation-delay: 850ms;
-}
-
-@keyframes navFadeIn {
-  50% {opacity: 1;}
-  100%{opacity: 1; transform: translateY(0)}
-}
-
 .nav-contact-closed {
  opacity: 0;
  visibility: hidden;
@@ -184,7 +185,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 
 
 @media only screen and (max-width: 800px) {
-
   .nav-contact-open {
     top: 12vh;
     right: 2vw;
@@ -194,7 +194,6 @@ $linearwhite: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(218,233,255,.9
 }
 
 @media only screen and (max-width: 600px) {
-
   [data-aos="navbar-shade"] {
     &.aos-animate {
       transform: initial;

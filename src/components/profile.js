@@ -5,7 +5,6 @@ export default function Profile() {
 
   return (
     <section className="profile-section">
-
       <div className="profile-sliders">
         <div className="profile-left"
         data-aos-offset="200"

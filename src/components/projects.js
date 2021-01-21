@@ -1,13 +1,13 @@
 import React, { useState, Fragment } from "react";
 import '../style/projects.scss'
-import CurbalertDoc from './projects/curbalert'
-import HangoutsDoc from './projects/hangouts'
-import SuperpetDoc from './projects/superpet'
-import KaraDoc from './projects/kara'
-import GoroomDoc from './projects/goroom'
-import HiesDoc from './projects/hies'
-import NumbertoolDoc from './projects/numbertool'
-import FuturamaDoc from './projects/futurama'
+import CurbalertDoc from './Projects/curbalert'
+import HangoutsDoc from './Projects/hangouts'
+import SuperpetDoc from './Projects/superpet'
+import KaraDoc from './Projects/kara'
+import GoroomDoc from './Projects/goroom'
+import HiesDoc from './Projects/hies'
+import NumbertoolDoc from './Projects/numbertool'
+import FuturamaDoc from './Projects/futurama'
 
 import { HashLink as Link } from 'react-router-hash-link';
 

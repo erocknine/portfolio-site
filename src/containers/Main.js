@@ -9,11 +9,9 @@ import { Loader } from '../components/loader'
 import TypeBreak from '../components/typebreak'
 // import Feature from '../components/feature'
 
-
 const Projects = React.lazy(() => import('../components/projects'));
 
 export default function Main() {
-
   return (
     <main className="main-container">
       <Navbar/>

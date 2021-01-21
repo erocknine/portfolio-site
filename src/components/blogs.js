@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { descendingBlogs } from './blogs/blogPage'
+import { descendingBlogs } from './BlogsPage/blogPage'
 import '../style/blogs.scss'
 import { Icon } from 'semantic-ui-react'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
