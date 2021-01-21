@@ -21,9 +21,7 @@ export default function Navbar() {
           <Link smooth to={"/blogs"} onClick={() => scrollTop()}><Blogs>Blogs</Blogs></Link>
           <Contact>Contact</Contact>
         </ul>
-        
       </nav>
-      
     </Fragment>
   )
 }
