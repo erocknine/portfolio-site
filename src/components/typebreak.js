@@ -1,12 +1,15 @@
-import React, {useRef} from 'react'
-import useScript from './typescript'
+import React from 'react'
+import Typical from 'react-typical';
 
-export default function TypeBreak(props) {
-  const instance = useRef(null)
+export default function TypeScript(props) {
 
   return (
     <section className="image-section-type">
-      <h1 className="typescript" ref={instance}>{useScript(instance)}</h1>
+      <Typical
+        steps={['Imagine', 1800, 'Design', 1700, 'Create', 2000]}
+        loop={Infinity}
+        wrapper="h1"
+      />
       {props.children}
     </section>
   )

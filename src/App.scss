@@ -124,6 +124,12 @@ body {
   }
 }
 
+.styles_typicalWrapper__1_Uvh {
+  color: $grapefruit;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+}
+
 .loader-section {
   height: 40vh;
   display: flex;
@@ -232,13 +238,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.typescript {
-  position: absolute;
-  color: $grapefruit;
-  text-transform: uppercase;
-  font-family: 'Josefin Sans';
 }
 
 .jesuslight {
