@@ -33,7 +33,7 @@ const HiesDoc = (props) => {
 
           <div className="project-skill">
             <div className="project-skill-icon">
-              <img className="image-icon" src="images/project-images/hies/pixi.png" alt="PIXI.js logo" />
+              <img className="image-icon" src={require("../../images/icons/pixi.png")} alt="PIXI.js logo" />
             </div>
             <p>PIXI.js</p>
           </div>
@@ -59,7 +59,7 @@ const HiesDoc = (props) => {
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/hies/new_hies.jpg" alt="Redesigned HIES home page"/>
+            <img className="image-solo" src={require("../../images/project-images/hies/new_hies.jpg")} alt="Redesigned HIES home page"/>
             <span>New HIES</span>
           </div>
         </div>
@@ -70,7 +70,7 @@ const HiesDoc = (props) => {
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/hies/original_hies.png" alt="Original HIES home page"/>
+            <img className="image-solo" src={require("../../images/project-images/hies/original_hies.png")} alt="Original HIES home page"/>
             <span>Original HIES</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hies/original_hies3.jpg" alt="Example of original HIES page overfilled with text"/>
+          <img className="image" src={require("../../images/project-images/hies/original_hies3.jpg")} alt="Example of original HIES page overfilled with text"/>
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -88,8 +88,8 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hies/hies_photoshop.jpg" alt="Creating new hero with photoshop"/>
-          <img className="image" src="images/project-images/hies/hies.gif" alt="GIF demonstrating water effect from PIXI.js displacement filter"/>
+          <img className="image" src={require("../../images/project-images/hies/hies_photoshop.jpg")} alt="Creating new hero with photoshop"/>
+          <img className="image" src={require("../../images/project-images/hies/hies.gif")} alt="GIF demonstrating water effect from PIXI.js displacement filter"/>
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -97,8 +97,8 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hies/new_hies3.png" alt="New HIES page with clean footer, with images & colors following blue & green color palette"/>
-          <img className="image" src="images/project-images/hies/new_hies2.png" alt="New HIES page with categorized tiles for cleaner text."/>
+          <img className="image" src={require("../../images/project-images/hies/new_hies3.png")} alt="New HIES page with clean footer, with images & colors following blue & green color palette"/>
+          <img className="image" src={require("../../images/project-images/hies/new_hies2.png")} alt="New HIES page with categorized tiles for cleaner text."/>
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -106,7 +106,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hies/hies_work.png" alt="Typing animation for aesthetic appeal."/>
+          <img className="image" src={require('../../images/project-images/hies/hies_work.png')} alt="Typing animation for aesthetic appeal."/>
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
@@ -118,12 +118,12 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/hies/new_hies4.jpg" alt="Services section demonstrating search functionality."/>
+          <img className="image-solo" src={require("../../images/project-images/hies/new_hies4.jpg")} alt="Services section demonstrating search functionality."/>
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" } onClick={() => handleProject("hies")}>
           <Link smooth to={"/#projects"}>
-            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+            <img className="return"src={require("../../images/icons/return.png")} alt="Return Arrow"/>
           </Link>
         </div>
 

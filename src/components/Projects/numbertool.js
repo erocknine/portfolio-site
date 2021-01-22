@@ -50,7 +50,7 @@ const NumbertoolDoc = (props) => {
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image" src="images/project-images/numbertool/og_image.png" alt="Number Tool in all its glory"/>
+            <img className="image" src={require("../../images/project-images/numbertool/og_image.png")} alt="Number Tool in all its glory"/>
             <span>Number Tool</span>
           </div>
         </div>
@@ -69,7 +69,7 @@ const NumbertoolDoc = (props) => {
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image" src="images/project-images/goroom/neumorphic.png" alt="Neumorphic Design example"/>
+            <img className="image" src={require("../../images/project-images/goroom/neumorphic.png")} alt="Neumorphic Design example"/>
             <span>Neumorphic Design</span>
           </div>
         </div>
@@ -84,7 +84,7 @@ const NumbertoolDoc = (props) => {
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/numbertool/boxshadow.png" alt="CSS code for box-shadow on button class element."/>
+            <img className="image-solo" src={require("../../images/project-images/numbertool/boxshadow.png")} alt="CSS code for box-shadow on button class element."/>
             <span>Box-shadow CSS code for neumorphic button design</span>
           </div>
         </div>
@@ -96,7 +96,7 @@ const NumbertoolDoc = (props) => {
 
         <div className={ openDoc === 'numbertool' ? "project-portion":"project-portion closed" } onClick={() => handleProject("numbertool")}>
           <Link smooth to={"/#projects"}>
-            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+            <img className="return"src={require("../../images/icons/return.png")} alt="Return Arrow"/>
           </Link>
         </div>
 

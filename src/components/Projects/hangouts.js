@@ -63,14 +63,14 @@ const HangoutsDoc = (props) => {
 
           <div className="project-skill">
             <div className="project-skill-icon">
-              <img className="image-icon" src="images/project-images/curbalert/marker.png" alt="PIXI.js logo" />
+              <img className="image-icon" src={require("../../images/icons/marker.png")} alt="PIXI.js logo" />
             </div>
             <p>Geolocation API</p>
           </div>
 
           <div className="project-skill">
             <div className="project-skill-icon">
-              <img className="image-icon" src="images/project-images/curbalert/map.png" alt="PIXI.js logo" />
+              <img className="image-icon" src={require("../../images/icons/map.png")} alt="PIXI.js logo" />
             </div>
             <p>Leaflet Map API</p>
           </div>
@@ -92,7 +92,7 @@ const HangoutsDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/hangouts/hangouts06.jpg" alt="Hangouts home page"/>
+          <img className="image-solo" src={require("../../images/project-images/hangouts/hangouts06.jpg")} alt="Hangouts home page"/>
         </div>
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
@@ -105,7 +105,7 @@ const HangoutsDoc = (props) => {
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <p>Even between three developers, there was no clear idea how this application should look. We only knew there would be a map, some kind of navbar, and a utilization of Yelp suggestions. So, we looked to Yelp's main page for inspiration.</p>
-          <img className="image" src="images/project-images/hangouts/yelp.jpg" alt="Yelp search page"/>
+          <img className="image" src={require("../../images/project-images/hangouts/yelp.jpg")} alt="Yelp search page"/>
         </div>
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
@@ -121,11 +121,11 @@ const HangoutsDoc = (props) => {
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image" src="images/project-images/hangouts/midpoint_sketch.png" alt="Midpoint formula"/>
+            <img className="image" src={require("../../images/project-images/hangouts/midpoint_sketch.png")} alt="Midpoint formula"/>
             <span>Midpoint Formula we didn't know existed</span>
           </div>
           <div className="image-block">
-            <img className="image" src="images/project-images/hangouts/hangouts05.jpg" alt="Map showing 3 friends and yelp suggested restaurants at calculated midpoint"/>
+            <img className="image" src={require("../../images/project-images/hangouts/hangouts05.jpg")} alt="Map showing 3 friends and yelp suggested restaurants at calculated midpoint"/>
             <span>Restaurant suggestions at midpoint between 3 friended users</span>
           </div>
         </div>
@@ -139,7 +139,7 @@ const HangoutsDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hangouts/hangouts02.jpg" alt="Yelp suggested restaurants"/>
+          <img className="image" src={require("../../images/project-images/hangouts/hangouts02.jpg")} alt="Yelp suggested restaurants"/>
           <p>CORS blocks all front-end requests to Yelp Search API, a misfortune we discovered after implementing our front-end fetch request. So, we placed the Yelp request with the necessary headers in a controller function in our Rails back-end API.</p>
         </div>
 
@@ -152,7 +152,7 @@ const HangoutsDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/hangouts/hangouts01.jpg" alt="Yelp suggested restaurants"/>
+          <img className="image-solo" src={require("../../images/project-images/hangouts/hangouts01.png")} alt="Yelp suggested restaurants"/>
         </div>
 
         <div className={ openDoc === 'hangouts' ? "project-portion-stack":"project-portion closed" }>
@@ -162,7 +162,7 @@ const HangoutsDoc = (props) => {
 
         <div className={ openDoc === 'hangouts' ? "project-portion":"project-portion closed" } onClick={() => handleProject("hangouts")}>
           <Link smooth to={"/#projects"}>
-            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+            <img className="return"src={require("../../images/icons/return.png")} alt="Return Arrow"/>
           </Link>
         </div>
 

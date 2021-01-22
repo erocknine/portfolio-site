@@ -65,14 +65,14 @@ const CurbalertDoc = (props) => {
 
           <div className="project-skill">
             <div className="project-skill-icon">
-              <img className="image-icon" src="images/project-images/curbalert/marker.png" alt="PIXI.js logo" />
+              <img className="image-icon" src={require("../../images/icons/marker.png")} alt="Marker logo" />
             </div>
             <p>Geolocation API</p>
           </div>
 
           <div className="project-skill">
             <div className="project-skill-icon">
-              <img className="image-icon" src="images/project-images/curbalert/map.png" alt="PIXI.js logo" />
+              <img className="image-icon" src={require("../../images/icons/map.png")} alt="Map logo" />
             </div>
             <p>Leaflet Map API</p>
           </div>
@@ -105,7 +105,7 @@ const CurbalertDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/curbalert/curbalert01.jpg" alt="Curbalert's landing page showing map, dashboard and navbar"/>
+          <img className="image-solo" src={require("../../images/project-images/curbalert/curbalert01.jpg")} alt="Curbalert's landing page showing map, dashboard and navbar"/>
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
@@ -130,7 +130,7 @@ const CurbalertDoc = (props) => {
         </div>
       
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/curbalert/navbar.gif" alt="GIF demonstrating a navbar previously made using only HTML & CSS"/>
+          <img className="image" src={require("../../images/project-images/curbalert/navbar.gif")} alt="GIF demonstrating a navbar previously made using only HTML & CSS"/>
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
@@ -144,12 +144,12 @@ const CurbalertDoc = (props) => {
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p >This wasn't necessarily a bug, but a visual nuisance to the UI. It was not a simple styling problem as I thought, and I had to resolve it. After some contemplating, I realized that the mapping function was too straightforward. It would render everything immediately into whatever container I called the function, and there was no line of CSS I could apply to the container to render it differently.</p>
-          <img className="image" src="images/project-images/curbalert/curbalert07.png" alt="GIF demonstrating a navbar previously made using only HTML & CSS"/>
+          <img className="image" src={require("../../images/project-images/curbalert/curbalert07.png")} alt="GIF demonstrating a navbar previously made using only HTML & CSS"/>
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p>So, I decided to split the item array into odds & evens as well as split the flexbox container into two separate divs with flex-direction: column on each. Then, all I had to do was render the odd items into one column and even items into the other. My solution required a collaborative effort between React and CSS, as expected I suppose.</p>
-          <img className="image" src="images/project-images/curbalert/curbalert06.png" alt="Wireframe sketch of original Curbalert page layout"/>
+          <img className="image" src={require("../../images/project-images/curbalert/curbalert06.png")} alt="Wireframe sketch of original Curbalert page layout"/>
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
@@ -168,7 +168,7 @@ const CurbalertDoc = (props) => {
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <p>Geolocation API and Google Geocode API worked together to retrieve the coordinates & address of the user. This data is used to fill in the required address inputs to save the user time when creating an item post. If a user is on the move, all the user needs to do is snap a picture of the item and write a description. After posting, the item is rendered onto the Leaflet map and the active section, becoming viewable by all users.</p>
           <div className="image-block">
-            <img className="image" src="images/project-images/curbalert/curbalert03.jpg" alt="Numerous active posts on map and active sidebar"/>
+            <img className="image" src={require("../../images/project-images/curbalert/curbalert03.jpg")} alt="Numerous active posts on map and active sidebar"/>
             <span>Active items have flags varying in color based on number of days since posted</span>
           </div>
         </div>
@@ -183,8 +183,8 @@ const CurbalertDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
-          <img className={large ? "image-large":"image clickable"} src="images/project-images/curbalert/curbalert05.jpg" onClick={() => setLarge(!large)} alt="Response JSON from Google Directions API" />
-          <img className="image" src="images/project-images/curbalert/curbalert02.jpg" alt="Curbalert has built-in Google Directions"/>
+          <img className={large ? "image-large":"image clickable"} src={require("../../images/project-images/curbalert/curbalert05.jpg")} onClick={() => setLarge(!large)} alt="Response JSON from Google Directions API" />
+          <img className="image" src={require("../../images/project-images/curbalert/curbalert02.jpg")} alt="Curbalert has built-in Google Directions"/>
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
@@ -193,14 +193,14 @@ const CurbalertDoc = (props) => {
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/curbalert/curbalert04.jpg" alt="Item post's magnification mode."/>
+            <img className="image-solo" src={require("../../images/project-images/curbalert/curbalert04.png")} alt="Item post's magnification mode."/>
             <span>The sole remaining 80's themed aesthetic left behind from a previous visual concept of the project</span>
           </div>
         </div>
 
         <div className={ openDoc === 'curbalert' ? "project-portion":"project-portion closed" } onClick={() => handleProject("curbalert")}>
           <Link smooth to={"/#projects"}>
-            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+            <img className="return"src={require("../../images/icons/return.png")} alt="Return Arrow"/>
           </Link>
         </div>
 

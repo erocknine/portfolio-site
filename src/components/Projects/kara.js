@@ -48,7 +48,7 @@ const KaraDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/kara/kara01.png" alt="Kara-Ok Home Page"/>
+          <img className="image-solo" src={require("../../images/project-images/kara/kara01.png")} alt="Kara-Ok Home Page"/>
         </div>
 
         <div className={ openDoc === 'kara' ? "project-portion" : "project-portion closed" }>
@@ -69,12 +69,12 @@ const KaraDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/kara/kara04.png" alt="Red error banner when song isn't found"/>
+          <img className="image" src={require("../../images/project-images/kara/kara04.png")} alt="Red error banner when song isn't found"/>
           <p>One of the few animations I included is a CSS transform for this message banner whenever a user searches a song. If the request for the song search fails in the API, a catch & rescue function responds with an error message, which executes the red banner animation indicating the song was not found.</p>
         </div>
 
         <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/kara/kara03.png" alt="Green success banner when song is found and added"/>
+          <img className="image" src={require("../../images/project-images/kara/kara03.png")} alt="Green success banner when song is found and added"/>
           <p>If the request is successful, the song is automatically added to the playlist, and a separate green banner animates indicating the song was added. I chose a bright green to clash with the colors of the page in order to enforce a feeling of change and success.</p>
         </div>
 
@@ -84,7 +84,7 @@ const KaraDoc = (props) => {
 
         <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/kara/kara02.png" alt="Dynamically generated song lyric page"/>
+            <img className="image-solo" src={require("../../images/project-images/kara/kara02.png")} alt="Dynamically generated song lyric page"/>
             <span>the1975 is one of my favorite bands</span>
           </div>
         </div>
@@ -96,7 +96,7 @@ const KaraDoc = (props) => {
 
         <div className={ openDoc === 'kara' ? "project-portion":"project-portion closed" } onClick={() => handleProject("kara")}>
           <Link smooth to={"/#projects"}>
-            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+            <img className="return"src={require("../../images/icons/return.png")} alt="Return Arrow"/>
           </Link>
         </div>
 

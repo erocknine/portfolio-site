@@ -50,7 +50,7 @@ const FuturamaDoc = (props) => {
 
         <div className={ openDoc === 'futurama' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image" src="images/project-images/futurama/futurama_1.png" alt="Home page with animations"/>
+            <img className="image" src={require("../../images/project-images/futurama/futurama_1.png")} alt="Home page with animations"/>
             <span>Futurama Quotes</span>
           </div>
         </div>
@@ -65,7 +65,7 @@ const FuturamaDoc = (props) => {
 
         <div className={ openDoc === 'futurama' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image" src="images/project-images/futurama/futurama_4.png" alt="Main page of Futurama Quotes"/>
+            <img className="image" src={require("../../images/project-images/futurama/futurama_4.png")} alt="Main page of Futurama Quotes"/>
             <span>Main Page</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ const FuturamaDoc = (props) => {
 
         <div className={ openDoc === 'futurama' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image" src="images/project-images/futurama/futurama_3.png" alt="Array of quote objects."/>
+            <img className="image" src={require("../../images/project-images/futurama/futurama_3.png")} alt="Array of quote objects."/>
             <span>quotes array with over 100 quote objects</span>
           </div>
         </div>
@@ -92,7 +92,7 @@ const FuturamaDoc = (props) => {
 
         <div className={ openDoc === 'futurama' ? "project-portion":"project-portion closed" } onClick={() => handleProject("futurama")}>
           <Link smooth to={"/#projects"}>
-            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+            <img className="return"src={require("../../images/icons/return.png")} alt="Return Arrow"/>
           </Link>
         </div>
 

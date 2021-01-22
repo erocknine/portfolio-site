@@ -38,7 +38,7 @@ const GoroomDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/goroom/goroom_new.png" alt="Redesigned Go Room Home Page"/>
+          <img className="image-solo" src={require("../../images/project-images/goroom/goroom_new.png")} alt="Redesigned Go Room Home Page"/>
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
@@ -51,7 +51,7 @@ const GoroomDoc = (props) => {
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image" src="images/project-images/goroom/goroom_original.png" alt="Original Go Room home page"/>
+            <img className="image" src={require("../../images/project-images/goroom/goroom_original.png")} alt="Original Go Room home page"/>
             <span>Original Go Room</span>
           </div>
         </div>
@@ -70,7 +70,7 @@ const GoroomDoc = (props) => {
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
           <div className="image-block">
-            <img className="image-solo" src="images/project-images/goroom/neumorphic.png" alt="Neumorphic Design example"/>
+            <img className="image-solo" src={require("../../images/project-images/goroom/neumorphic.png")} alt="Neumorphic Design example"/>
             <span>Neumorphic Design</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ const GoroomDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/goroom/goroom_test.png" alt="Test neumorphic button design layout"/>
+          <img className="image" src={require("../../images/project-images/goroom/goroom_test.png")} alt="Test neumorphic button design layout"/>
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
@@ -88,8 +88,8 @@ const GoroomDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/goroom/goroom_sketch.png" alt="Wireframe sketch of final design layout"/>
-          <img className="image" src="images/project-images/goroom/goroom-home.gif" alt="GIF demonstrating animations to join and start a chat room in final design"/>
+          <img className="image" src={require("../../images/project-images/goroom/goroom_sketch.png")} alt="Wireframe sketch of final design layout"/>
+          <img className="image" src={require("../../images/project-images/goroom/goroom-home.gif")} alt="GIF demonstrating animations to join and start a chat room in final design"/>
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
@@ -97,12 +97,12 @@ const GoroomDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" }>
-          <img className="image-solo" src="images/project-images/goroom/goroom_new2.png" alt="Final design layout"/>
+          <img className="image-solo" src={require("../../images/project-images/goroom/goroom_new2.png")} alt="Final design layout"/>
         </div>
 
         <div className={ openDoc === 'goroom' ? "project-portion":"project-portion closed" } onClick={() => handleProject("goroom")}>
           <Link smooth to={"/#projects"}>
-            <img className="return"src="images/project-images/return.png" alt="Return Arrow"/>
+            <img className="return"src={require("../../images/icons/return.png")} alt="Return Arrow"/>
           </Link>
         </div>
 
