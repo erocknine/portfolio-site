@@ -106,7 +106,7 @@ const HiesDoc = (props) => {
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
-          <img className="image" src="images/project-images/hies/new_hies.gif" alt="Typing animation for aesthetic appeal."/>
+          <img className="image" src="images/project-images/hies/hies_work.png" alt="Typing animation for aesthetic appeal."/>
         </div>
 
         <div className={ openDoc === 'hies' ? "project-portion":"project-portion closed" }>
