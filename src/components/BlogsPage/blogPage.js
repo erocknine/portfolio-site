@@ -48,7 +48,7 @@ export function BlogPage() {
           >
             <img
               className="return"
-              src={`/images/project-images/${
+              src={`/images/${
                 dark ? "return_white" : "return"
               }.png`}
               alt="Return Arrow"
@@ -61,7 +61,7 @@ export function BlogPage() {
           >
             <img
               className="return"
-              src={`/images/project-images/${
+              src={`/images/${
                 dark ? "return_white" : "return"
               }.png`}
               alt="Return Arrow"
